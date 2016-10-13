@@ -1,0 +1,141 @@
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*
+sm	@media screen and (min-width: 35.5em)	? 568px	.pure-u-sm-*
+md	@media screen and (min-width: 48em)	? 768px	.pure-u-md-*
+lg	@media screen and (min-width: 64em)	? 1024px	.pure-u-lg-*
+xl	@media screen and (min-width: 80em)	? 1280px	.pure-u-xl-*
+*/
+
+/*Mobile Only*/
+@media screen and (max-width: 35.5em) {
+
+    html {
+        font-size: 1em;
+    }
+
+    article {
+        padding-top: 2em;
+    }
+
+    aside {
+        position: fixed;
+        background: #d32f2f;
+        cursor: pointer;
+    }
+
+    aside nav {
+        display: none;
+    }
+
+    aside nav ul {
+        position: inherit;
+        width: 100%;
+        margin: 2em 0 0 0;
+    }
+
+    aside nav a {
+        display: block;
+        color: white;
+        text-shadow: none;
+    }
+    aside nav a:hover {
+        color: #d32f2f;
+        background: white;
+        text-shadow: none;
+    }
+
+    aside:hover nav {
+        display: block;
+    }
+
+    aside .menu {
+        color: white;
+        background: none;
+        border: none;
+        padding: .3em .5em;
+        float: right;
+    }
+
+    .logos {
+        float: none;
+        padding: 0.5em 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+
+    .photography img,
+    .photography video {
+        margin-bottom: 0.5em;
+    }
+
+
+}
+
+/*Medium and below*/
+@media screen and (max-width: 48em) {
+
+    /*Responsive table*/
+    table.responsive-table {
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-table thead {display: none;}
+
+    .responsive-table tr td:first-child {
+        /*background: #f0f0f0;*/
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .responsive-table tbody,
+    .responsive-table tbody tr,
+    .responsive-table tbody td {
+        display: block;
+        text-align: center;
+    }
+    .responsive-table tbody tr {
+        border-top: 1px solid #949697;
+    }
+
+
+    .responsive-table tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
+    .thumbs {
+        margin: -1em -.25em .5em -.25em;
+    }
+
+    .thumbs a {
+        width: calc(33.3% - .5em);
+        padding: .25em;
+
+    }
+
+
+
+}
+
+
+/*Everything but Mobile*/
+@media screen and (min-width: 35.5em) {
+
+    aside nav ul {
+        padding: .3em .5em;
+    }
+    aside .menu {
+        display: none;
+    }
+
+
+}
+

@@ -1,36 +1,986 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Andrew Battenburg</title>
     <meta name="description" content="Andrew Battenburg's website. Feels like 1999 all over again.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="apple-touch-icon" href="r/img/face.png">
+
+    <link rel="stylesheet" href="r/css/normalize.min.css">
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="r/css/main.css">
+    <link rel="stylesheet" href="r/css/mobile.css">
+    <link rel="stylesheet" href="r/css/components.css">
+
+    <!--<script src="r/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+
+    <script src="https://use.fontawesome.com/690f9bd560.js"></script>
+
 </head>
-<body>
-    <!--TODO: Make this more badass.-->
-    <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<body class="pure-g">
 
-    <h1>Andrew Battenburg</h1>
-    <p>
-        Workin' in it.
-    </p>
+<!--[if lt IE 8]>
+<p class="browserupgrade pure-u-1">
+    What are you doin' using an old version of <i class="fa fa-internet-explorer"></i>?
+    <a href="http://browsehappy.com/" target="_blank">You know better</a>.
+</p>
+<![endif]-->
 
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
-    <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
 
-    <script src="js/main.js"></script>
+
+<aside class="pure-u-1 pure-u-sm-1-3 pure-u-md-1-3 pure-u-lg-1-4">
+
+    <div class="menu">
+        ≡ Menu
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#main">Introductions</a>
+            </li>
+            <li>
+                <a href="#uiux">UI + UX</a>
+            </li>
+            <li>
+                <a href="#work">Work</a>
+            </li>
+            <li>
+                <a href="#photography">Photography</a>
+            </li>
+        </ul>
+
+    </nav>
+</aside>
+
+
+<main class="pure-u-1 pure-u-sm-2-3 pure-u-md-2-3 pure-u-lg-2-3">
+    <article>
+
+        <!--Introduction-->
+        <section id="main">
+            <h1>
+                Hi, I'm
+                <br>
+                <strong>Andrew Battenburg</strong><span>.</span>
+            </h1>
+            <p>
+                I'm a software designer, specializing in responsive and mobile web.
+                You'll usually find me developing prototypes, writing requirements, designing UI kits, and front end coding.
+            </p>
+
+            <p>
+                In the 2007 I moved to Seattle to learn how to build for the web and join start ups.
+                Four years later I graduated from University of Washington with a focus on Human
+                Computer Interaction and had two companies under the belt.
+            </p>
+
+            <p>
+                If I'm not cooking, taking photos, or traveling, I'll be supporting eSports
+                or laying some smack down in Super Smash.
+                I prefer telling silly jokes in person rather than on social media.
+            </p>
+
+            <h3>Contact</h3>
+
+            <p>
+                Feel free to email me at
+                <a href="mailto:abattenb@gmail.com?Subject=I%20saw%20your%20portfolio%20and%20it%20was%20awesome">abattenb@gmail.com</a>
+                or, if you prefer, you can send me a
+                <a href="https://www.linkedin.com/in/andrew-battenburg-290521117">LinkedIn</a>
+                message.
+            </p>
+
+
+        </section>
+
+        <!--UI + UX-->
+        <section id="uiux" class="components">
+            <h2>UI + UX</h2>
+
+            <h3>UI Kit</h3>
+
+            <p>
+                For any project I always design a kit of UI elements to pull from. Software is a collection of components;
+                headers, text, photos, and buttons. When the pieces are robust, the whole is easier and faster
+                to develop.
+            </p>
+            <p>
+
+                Below you'll find some highlights from my most recent kit.
+                High contrast colors, clear UI states, and playful animations allowed for accessibility to be a design priority.
+
+                A screenshot of the full kit I developed for renticity can be
+                <a href="r/img/ui_kit.png">found here</a>.
+            </p>
+
+            <h4>Buttons</h4>
+
+
+            <p>
+                Most buttons improperly omit focus and active states, which are necessary for keyboard navigation
+                and user feedback. Embracing these states makes buttons not only more accessible, but so much more satisfying.
+                Go ahead and give them a try!
+            </p>
+
+            <button type="button" class="btn btn-default">
+                &#9671;
+                Default
+            </button>
+            <button type="button" class="btn btn-primary">
+                &#9673;
+                Primary
+            </button>
+            <button type="button" class="btn btn-danger">
+                &#9661;
+                Danger
+            </button>
+
+            <br>
+            <br>
+
+            <button type="button" class="btn btn-default btn-outline">
+                &#9671;
+                Default
+            </button>
+            <button type="button" class="btn btn-primary btn-outline">
+                &#9673;
+                Primary
+            </button>
+            <button type="button" class="btn btn-danger btn-outline">
+                &#9661;
+                Danger
+            </button>
+
+            <br>
+            <br>
+
+            <button type="button" class="btn btn-default btn-link">
+                &#9671;
+                Default
+            </button>
+            <button type="button" class="btn btn-primary btn-link">
+                &#9673;
+                Primary
+            </button>
+            <button type="button" class="btn btn-danger btn-link">
+                &#9661;
+                Danger
+            </button>
+
+            <br>
+            <br>
+
+            <button type="button" class="btn btn-default disabled">
+                &#9671;
+                Default
+            </button>
+            <button type="button" class="btn btn-primary disabled">
+                &#9673;
+                Primary
+            </button>
+            <button type="button" class="btn btn-danger disabled">
+                &#9661;
+                Danger
+            </button>
+
+            <!--<h4>Card</h4>-->
+
+
+            <!--<div class="card">-->
+                <!--<img src="r/img/blank_circle.gif" alt="blank image of ned, my desktop monstser">-->
+                <!--<div class="title">-->
+                    <!--Tina's Birthday-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--Hey it's by birthday, you're all invited to come over! Start's at 6 this Wednesday.-->
+                <!--</div>-->
+                <!--<div class="small text-right">-->
+                    <!--Date: 1234-->
+                <!--</div>-->
+
+            <!--</div>-->
+
+
+
+            <h4>Loading Icon</h4>
+
+            <p>
+
+                I wanted to create a more playful loading icon instead of the standard <i class="fa fa-spinner fa-spin fa-fw"></i>.
+                The bouncing animation and changing colors hold your attention for long enough to load.
+                If, for some reason, the load time is extra long (30+ seconds), there is an easter egg to find.
+            </p>
+
+            <div class="spinx3">
+                <div class="ball_shadow"></div>
+                <div class="ball"></div>
+                <p>Loading party invites&hellip;</p>
+            </div>
+
+            <h4>Side Navigation</h4>
+
+            <p>
+                Just like buttons, many sets of navigation don't include differentiating "active" and "hover" states.
+                If you route by relative URL, use anchor tags, if by JS, use buttons, that way the keyboard can focus the navigation.
+            </p>
+
+            <nav>
+                <ul role="menu">
+                    <li>
+                        <button>
+                            <i class="fa fa-home"></i>
+                            Dashboard
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fa fa-envelope-o"></i>
+                            Messages
+                            <span>3</span>
+                        </button>
+                    </li>
+                    <li class="active">
+                        <button>
+                            <i class="fa fa-gift"></i>
+                            Parties
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fa fa-search"></i>
+                            Search
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fa fa-heart-o"></i>
+                            Liked
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fa fa-cog" ></i>
+                            Settings
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <h4>Dropdown</h4>
+
+            <p>
+                With enough elbow grease, you can get all dropdowns, including Google Places' autocomplete and Bootstrap's
+                dropdown, to use the same styling. I like to sneak in subtle color styling to convey the importance of
+                an action.
+            </p>
+
+            <div class="dropdown">
+                <button class="btn btn-default btn-outline" aria-haspopup="true" aria-expanded="false">
+                    More <i class="fa fa-caret-down"></i>
+                </button>
+
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li class="primary">
+                        <button>New</button>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <button>Rename</button>
+                    </li>
+                    <li>
+                        <button>Move</button>
+                    </li>
+                    <li>
+                        <button>Save</button>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="danger">
+                        <button>Delete</button>
+                    </li>
+                    <!--<li><div class="divider"></div></li>-->
+                </ul>
+            </div>
+
+            <h4>Alerts</h4>
+
+            <p>
+                I prefer big buttons, generous hitboxes,
+                and clear, concise feedback. Never lie to the user, you'll only get a support ticket later.
+            </p>
+
+
+            <h5>Small</h5>
+            <p>
+                Useful for inline validation, auto saving, or small notices.
+            </p>
+
+            <div class="alert alert-sm alert-info" role="alert">
+                <i class="fa fa-send"></i>
+                <p>
+                    Send party invites 2 weeks out for the best turnout.
+                </p>
+            </div>
+            <div class="alert alert-sm alert-success" role="alert">
+                <i class="fa fa-save"></i>
+                <p>
+                    Party information auto-saved.
+                </p>
+            </div>
+            <div class="alert alert-sm alert-error" role="alert">
+                <i class="fa fa-warning"></i>
+                <p>
+                    Are you sure your birthday is in the future?
+                </p>
+            </div>
+
+            <h5>Medium</h5>
+
+            <p>
+                Great for "banana bar" messages or in-page feedback with an action.
+            </p>
+
+            <div class="alert alert-info" role="alert">
+                <i class="fa fa-thumbs-o-up"></i>
+                <p>
+                    Party invite sent successfully!
+                </p>
+                <button class="btn btn-default pull-right">Read Invite</button>
+            </div>
+
+            <div class="alert alert-success" role="alert">
+                <i class="fa fa-beer"></i>
+                <p>
+                    You just got invited to a party!
+                </p>
+                <button class="btn btn-primary pull-right">Accept Invite!</button>
+            </div>
+
+
+            <div class="alert alert-error" role="alert">
+                <i class="fa fa-bomb"></i>
+                <p>
+                    The party <span class="bold">crashed</span>! Oh no!
+                </p>
+                <button class="btn btn-danger pull-right">Reboot Party</button>
+            </div>
+
+            <h5>Large</h5>
+
+            <p>
+                Awesome for blank screen UX or upsells.
+            </p>
+
+            <div class="alert alert-lg alert-success" role="alert">
+                <div class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                </div>
+                <div>
+                    Your birthday is coming up, let's celebrate it! Creating and inviting people to your party is easy, cutting cake is the hard part.
+                </div>
+                <button class="btn btn-primary btn-lg xs-block">Create Party</button>
+            </div>
+
+            <div class="alert alert-lg alert-info" role="alert">
+                <div class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-magic fa-stack-1x fa-inverse"></i>
+                </div>
+                <div>
+                    You can make a new Party for more than just birthdays. New Year celebrations, Mother's Day, or weekend chillin' work with Party-o-Matic 2000.
+                </div>
+                <button class="btn btn-default btn-outline btn-lg xs-block">New Party</button>
+            </div>
+
+
+            <h4>Messages</h4>
+
+            <p>
+                A classic, responsive, all CSS take on a Messages design.
+            </p>
+
+            <div class="message you">
+                <div class="user_name">
+                    You
+                </div>
+                <!--Needs to stay in one line to render properly-->
+                <div class="message_body freetext">Hey, would you like to come to my party? We are going to play ring toss with a live giraffe!</div>
+
+                <div class="text-center small">
+                    12:34 PM 10/03/16
+                </div>
+            </div>
+
+            <div class="message them">
+                <div class="user_name">
+                    Tina Anderson
+                </div>
+                <!--Needs to stay in one line to render properly-->
+                <div class="message_body freetext">Oh that sounds really cool 😃 I'm there!</div>
+
+                <div class="text-center small">
+                    1:54 PM Yesterday
+                </div>
+            </div>
+
+            <h4>Color Table</h4>
+
+            <p>
+                I always create brand table for easy, cross-application color look up.
+                Each color has enough contrast such that any three shade or tint steps away meets at least
+                <a href="http://webaim.org/resources/contrastchecker/" target="_blank">WCAG AA</a> accessibility standards.
+            </p>
+
+            <table class="color_table responsive-table">
+                <thead>
+                <tr>
+                    <th>Color</th>
+                    <th>Name</th>
+                    <th>Hex</th>
+                    <th>RGB</th>
+                    <th>Classes</th>
+                    <th>Usage</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td>
+                        <span class="lightgrey_bg"></span>
+                    </td>
+                    <td class="lightgrey">
+                        Light Grey
+                    </td>
+                    <td>
+                        #FAFAFB
+                    </td>
+                    <td>
+                        rgba(250, 250, 251, 1)
+                    </td>
+                    <td>
+                        .lightgrey_bg
+                        <br>
+                        .lightgrey
+                    </td>
+                    <td>
+                        Backgrounds
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="softgrey_bg"></span>
+                    </td>
+                    <td class="softgrey">
+                        Soft Grey
+                    </td>
+                    <td>
+                        #C7C9CA
+                    </td>
+                    <td>
+                        rgba(199, 201, 202, 1)
+                    </td>
+                    <td>
+                        .softgrey_bg
+                        <br>
+                        .softgrey
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="grey_bg"></span>
+                    </td>
+                    <td class="grey">
+                        Grey
+                    </td>
+                    <td>
+                        #949697
+                    </td>
+                    <td>
+                        rgba(148, 150, 151, 1)
+                    </td>
+                    <td>
+                        .grey_bg
+                        <br>
+                        .grey
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hardgrey_bg"></span>
+                    </td>
+                    <td class="hardgrey">
+                        Hard Grey
+                    </td>
+                    <td>
+                        #525556
+                    </td>
+                    <td>
+                        rgba(82, 85, 86, 1)
+                    </td>
+                    <td>
+                        .hardgrey_bg
+                        <br>
+                        .hardgrey
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="darkgrey_bg"></span>
+                    </td>
+                    <td class="darkgrey">
+                        Dark Grey
+                    </td>
+                    <td>
+                        #323333
+                    </td>
+                    <td>
+                        rgba(50, 51, 51, 1)
+                    </td>
+                    <td>
+                        .darkgrey_bg
+                        <br>
+                        .darkgrey
+                    </td>
+                    <td>
+                        Text
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <span class="lightblue_bg"></span>
+                    </td>
+                    <td class="lightblue">
+                        Light Blue
+                    </td>
+                    <td>
+                        #F4F9EF
+                    </td>
+                    <td>
+                        rgba(244, 249, 239, 1)
+                    </td>
+                    <td>
+                        .lightblue_bg
+                        <br>
+                        .lightblue
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="softblue_bg"></span>
+                    </td>
+                    <td class="softblue">
+                        Soft Blue
+                    </td>
+                    <td>
+                        #81C786
+                    </td>
+                    <td>
+                        rgba(129, 199, 134, 1)
+                    </td>
+                    <td>
+                        .softblue_bg
+                        <br>
+                        .softblue
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="blue_bg"></span>
+                    </td>
+                    <td class="blue">
+                        Blue
+                    </td>
+                    <td>
+                        #10AD4E
+                    </td>
+                    <td>
+                        rgba(16, 173, 78, 1)
+                    </td>
+                    <td>
+                        .blue_bg
+                        <br>
+                        .blue
+                    </td>
+                    <td>
+                        Branding
+                        <br>
+                        CTA
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hardblue_bg"></span>
+                    </td>
+                    <td class="hardblue">
+                        Hard Blue
+                    </td>
+                    <td>
+                        #048044
+                    </td>
+                    <td>
+                        rgba(4, 128, 68, 1)
+                    </td>
+                    <td>
+                        .hardblue_bg
+                        <br>
+                        .hardblue
+                    </td>
+                    <td>
+                        Links
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="darkblue_bg"></span>
+                    </td>
+                    <td class="darkblue">
+                        Dark Blue
+                    </td>
+                    <td>
+                        #084C33
+                    </td>
+                    <td>
+                        rgba(8, 76, 51, 1)
+                    </td>
+                    <td>
+                        .darkblue_bg
+                        <br>
+                        .darkblue
+                    </td>
+                    <td>
+                        Shadowing
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <span class="lightpink_bg"></span>
+                    </td>
+                    <td class="lightpink">
+                        Light Pink
+                    </td>
+                    <td>
+                        #FFF8F9
+                    </td>
+                    <td>
+                        rgba(255, 248, 249, 1)
+                    </td>
+                    <td>
+                        .lightpink_bg
+                        <br>
+                        .lightpink
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="softpink_bg"></span>
+                    </td>
+                    <td class="softpink">
+                        Soft Pink
+                    </td>
+                    <td>
+                        #FF8D90
+                    </td>
+                    <td>
+                        rgba(255, 141, 144, 1)
+                    </td>
+                    <td>
+                        .softpink_bg
+                        <br>
+                        .softpink
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="pink_bg"></span>
+                    </td>
+                    <td class="pink">
+                        Pink
+                    </td>
+                    <td>
+                        #FF675D
+                    </td>
+                    <td>
+                        rgba(255, 103, 93, 1)
+                    </td>
+                    <td>
+                        .pink_bg
+                        <br>
+                        .pink
+                    </td>
+                    <td>
+                        Favoriting
+                        <br>
+                        Deleting
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="hardpink_bg"></span>
+                    </td>
+                    <td class="hardpink">
+                        Hard Pink
+                    </td>
+                    <td>
+                        #BF4949
+                    </td>
+                    <td>
+                        rgba(191, 73, 73, 1)
+                    </td>
+                    <td>
+                        .hardpink_bg
+                        <br>
+                        .hardpink
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="darkpink_bg"></span>
+                    </td>
+                    <td class="darkpink">
+                        Dark Pink
+                    </td>
+                    <td>
+                        #7F2525
+                    </td>
+                    <td>
+                        rgba(127, 37, 37, 1)
+                    </td>
+                    <td>
+                        .darkpink_bg
+                        <br>
+                        .darkpink
+                    </td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <h3>UX Process</h3>
+
+            <p>
+                My favorite approach is to move from sketch into front-end prototype to get actionable feedback as fast as
+                possible. Longer projects may need more written requirements and detailed user flows,
+                but I like getting to the "wow moment" as soon as possible. It helps get the ideas that are in
+                people's heads and get them into something concrete.
+            </p>
+
+
+            <h4>Pen and Paper</h4>
+
+            <p>
+                You still can't replace a paper notebook. It never runs out of batteries, looks great with age, and
+                doesn't bug you with updates. When designing in groups, whiteboards are also great.
+                It's a lot of fun and anyone can contribute without worrying about pixels or polish.
+            </p>
+            <img src="r/img/sketches2.jpg" class="pure-img" alt="a sample user flow">
+
+
+
+            <h4>Prototype</h4>
+
+            <p>
+                Developing a UI kit for your product makes it easy to go from sketch to browser and by
+                using real components, your prototypes are already using production-tested code.
+                Javascript frameworks, IDEs, and synchronized device testing means get you can results on your
+                phone or big screen in seconds.
+            </p>
+            <p>
+                When making something new, I like to keep a
+                "<a href="r/img/play.png">digital sketchbook</a>"
+                as well, designing in the medium itself. Sometimes it's just a good way to warm up while drinking
+                your morning coffee, or maybe you just need a clean-room to nail down an idea.
+
+            </p>
+
+            <h4>Feedback</h4>
+
+            <p>
+                The higher the fidelity, the most direct and actionable the feedback.
+                Getting into the browser means I can surface use cases earlier in development, which leads to better
+                requirements and smoother product launches in the long run.
+
+            </p>
+
+
+            <img src="r/img/flow.jpg" class="pure-img" alt="a sample user flow">
+            <!--<figure>-->
+                <!--<figcaption>-->
+                    <!--A small, sample diagram of a user sign up flow done in LucidChart.-->
+                <!--</figcaption>-->
+            <!--</figure>-->
+
+
+            <p>
+                I like for customers to run through prototypes by themselves and meet a few days later.
+                By having the interview away from the screen, lasting impressions and what's most important come into focus.
+                Plus, there's nothing better than in-person compliments.
+            </p>
+
+
+        </section>
+
+        <!--Projects-->
+        <section id="work">
+            <h2>Work</h2>
+
+            <h3>
+                renticity
+            </h3>
+
+            <img src="r/img/logos/renticity.png" class="logos" alt="renticity logo">
+            <p>
+                In 2013 I joined Renticity as Lead Designer to create a set of tools for landlords and renters.
+                We set out to to build the complete rental package; list properties, screen applications, sign leases,
+                and pay rent, all online and all on the go.
+            </p>
+
+
+            <div class="thumbs">
+                <a href="r/img/screenshots/dashboard.png">
+                    <img src="r/img/thumbs/dashboard.jpg" alt="dashboard thumbnail">
+                </a>
+                <a href="r/img/screenshots/details.png">
+                    <img src="r/img/thumbs/details.jpg" alt="details thumbnail">
+                </a>
+                <a href="r/img/screenshots/homepage.png">
+                    <img src="r/img/thumbs/homepage.jpg" alt="homepage thumbnail">
+                </a>
+                <a href="r/img/screenshots/lease.png">
+                    <img src="r/img/thumbs/lease.jpg" alt="lease thumbnail">
+                </a>
+                <a href="r/img/screenshots/listing.png">
+                    <img src="r/img/thumbs/listing.jpg" alt="listing thumbnail">
+                </a>
+                <a href="r/img/screenshots/map.png">
+                    <img src="r/img/thumbs/map.jpg" alt="map thumbnail">
+                </a>
+                <a href="r/img/screenshots/photos.png">
+                    <img src="r/img/thumbs/photos.jpg" alt="photos thumbnail">
+                </a>
+                <a href="r/img/screenshots/settings.png">
+                    <img src="r/img/thumbs/settings.jpg" alt="settings thumbnail">
+                </a>
+            </div>
+
+            <p>
+                Our searchable map included both organic listings and aggregate data from 3rd party sources.
+                Renter applications to listings were all digital, which allowed us to offer near-instant credit and criminal
+                background checks. Once an application was accepted, landlords could either upload their lease
+                or use Renticity's own lease to send to renters to eSign. Renters could pay for their deposits,
+                rent, and utilities online as well. Everything together, online, mobile, and integrated.
+
+            </p>
+
+            <h3>
+                buuteeq
+            </h3>
+            <img src="r/img/logos/buuteeq.png" class="logos" alt="buuteeq logo">
+            <p>
+
+                Buuteeq was a content platform for hotels to
+                <a href="r/img/screenshots/buuteeq_maxwell.png" target="_blank">market</a>
+                and
+                <a href="r/img/screenshots/buuteeq_lian.png" target="_blank">book online</a>.
+                I was brought on as part of the front end design team, implementing redlines, design comps, and
+                browser support. Clients often had special requests and I worked
+                closely with them for special features and additional services such as advertising.
+            </p>
+            <p>
+                In 2012 we were transitioning from a fixed grid system to responsive design while also supporting browsers
+                all the way back to IE6, FF3, and iOS 4. Two years later Buuteeq sold and absorbed by Priceline Group.
+            </p>
+
+            <h3>
+                shiftalliance
+            </h3>
+            <img src="r/img/logos/shiftalliance.png" class="logos" alt="shiftalliance logo">
+            <p>
+                shiftalliance was founded on the idea that
+                <i>"doing the right thing"</i> and <i>"successful business"</i>
+                were intrinsically linked.
+
+                We built business models that at their core brought value and delight to both the customers and the business.
+
+                I was responsible for business research and lead a student team the University of Washington as a part of the Capstone Project.
+            </p>
+
+        </section>
+
+        <!--Photography-->
+        <section id="photography">
+
+            <h2>Photography</h2>
+
+            <p>
+                From mountainsides to workbenches, a selection of photographs, projects, and post-processing. Locations include Dubai, Columbia, Seattle, and more.
+            </p>
+            <p>
+                Huge shout-out to Alan O'Neil and his help with stringing and programming LEDs. Without him there would be no light and magic.
+            </p>
+
+            <div class="photographs">
+
+                <img src="r/img/photography/bocas_del_toro.jpg" alt="Bocas Del Toro">
+
+                <div class="animated_photo">
+                    <img src="r/img/photography/burj_khalifa.jpg" alt="Burj Khalifa - New Years Celebration">
+                    <video autoplay loop>
+                        <source src="r/img/photography/burj_khalifa.webm" type="video/webm">
+                        <source src="r/img/photography/burj_khalifa.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <img src="r/img/photography/i_you.jpg" alt="I <3 You - LED Project">
+                <img src="r/img/photography/figurine.jpg" alt="Figurine portrait">
+                <!--<img src="r/img/photography/firework.jpg" clt="Fireworks in Seattle">-->
+                <img src="r/img/photography/mountain.jpg" alt="Mountainside - United Arab Emirates">
+                <img src="r/img/photography/la_fortuna.jpg" alt="Lake in Volcano - La Fortuna">
+                <!--<img src="r/img/photography/led.jpg" alt="LED light bar">-->
+                <img src="r/img/photography/medellin_modern_art.jpg" alt="LED lightscape - Medellín Museum of Modern Art">
+                <img src="r/img/photography/ned.jpg" alt="Ned portrait">
+                <img src="r/img/photography/panama.jpg" alt="Panama City">
+                <!--<img src="r/img/photography/sheikh_zayed_mosque.jpg" alt="Sheikh Zayed Mosque">-->
+
+
+            </div>
+
+        </section>
+
+
+    </article>
+
+
+    <footer class="pure-u-1">
+        2016 &copy; Andrew Battenburg
+    </footer>
+</main>
+
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
+
+<script src="r/js/main.js"></script>
 </body>
 </html>
 <!--                 _
