@@ -171,6 +171,12 @@ footer {
     padding-bottom: 1em;
 }
 
+img,
+video {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
 audio,
 canvas,
 iframe,
@@ -266,18 +272,12 @@ aside nav li:last-of-type a {
     outline: 1px solid #999;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 .thumbs a:hover img {
     outline: none;
 }
 
-
-.photographs img,
-.photographs video {
-    max-width: 100%;
-    /*height: auto;*/
-    padding-bottom: 1em;
-}
 
 .photographs .animated_photo {
     position: relative;

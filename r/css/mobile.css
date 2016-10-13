@@ -23,6 +23,9 @@ xl	@media screen and (min-width: 80em)	? 1280px	.pure-u-xl-*
 
     aside {
         position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
         background: #d32f2f;
         cursor: pointer;
     }
@@ -30,6 +33,11 @@ xl	@media screen and (min-width: 80em)	? 1280px	.pure-u-xl-*
     aside nav {
         display: none;
     }
+
+    aside:hover nav {
+        display: block;
+    }
+
 
     aside nav ul {
         position: inherit;
@@ -40,16 +48,13 @@ xl	@media screen and (min-width: 80em)	? 1280px	.pure-u-xl-*
     aside nav a {
         display: block;
         color: white;
+        background: #d32f2f;
         text-shadow: none;
     }
     aside nav a:hover {
         color: #d32f2f;
         background: white;
         text-shadow: none;
-    }
-
-    aside:hover nav {
-        display: block;
     }
 
     aside .menu {
@@ -59,6 +64,7 @@ xl	@media screen and (min-width: 80em)	? 1280px	.pure-u-xl-*
         padding: .3em .5em;
         float: right;
     }
+
 
     .logos {
         float: none;
