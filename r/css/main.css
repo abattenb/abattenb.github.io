@@ -286,16 +286,21 @@ aside nav li:last-of-type a {
 .photographs .animated_photo video {
     display: none;
 }
-.photographs .animated_photo:hover img {
+.photographs .animated_photo:hover img,
+.photographs .animated_photo:focus img {
     display: none;
 }
 .photographs .animated_photo:hover:before,
-.photographs .animated_photo:hover:after {
+.photographs .animated_photo:hover:after,
+.photographs .animated_photo:focus:before,
+.photographs .animated_photo:focus:after {
     content: '';
     display: none;
 }
 .photographs .animated_photo:hover video,
-.photographs video:hover {
+.photographs .animated_photo:focus video,
+.photographs video:hover,
+.photographs video:focus {
     display: block;
 }
 

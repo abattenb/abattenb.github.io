@@ -22,6 +22,7 @@ xl	@media screen and (min-width: 80em)	? 1280px	.pure-u-xl-*
     }
 
     aside {
+        font-size: 1.3em;
         position: fixed;
         top: 0;
         right: 0;
