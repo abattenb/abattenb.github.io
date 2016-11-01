@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans);
+
+
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 5em;
+    letter-spacing: -0.14em;
+
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+
+    -webkit-font-feature-settings: "kern";
+    font-kerning: normal;
+
+    -ms-font-feature-settings:     'kern' 1, 'liga' 1;  /* IE10 */
+    -moz-font-feature-settings:    'kern' 1, 'liga' 1;  /* Firefox */
+    -webkit-font-feature-settings: 'kern' 1, 'liga' 1;  /* Chrome, Safari, Opera */
+    font-feature-settings:         'kern' 1, 'liga' 1;  /* Future-proof! */
+
+}
+
+h1 span {
+    color: greenyellow;
+}
+
+h2 span {
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+h2 span:before {
+    content: '';
+    position: absolute;
+    background: red;
+    left: -.15em;
+    width: calc(100% + .5em);
+    height: 100%;
+    transform: rotate(-3deg);
+
+    /*mix-blend-mode: multiply;*/
+    z-index: -1;
+
+}
+
+
+
+
+.open_sans {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1.5em;
+    text-align: center;
+    display: inline-block;
+    /*text-decoration: line-through;*/
+}
+
+.stretch {
+    transform:scale(.5,1);
+}
+
+.grey {
+    color: gainsboro;
+}
+
+.smile {
+    display: inline-block;
+    position: relative;
+    font-size: 3em;
+}
+
+.smile:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .2em;
+    top: .5em;
+    background: black;
+}

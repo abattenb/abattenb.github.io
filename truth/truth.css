@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Oswald|Playfair+Display');
+
+html {
+    font-family: Tahoma, sans-serif;
+    background: #FAFAFA;
+}
+
+body {
+    margin: 0;
+}
+
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    border-bottom: 1px solid #111;
+    margin: 1em 0 0 0;
+    text-transform: uppercase;
+}
+
+/*---------------------------------
+Cookie
+---------------------------------*/
+
+.cookie {
+    background: dodgerblue;
+    border-bottom: 1px solid royalblue;
+    color: white;
+    text-align: center;
+    font-size: .8em;
+}
+
+.cookie button {
+    background: transparent;
+    border: 1px solid white;
+    padding: 2px 5px;
+    margin: 2px;
+    color: white;
+    font-size: .9em;
+    font-weight: bold;
+
+    transition: .2s all;
+}
+.cookie button:hover {
+    color: dodgerblue;
+    background: white;
+    cursor: pointer;
+    transition: .2s all;
+}
+.cookie button:focus {
+    background: gainsboro;
+    transition: .2s all;
+}
+
+/*---------------------------------
+Header
+---------------------------------*/
+
+header {
+    height: 50px;
+    border-bottom: 1px solid #111;
+}
+header img {
+    float: left;
+    height: 50px;
+    padding-right: 10px;
+}
+
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #ED1C24;
+    margin: 0;
+    display: inline;
+}
+
+
+header .ticker {
+    text-align: right;
+    float: right;
+}
+
+header .tagline {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+
+
+    font-size: 1.3em;
+}
+
+/*---------------------------------
+Frame
+---------------------------------*/
+
+.frame {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+}
+
+.columns .column {
+    flex: 1 0 25%;
+}
+
+/*---------------------------------
+Slideshow
+---------------------------------*/
+
+
+.slideshow {
+    background: linear-gradient(135deg, #e3ecf2 66%, #8d959b 100%);
+}
+
+.slideshow .slide {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slideshow .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slideshow .slide .headline {
+    color: white;
+    position: absolute;
+    bottom: 0.8em;
+    right: 3em;
+    font-size: 2em;
+    display: inline-block;
+    text-shadow: 0px 1px 1px #960a0f, 0px 0px 8px #8e0c11;
+    text-align: right;
+    mix-blend-mode: lighten;
+}
+
+
+.slideshow .slide .headline:before {
+    content: '';
+    position: absolute;
+    left: -0.5em;
+    top: -.25em;
+    width: calc(100% + 3em);
+    height: calc(100% + .5em);
+    background: linear-gradient(135deg, #ED1C24 50%, #d0171e);
+    z-index: -1;
+}
+
+
+/*---------------------------------
+Top Stories
+---------------------------------*/
+
+.top_stories {
+    display: flex;
+}
+
+.top_stories article {
+    /*outline: 1px solid blue;*/
+    flex: 1;
+    background: white;
+}
+
+.top_stories article h1 {
+    font-family: 'Playfair Display', serif;
+    color: #111;
+    /*text-transform: uppercase;*/
+    transition: .15s all;
+    padding: 0 .25em;
+
+}
+.top_stories article a {
+    text-decoration: none;
+
+}
+
+.top_stories article a:hover h1 {
+    color: #ED1C24;
+    text-decoration: underline;
+    transition: .15s all;
+}
+.top_stories article a p {
+    /*font-family: 'Playfair Display', serif;*/
+    /*font-family: "Times New Roman", Serif;*/
+    font-family: Arial, sans-serif;
+    font-size: .9em;
+    line-height: 1.4;
+    color: #111;
+    padding: 0 .5em .5em;
+    border-bottom: 3px solid #FAFAFA;
+    clear: both;
+
+}
+
+
+.top_stories img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.top_stories .author {
+    text-decoration: none;
+    color: #ED1C24;
+}
+.top_stories .author:hover {
+    text-decoration: underline;
+}
+
+.top_stories .section {
+    background: linear-gradient(135deg, #ED1C24 50%, #d0171e);
+    text-shadow: 0px 1px 1px #d0171e, 0px 0px 5px #960a0f;
+
+    color: white;
+    margin-bottom: -1em;
+    position: relative;
+    display: inline;
+    padding: 0.4em 1.5em 0.4em 0.6em;
+    float: right;
+    top: -1.5em;
+    right: .5em;
+}
+
+
+
+/*---------------------------------
+Ads
+---------------------------------*/
+
+.ads {
+
+    margin-top: 2.5em;
+}
+
+.ad-content {
+    display: block;
+    padding: 0;
+    margin: 0 0 -1px 0;
+}
+.ad-content img {
+    display: block;
+}
+
+/*---------------------------------
+Trends
+---------------------------------*/
+
+.trends {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.trends a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2em 2em;
+    font-weight: bold;
+    flex-grow: 1;
+    min-width: 20%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    text-shadow: 0 -1px 0px rgba(0,0,0,0.4);
+    transition: .2s all;
+}
+
+.trends a:hover {
+    flex-grow: 4;
+    text-decoration: underline;
+
+    transition: .2s all;
+}
+
+.trends a:before {
+    content: '\f06e';
+
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 5em;
+    transform: rotate(-45deg);
+    opacity: 0.3;
+    bottom: -0.2em;
+    right: -0.2em;
+
+}
+
+.trends .facebook:before {content: '\f230';}
+.trends .twitter:before {content: '\f099';}
+.trends .linkedin:before {content: '\f08c';}
+.trends .instagram:before {content: '\f16d';}
+.trends .etsy:before {content: '\f2d7';}
+
+
+
+/*---------------------------------
+Stories
+---------------------------------*/
+
+
+.stories h2 {
+    border-bottom: 1px solid #111;
+}
+
+.stories a {
+    display: block;
+    background: white;
+    padding: .65em .25em;
+    border-bottom: 1px solid #111;
+    color: #111;
+    font-size: .85em;
+    line-height: 1.5;
+    text-decoration: none;
+
+    transition: .2s all;
+
+}
+.stories a:hover {
+    text-decoration: underline;
+    color: #ED1C24;
+
+    transition: .2s all;
+}
+
+.stories a .section {
+    background: linear-gradient(135deg, #ED1C24 50%, #e01e25);
+    text-shadow: 0px 1px 1px #d0171e, 0px 0px 3px #d0171e;
+
+    color: white;
+    padding: 0.15em 1em 0.15em .35em;
+    margin-right: .5em;
+    /*font-weight: bold;*/
+    text-transform: uppercase;
+}
+
+
+
+
+/*---------------------------------
+Videos
+---------------------------------*/
+
+.video {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+
+    border: none;
+
+}
+.video img {
+    width: 100%;
+    display: block;
+}
+
+.video:before {
+    content: '\f144';
+    font-family: FontAwesome;
+    color: rgba(0,0,0,.7);
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+
+    margin: -.6em 0 0 0;
+    transition: .15s all;
+
+}
+
+.video:hover:before {
+    color: #ED1C24;
+    transition: .15s all;
+}
+
+.video .title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: .25em;
+    background: rgba(0,0,0,.7);
+    text-shadow: 0px 1px 1px black;
+
+    color: white;
+}
+
+.video:hover .title {
+    text-decoration: underline;
+}
+
+
+/*---------------------------------
+Subscribe
+---------------------------------*/
+
+
+.subscribe {
+    margin: 2em 0;
+    padding: 2em;
+    border: 1px solid #ED1C24;
+    background: white;
+}
+
+.subscribe h2 {
+    border: none;
+    margin: 0;
+}
+
+.subscribe button {
+    border: 1px solid #ED1C24;
+    background: linear-gradient(to bottom, #ea3f45 0%,#ed1c24 50%,#dd1a1d 100%);
+    color: white;
+    font-size: 1.3em;
+    padding: .25em .5em;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.subscribe button:hover {
+    box-shadow: 0px 0px 3px pink;
+}
+.subscribe button:focus {
+    background: #970c11;
+}
+
+.subscribe input {
+    border: 1px solid #ED1C24;
+    background: white;
+    /*color: white;*/
+    padding: .25em .5em;
+    font-size: 1.3em;
+    box-shadow: inset 0px 1px 2px gainsboro;
+}
+
+
+
+/*---------------------------------
+Footer
+---------------------------------*/
+
+footer {}
+
+footer {
+    padding: 1.5em 0;
+    background: #111;
+    color: white;
+}
+
+footer h2 {
+    font-family: Tahoma, sans-serif;
+    font-size: 1em;
+    margin: .5em .25em;
+}
+
+footer a {
+    display: block;
+    padding: .5em .25em;
+    background: transparent;
+    color: white;
+    font-size: .9em;
+
+    transition: .1s all;
+}
+footer a:hover,
+footer a:focus {
+    /*background: #ED1C24;*/
+    background: linear-gradient(135deg, #ED1C24 50%, #d0171e);
+
+    padding: .5em .5em;
+
+    transition: .1s all;
+}
+
+footer .social a {
+    display: inline;
+    box-sizing: border-box;
+    font-size: 2em;
+    width: 33%;
+    float: left;
+    padding: .25em;
+}
+footer .social a:hover {
+    padding: .25em .35em;
+
+}
+
+footer img {
+    margin: 1.5em 0 1em 0;
+    width: 7em;
+}
+
+/*---------------------------------
+Misc
+---------------------------------*/
+
+
+.right {float: right;}
+.left {float: left;}
+.small {font-size: .8em;}
+.green {color: green;}
+.hidden  {display: none;}
+.bold {font-weight: bold;}
+.text-center {text-align: center;}
+
+
+
+.brand_red {color: #ED1C24;}
+.white {color: white;}
+
+/*http://uigradients.com/ is awesome!*/
+
+.gr_poolwater       {background: linear-gradient(135deg, #67B26F, #4ca2cd);}
+.gr_flamepink       {background: linear-gradient(135deg, #FF512F, #DD2476);}
+.gr_plum            {background: linear-gradient(135deg, #ff00cc, #333399);}
+.gr_plants          {background: linear-gradient(135deg, #56ab2f, #a8e063);}
+.gr_night           {background: linear-gradient(135deg, #000428, #004e92);}
+.gr_grapefruit      {background: linear-gradient(135deg, #e96443, #904e95);}
+.gr_yellowsnow      {background: linear-gradient(135deg, #F09819, #EDDE5D);}
+.gr_falafelmovie    {background: linear-gradient(135deg, #a73737, #7a2828);}

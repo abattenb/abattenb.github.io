@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="99" viewBox="0 0 180 100">
+    <style>.a{fill:#FFF;}</style>
+    <rect width="180" height="99" fill="#ED1C24"/>
+    <path d="M22.3 80.9V25.7H11v-8.1h31.6v8.1H31.3v55.2H22.3z" class="a"/>
+    <path d="M47.1 80.9V17.7h6.8l15.8 39.1V17.7h9v63.3H72.3L56.1 38.8v42.1H47.1z" class="a"/>
+    <path d="M87.8 67.4l-2.3-49.7h9l-1.6 49.7H87.8zM85.5 80.9v-9h9v9H85.5z" class="a"/>
+</svg>
