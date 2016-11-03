@@ -246,7 +246,7 @@ Ads
     width: 100%;
     display: block;
 
-    opacity: .05;
+    /*opacity: .05;*/
 }
 
 .ads .block {
@@ -257,14 +257,14 @@ Ads
     text-shadow: 0 -1px 1px #333;
     font-size: 2em;
     text-align: center;
-    margin-bottom: -83.33%;
+    margin-bottom: -166.66%;
     position: relative;
 }
 
 .ads .block:before {
     content: '';
     display: block;
-    padding-top: 83.33%;
+    padding-top: 166.66%;
 }
 
 .ads .block .condescending_message {
