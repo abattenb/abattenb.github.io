@@ -41,6 +41,7 @@ Cookie
 
     transition: .2s all;
 }
+
 .cookie button:hover {
     color: dodgerblue;
     background: white;
@@ -78,6 +79,7 @@ header h1 {
 header .ticker {
     text-align: right;
     float: right;
+    padding: 0.25em .5em;
 }
 
 header .tagline {
@@ -111,7 +113,8 @@ Slideshow
 
 
 .slideshow {
-    background: linear-gradient(135deg, #e3ecf2 66%, #8d959b 100%);
+    background: #333;
+    position: relative;
 }
 
 .slideshow .slide {
@@ -129,7 +132,7 @@ Slideshow
 .slideshow .slide .headline {
     color: white;
     position: absolute;
-    bottom: 0.8em;
+    bottom: 1em;
     right: 3em;
     font-size: 2em;
     display: inline-block;
@@ -150,6 +153,17 @@ Slideshow
     z-index: -1;
 }
 
+.slideshow .controls {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    text-decoration: none;
+    color: white;
+    font-size: .7em;
+    padding: .25em;
+    text-shadow: 1px 1px 0px black, -1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black;
+    opacity: 0.7;
+}
 
 /*---------------------------------
 Top Stories
@@ -190,10 +204,9 @@ Top Stories
     font-size: .9em;
     line-height: 1.4;
     color: #111;
-    padding: 0 .5em .5em;
-    border-bottom: 3px solid #FAFAFA;
+    padding: 0 .5em .25em;
     clear: both;
-
+    margin: 0;
 }
 
 
@@ -203,13 +216,7 @@ Top Stories
     height: auto;
 }
 
-.top_stories .author {
-    text-decoration: none;
-    color: #ED1C24;
-}
-.top_stories .author:hover {
-    text-decoration: underline;
-}
+
 
 .top_stories .section {
     background: linear-gradient(135deg, #ED1C24 50%, #d0171e);
@@ -225,6 +232,37 @@ Top Stories
     right: .5em;
 }
 
+.top_stories .infobar {
+    padding: .25em .5em .5em;
+    font-size: 0.8em;
+}
+
+.top_stories .author {
+    text-decoration: none;
+    color: #ED1C24;
+}
+.top_stories .author:hover {
+    text-decoration: underline;
+}
+
+
+.top_stories .readmore_cta {
+    display: block;
+    font-size: .9em;
+    text-align: center;
+    border: 1px solid transparent;
+    border-top: 1px solid #DDD;
+    color: #111;
+    padding: .25em .25em;
+    margin: 0em .5em .25em;
+    text-transform: uppercase;
+    transition: .2s all;
+}
+
+.top_stories .readmore_cta:hover {
+    border: 1px solid #ED1C24;
+    transition: .2s all;
+}
 
 
 /*---------------------------------
@@ -252,10 +290,10 @@ Ads
 .ads .block {
     width: 100%;
     color: #aaa;
-    background: #eee;
+    background: linear-gradient(135deg, #FAFAFA 50%, #EEE 100%);
     box-shadow: inset 0px 0px 2px black;
     text-shadow: 0 -1px 1px #333;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     margin-bottom: -166.66%;
     position: relative;
@@ -317,6 +355,7 @@ Trends
     opacity: 0.3;
     bottom: -0.2em;
     right: -0.2em;
+    text-shadow: none;
 
 }
 
@@ -435,27 +474,39 @@ Subscribe
 
 .subscribe {
     margin: 2em 0;
-    padding: 2em;
+    padding: 2em 3em;
     border: 1px solid #ED1C24;
-    background: white;
+    background: #ED1C24;
+    color: white;
+    border-radius: 0.5em;
 }
 
 .subscribe h2 {
     border: none;
     margin: 0;
+    text-shadow: 0 -1px 0px rgba(0,0,0,0.6);
 }
 
 .subscribe button {
-    border: 1px solid #ED1C24;
-    background: linear-gradient(to bottom, #ea3f45 0%,#ed1c24 50%,#dd1a1d 100%);
+    /*border: 1px solid #ED1C24;*/
+    background: transparent;
+    border: 2px solid white;
     color: white;
     font-size: 1.3em;
     padding: .25em .5em;
-    border-radius: 1px;
     cursor: pointer;
+    transition: .2s all;
 }
+
+.subscribe .hieroglyphics {
+    font-size: 4em;
+    padding: .25em 0;
+}
+
 .subscribe button:hover {
-    box-shadow: 0px 0px 3px pink;
+    color: #ED1C24;
+    background: white;
+    transition: .2s all;
 }
 .subscribe button:focus {
     background: #970c11;
@@ -534,15 +585,19 @@ Misc
 
 .right {float: right;}
 .left {float: left;}
+.big {font-size: 1.2em;}
 .small {font-size: .8em;}
+.tiny {font-size: .3em;}
 .green {color: green;}
 .hidden  {display: none;}
 .bold {font-weight: bold;}
 .text-center {text-align: center;}
+.text-left {text-align: left}
 
 
-
+.twitter_blue {color: #1da1f3;}
 .brand_red {color: #ED1C24;}
+.grey {color: #888;}
 .white {color: white;}
 
 /*http://uigradients.com/ is awesome!*/
