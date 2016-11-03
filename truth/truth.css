@@ -242,7 +242,38 @@ Ads
     margin: 0 0 -1px 0;
 }
 .ad-content img {
+    position: relative;
+    width: 100%;
     display: block;
+
+    opacity: .05;
+}
+
+.ads .block {
+    width: 100%;
+    color: #aaa;
+    background: #eee;
+    box-shadow: inset 0px 0px 2px black;
+    text-shadow: 0 -1px 1px #333;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: -83.33%;
+    position: relative;
+}
+
+.ads .block:before {
+    content: '';
+    display: block;
+    padding-top: 83.33%;
+}
+
+.ads .block .condescending_message {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
 }
 
 /*---------------------------------
