@@ -585,6 +585,7 @@ footer img {
 Misc
 ---------------------------------*/
 
+.hidden {display: none;}
 
 .right {float: right;}
 .left {float: left;}
