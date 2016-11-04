@@ -73,6 +73,7 @@ header h1 {
     color: #ED1C24;
     margin: 0;
     display: inline;
+    vertical-align: top;
 }
 
 
@@ -85,7 +86,7 @@ header .ticker {
 header .tagline {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-
+    display: inline-block;
 
     font-size: 1.3em;
 }
@@ -171,11 +172,13 @@ Top Stories
 
 .top_stories {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .top_stories article {
     /*outline: 1px solid blue;*/
     flex: 1;
+    flex-basis: 25%;
     background: white;
 }
 

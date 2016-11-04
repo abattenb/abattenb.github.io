@@ -1,5 +1,79 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Styles */
+.break_test {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
 }
 
+/*XS*/
+@media only screen and (max-width : 520px) {
+    .break_test {
+        background: cyan;
+    }
+
+    .visible_sm, .visible_md,
+    .visible_lg, .hidden_xs  {display: none;}
+
+
+   header .ticker {
+       display: block;
+   }
+}
+
+/*XS+SM*/
+@media only screen and (max-width : 767px) {
+    header .tagline {
+        font-size: 1.1em;
+        padding-left: .5em;
+    }
+
+    .top_stories article {
+        flex-basis: 100%;
+    }
+}
+
+
+/*SM*/
+@media only screen and (min-width : 521px) and (max-width : 767px) {
+    .break_test {
+        background: magenta;
+    }
+
+    .visible_xs, .visible_md,
+    .visible_lg, .hidden_sm {display: none;}
+
+    .top_stories article {
+        flex-basis: 50%;
+    }
+}
+
+/*MD*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .break_test {
+        background: yellow;
+    }
+    .visible_xs, .visible_sm,
+    .visible_lg, .hidden_md {display: none;}
+
+
+    header .tagline {
+        margin-top: 0.7em;
+    }
+
+
+}
+
+/*LG*/
+@media only screen and (min-width : 1025px) {
+    .break_test {
+        background: black;
+    }
+    .visible_xs, .visible_sm,
+    .visible_md, .hidden_lg {display: none;}
+
+
+    header .tagline {
+        margin-top: 0.7em;
+    }
+
+
+}
