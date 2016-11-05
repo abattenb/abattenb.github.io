@@ -27,6 +27,20 @@
         content: none;
     }
 
+    .ad-content img {
+        width: auto;
+        margin: 0 auto;
+    }
+
+
+    .subscribe .hieroglyphics{
+        font-size: 3em;
+    }
+
+    .stories.columns .column {
+        flex: 1 0 100%;
+    }
+
     footer {
         padding-top: 1em;
     }
@@ -72,6 +86,27 @@
     }
 }
 
+/*XS+SM+MD*/
+@media (max-width : 64em) {
+    h2 {
+        padding-left: .15em;
+        padding-right: .15em;
+    }
+
+    .subscribe {
+
+        font-size: 0.8em;
+
+        margin: .5em .25em;
+        padding: 0.5em 1em;
+    }
+
+    .stories.columns .ads .block {
+        display: none;
+    }
+
+}
+
 
 /*SM*/
 @media (min-width : 32em) and (max-width : 42em) {
@@ -90,6 +125,17 @@
 
     .top_stories article {
         flex-basis: 50%;
+    }
+
+    .stories.columns .column {
+        flex: 1 0 50%;
+    }
+
+    .stories.columns .ads.column {
+        flex: 1 0 100%;
+    }
+    .stories.columns .ads.column {
+        display: flex;
     }
 }
 

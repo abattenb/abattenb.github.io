@@ -123,6 +123,7 @@ Frame
 
 .columns {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .columns .column {
@@ -406,11 +407,11 @@ Stories
 ---------------------------------*/
 
 
-.stories h2 {
+.bits h2 {
     border-bottom: 1px solid #111;
 }
 
-.stories a {
+.bits a {
     display: block;
     background: white;
     padding: .65em .25em;
@@ -423,14 +424,14 @@ Stories
     transition: .2s all;
 
 }
-.stories a:hover {
+.bits a:hover {
     text-decoration: underline;
     color: #ED1C24;
 
     transition: .2s all;
 }
 
-.stories a .section {
+.bits a .section {
     background: linear-gradient(135deg, #ED1C24 50%, #e01e25);
     text-shadow: 0px 1px 1px #d0171e, 0px 0px 3px #d0171e;
 
@@ -448,7 +449,7 @@ Stories
 Videos
 ---------------------------------*/
 
-.video {
+.videos a {
     display: block;
     position: relative;
     width: 100%;
@@ -457,12 +458,12 @@ Videos
     border: none;
 
 }
-.video img {
+.videos a img {
     width: 100%;
     display: block;
 }
 
-.video:before {
+.videos a:before {
     content: '\f144';
     font-family: FontAwesome;
     color: rgba(0,0,0,.7);
@@ -479,12 +480,12 @@ Videos
 
 }
 
-.video:hover:before {
+.videos a:hover:before {
     color: #ED1C24;
     transition: .15s all;
 }
 
-.video .title {
+.videos a .title {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -496,7 +497,7 @@ Videos
     color: white;
 }
 
-.video:hover .title {
+.videos a:hover .title {
     text-decoration: underline;
 }
 
