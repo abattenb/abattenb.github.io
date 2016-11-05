@@ -6,13 +6,11 @@
 
 /*XS*/
 @media only screen and (max-width : 520px) {
-    .break_test {
-        background: cyan;
-    }
-
+    .break_test {background: cyan;}
     .visible_sm, .visible_md,
     .visible_lg, .hidden_xs  {display: none;}
 
+    .slideshow .slide {height: 20em;}
 
    header .ticker {
        display: block;
@@ -34,12 +32,12 @@
 
 /*SM*/
 @media only screen and (min-width : 521px) and (max-width : 767px) {
-    .break_test {
-        background: magenta;
-    }
-
+    .break_test {background: magenta;}
     .visible_xs, .visible_md,
     .visible_lg, .hidden_sm {display: none;}
+
+    .slideshow .slide {height: 20em;}
+
 
     .top_stories article {
         flex-basis: 50%;
@@ -48,9 +46,7 @@
 
 /*MD*/
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-    .break_test {
-        background: yellow;
-    }
+    .break_test {background: yellow;}
     .visible_xs, .visible_sm,
     .visible_lg, .hidden_md {display: none;}
 

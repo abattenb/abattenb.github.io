@@ -1,0 +1,1085 @@
+<!--
+A place to gather design elements used across Renticity.
+-->
+<div class="design container">
+
+    <a href="/dev" class="btn btn-default btn-outline pull-right"><i class="fa fa-reply"></i>Back</a>
+    <h2>Design Page</h2>
+
+    <h3>Headers</h3>
+
+    <h1>H1. JFK got my VHS, PC and XLR web quiz.</h1>
+    <h2>H2. JFK got my VHS, PC and XLR web quiz.</h2>
+    <h3>H3. JFK got my VHS, PC and XLR web quiz.</h3>
+    <h4>H4. JFK got my VHS, PC and XLR web quiz.</h4>
+
+
+    <h3>Dropdowns</h3>
+
+    <div class="dropdown">
+        <button class="btn btn-default btn-outline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More <i class="fa fa-caret-down"></i></button>
+
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a>Stop</a></li>
+            <li class="danger"><a>Drop</a></li>
+            <li><a>Roll</a></li>
+        </ul>
+    </div>
+
+
+    <h3>Modals</h3>
+
+    <!-- Button trigger modal -->
+    <button class="btn btn-default btn-outline" data-toggle="modal" data-target="#myModal">
+        <i class="fa fa-bomb"></i>Boom goes the modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><i class="fa fa-close"></i></span><span class="sr-only">Close</span></button>
+                    <h2 class="modal-title">Modals Happen</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Lets not over-do it though.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Alerts</h3>
+
+    <div class="messageFrame">
+        <div class="alertInline alert-success" role="alert">
+            <i class="fa fa-bomb"></i>
+            <p>
+                Generic Error ErrorError Error Error Error Error. Why does this happen? Error
+            </p>
+            <button type="button" class="close pull-right" ng-click="hideAlert()">&#215;</button>
+        </div>
+    </div>
+
+
+    <h4>Small</h4>
+
+    <div class="alertInline alertSmall alert-error" role="alert">
+        <i class="fa fa-warning"></i>
+        <p>
+            There has been a problem. Your birthday probably isn't in the future. If it is, then we definitely want to grab a drink. Also bring stock numbers.
+        </p>
+    </div>
+
+    <h4>Medium</h4>
+
+
+    <div class="alertInline alert-success" role="alert">
+        <i class="fa fa-users"></i>
+        <p>
+            You have been invited to the <span class="underline">Banana Cartels Party</span>.
+        </p>
+        <button class="btn btn-primary pull-right">Join the Party!</button>
+        <button class="btn btn-link underline pull-right">I'll fly solo.</button>
+    </div>
+
+    <div class="alertInline alert-info" role="alert">
+        <i class="fa fa-exclamation-circle"></i>
+        <p>
+            An Adverse Action Notice has been sent to you.
+        </p>
+        <button class="btn btn-default pull-right">Read notice.</button>
+        <button class="btn btn-link underline pull-right">Dismiss.</button>
+    </div>
+
+    <div class="alertInline alert-error" role="alert">
+        <i class="fa fa-bomb"></i>
+        <p>
+            Your rent was due <span class="bold">yesterday</span>!
+        </p>
+        <button class="btn btn-danger pull-right">Pay rent now!</button>
+        <button class="btn btn-link underline pull-right">Dismiss.</button>
+    </div>
+
+    <h4>Large</h4>
+
+    <div class="alertInline alertLarge alert-success" role="alert">
+        <div class="fa fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+        </div>
+        <div>
+            Renticity Pro gives landlords the ability to sign e-leases and collect rent. It's all fast, online, and only <span class="underline">$10 / month</span>.
+        </div>
+        <button class="btn btn-primary btn-lg xs-block">Subscribe Now</button>
+    </div>
+
+    <div class="alertInline alertLarge alert-info" role="alert">
+        <i class="fa fa-info-circle"></i>
+        <div>
+            Did you know that you can do the thing. Do the thing. Please, do the thing. You know you want to do the thing. Maybe even do a couple things. But definitely do the thing.
+        </div>
+        <button class="btn btn-default btn-outline btn-lg xs-block">The Thing</button>
+    </div>
+
+
+    <h3>Colors</h3>
+
+
+    <table class="color_table">
+        <thead>
+        <tr>
+            <th>Color</th>
+            <th>Name</th>
+            <th>Hex</th>
+            <th>RGB</th>
+            <th>Classes</th>
+            <th>Usage</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>
+                <span class="lightgrey_bg"></span>
+            </td>
+            <td class="lightgrey">
+                Light Grey
+            </td>
+            <td>
+                #FAFAFB;
+            </td>
+            <td>
+                rgba(250, 250, 251, 1);
+            </td>
+            <td>
+                .lightgrey_bg
+                <br>
+                .lightgrey
+            </td>
+            <td>
+                Backgrounds
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="softgrey_bg"></span>
+            </td>
+            <td class="softgrey">
+                Soft Grey
+            </td>
+            <td>
+                #C7C9CA;
+            </td>
+            <td>
+                rgba(199, 201, 202, 1);
+            </td>
+            <td>
+                .softgrey_bg
+                <br>
+                .softgrey
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="grey_bg"></span>
+            </td>
+            <td class="grey">
+                Grey
+            </td>
+            <td>
+                #949697;
+            </td>
+            <td>
+                rgba(148, 150, 151, 1);
+            </td>
+            <td>
+                .grey_bg
+                <br>
+                .grey
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="hardgrey_bg"></span>
+            </td>
+            <td class="hardgrey">
+                Hard Grey
+            </td>
+            <td>
+                #525556;
+            </td>
+            <td>
+                rgba(82, 85, 86, 1);
+            </td>
+            <td>
+                .hardgrey_bg
+                <br>
+                .hardgrey
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="darkgrey_bg"></span>
+            </td>
+            <td class="darkgrey">
+                Dark Grey
+            </td>
+            <td>
+                #323333;
+            </td>
+            <td>
+                rgba(50, 51, 51, 1);
+            </td>
+            <td>
+                .darkgrey_bg
+                <br>
+                .darkgrey
+            </td>
+            <td>
+                Text
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <span class="lightblue_bg"></span>
+            </td>
+            <td class="lightblue">
+                Light Blue
+            </td>
+            <td>
+                #F6FCFE;
+            </td>
+            <td>
+                rgba(246, 252, 254, 1);
+            </td>
+            <td>
+                .lightblue_bg
+                <br>
+                .lightblue
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="softblue_bg"></span>
+            </td>
+            <td class="softblue">
+                Soft Blue
+            </td>
+            <td>
+                #8CD3ED;
+            </td>
+            <td>
+                rgba(140, 211, 237, 1);
+            </td>
+            <td>
+                .softblue_bg
+                <br>
+                .softblue
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="blue_bg"></span>
+            </td>
+            <td class="blue">
+                Blue
+            </td>
+            <td>
+                #46B7E7;
+            </td>
+            <td>
+                rgba(70, 183, 231, 1);
+            </td>
+            <td>
+                .blue_bg
+                <br>
+                .blue
+            </td>
+            <td>
+                Branding
+                <br>
+                Trim
+                <br>
+                Basically anything
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="hardblue_bg"></span>
+            </td>
+            <td class="hardblue">
+                Hard Blue
+            </td>
+            <td>
+                #0076BD;
+            </td>
+            <td>
+                rgba(0, 118, 189, 1);
+            </td>
+            <td>
+                .hardblue_bg
+                <br>
+                .hardblue
+            </td>
+            <td>
+                Links
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="darkblue_bg"></span>
+            </td>
+            <td class="darkblue">
+                Dark Blue
+            </td>
+            <td>
+                #004466;
+            </td>
+            <td>
+                rgba(0, 68, 102, 1);
+            </td>
+            <td>
+                .darkblue_bg
+                <br>
+                .darkblue
+            </td>
+            <td>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <span class="lightpink_bg"></span>
+            </td>
+            <td class="lightpink">
+                Light Pink
+            </td>
+            <td>
+                #FFF8F9;
+            </td>
+            <td>
+                rgba(255, 248, 249, 1);
+            </td>
+            <td>
+                .lightpink_bg
+                <br>
+                .lightpink
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="softpink_bg"></span>
+            </td>
+            <td class="softpink">
+                Soft Pink
+            </td>
+            <td>
+                #FF8D90;
+            </td>
+            <td>
+                rgba(255, 141, 144, 1);
+            </td>
+            <td>
+                .softpink_bg
+                <br>
+                .softpink
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="pink_bg"></span>
+            </td>
+            <td class="pink">
+                Pink
+            </td>
+            <td>
+                #FF675D;
+            </td>
+            <td>
+                rgba(255, 103, 93, 1);
+            </td>
+            <td>
+                .pink_bg
+                <br>
+                .pink
+            </td>
+            <td>
+                Favoriting
+                <br>
+                Deleting
+                <br>
+                "Passionate" Actions
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="hardpink_bg"></span>
+            </td>
+            <td class="hardpink">
+                Hard Pink
+            </td>
+            <td>
+                #BF4949;
+            </td>
+            <td>
+                rgba(191, 73, 73, 1);
+            </td>
+            <td>
+                .hardpink_bg
+                <br>
+                .hardpink
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="darkpink_bg"></span>
+            </td>
+            <td class="darkpink">
+                Dark Pink
+            </td>
+            <td>
+                #7F2525;
+            </td>
+            <td>
+                rgba(127, 37, 37, 1);
+            </td>
+            <td>
+                .darkpink_bg
+                <br>
+                .darkpink
+            </td>
+            <td></td>
+        </tr>
+
+
+
+        <tr>
+            <td>
+                <span class="lightorange_bg"></span>
+            </td>
+            <td class="lightorange">
+                Light Orange
+            </td>
+            <td>
+                #FFFAF3;
+            </td>
+            <td>
+                rgba(255, 192, 108, 1);
+            </td>
+            <td>
+                .lightorange_bg
+                <br>
+                .lightorange
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="softorange_bg"></span>
+            </td>
+            <td class="softorange">
+                Soft Orange
+            </td>
+            <td>
+                #FFC06C;
+            </td>
+            <td>
+                rgba(255, 192, 108, 1);
+            </td>
+            <td>
+                .softorange_bg
+                <br>
+                .softorange
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="orange_bg"></span>
+            </td>
+            <td class="orange">
+                Orange
+            </td>
+            <td>
+                #FC9F4C
+            </td>
+            <td>
+                rgba(252, 159, 76, 1);
+            </td>
+            <td>
+                .orange_bg
+                <br>
+                .orange
+            </td>
+            <td>
+                Accent
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="hardorange_bg"></span>
+            </td>
+            <td class="hardorange">
+                Hard Orange
+            </td>
+            <td>
+                #AD6128;
+            </td>
+            <td>
+                rgba(173, 97, 40, 1);
+            </td>
+            <td>
+                .hardorange_bg
+                <br>
+                .hardorange
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="darkorange_bg"></span>
+            </td>
+            <td class="darkorange">
+                Dark Orange
+            </td>
+            <td>
+                #70360B;
+            </td>
+            <td>
+                rgba(112, 54, 11, 1);
+            </td>
+            <td>
+                .darkorange_bg
+                <br>
+                .darkorange
+            </td>
+            <td></td>
+        </tr>
+
+        </tbody>
+    </table>
+
+    <h3>Misc. Colors</h3>
+
+    <p>Note: To call these colors, you use the CSS class <span class="bold">color_[name]</span>.
+        There are three color prefixes:
+    </p>
+    <ul>
+        <li><span class="bold">color_ </span> : Uses the <span class="italics">color:</span> command for text and font icons.</li>
+        <li><span class="bold">bg_ </span> : Uses the <span class="italics">background-color:</span> command for blocks, button, etc.</li>
+        <li><span class="bold">gr_ </span> : Uses <span class="italics">linear-gradient:</span> for a better looking background.</li>
+    </ul>
+
+    <i class="fa fa-square fa-4x color_flamingo"></i>
+    <i class="fa fa-square fa-4x color_poppy"></i>
+    <i class="fa fa-square fa-4x color_razzmatazz"></i>
+    <i class="fa fa-square fa-4x color_cabaret"></i>
+    <i class="fa fa-square fa-4x color_wisteria"></i>
+    <i class="fa fa-square fa-4x color_plum"></i>
+    <i class="fa fa-square fa-4x color_rebecca"></i>
+    <i class="fa fa-square fa-4x color_chambray"></i>
+    <i class="fa fa-square fa-4x color_royal"></i>
+    <i class="fa fa-square fa-4x color_renticityblue"></i>
+    <i class="fa fa-square fa-4x color_turquoise"></i>
+    <i class="fa fa-square fa-4x color_meadow"></i>
+    <i class="fa fa-square fa-4x color_salem"></i>
+    <i class="fa fa-square fa-4x color_jade"></i>
+    <i class="fa fa-square fa-4x color_gossip"></i>
+    <i class="fa fa-square fa-4x color_lemon"></i>
+    <i class="fa fa-square fa-4x color_california"></i>
+    <i class="fa fa-square fa-4x color_ecstasy"></i>
+    <i class="fa fa-square fa-4x color_burnt"></i>
+    <i class="fa fa-square fa-4x color_lynch"></i>
+    <i class="fa fa-square fa-4x color_cascade"></i>
+
+    <h3>Init and Repeat</h3>
+
+    <div ng-init="parties = [{name:'Banana Cartels', color: 'bg_lemon'},
+                             {name: 'Taco Tuesday', color: 'bg_california'},
+                             {name: '2spooky4me Haunted House', color: 'bg_plum'}]">
+
+        <div ng-repeat="party in parties">
+            <p>
+                <span>{{party.name}}</span> - <span>{{party.color}}</span>
+            </p>
+
+        </div>
+    </div>
+
+    <h3>Lists</h3>
+    <ul>
+        <li>Blank 1</li>
+        <li>Blank 2</li>
+        <li>Blank 3</li>
+    </ul>
+
+    <ul class="bullet_list">
+        <li>Blank 1</li>
+        <li>Blank 2</li>
+        <li>Blank 3</li>
+    </ul>
+
+
+    <h3>Progress bars</h3>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+            <span class="sr-only">20% Complete</span>
+        </div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+            <span class="sr-only">40% Complete</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <span class="sr-only">60% Complete</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-action" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+            <span class="sr-only">80% Complete</span>
+        </div>
+    </div>
+
+
+    <h3>Badges</h3>
+    <span class="badge badge_primary badge_icon"><i class="fa fa-user"></i></span>
+    <span class="badge badge_icon"><i class="fa fa-user"></i></span>
+    <br/><br/>
+
+    <h3>Ellipsis</h3>
+    <p>
+        Note: Works only on single line block elements.
+    </p>
+
+    <div class="ellipsis">
+        "What? Revenue? No, no, no, no, no. No. If you show revenue, people will ask "How much?" And it will never be enough, but if you have no revenue, you can say you're pre-revenue. You're a potential pure play. It's not about how much you earn, it's about what you're worth. And who's worth the most? Companies that lose money. Pinterest, Snapchat... No revenue. Amazon has lost money every fucking quarter for the last 20 fucking years, and that Bezos motherfucker is the king."
+    </div>
+    <br>
+
+    <span class="badge"><i class="fa fa-umbrella"></i>Mushroom</span>
+    <span class="badge badge_primary"><i class="fa fa-paw"></i>Tanooki</span>
+    <span class="badge badge_action"><i class="fa fa-star"></i>Starman</span>
+    <span class="badge badge_fail"><i class="fa fa-bomb"></i>Fireflower</span>
+
+
+
+    <h3>Credit Cards</h3>
+
+    <span class="visa"></span>
+    <span class="mc"></span>
+    <span class="amex"></span>
+    <span class="disc"></span>
+    <br/>
+    <span class="visa visa_valid"></span>
+    <span class="mc mc_valid"></span>
+    <span class="amex amex_valid"></span>
+    <span class="disc disc_valid"></span>
+
+
+    <h3>Tabs</h3>
+
+
+    <ul class="renticity-tabs">
+        <li data-ng-class="{active: renticity.tab == 'saved'}">
+            <button type="button" data-ng-click="setTab('saved')">
+                <i class="fa fa-save"></i>
+                Saved
+            </button>
+        </li>
+        <li data-ng-class="{active: renticity.tab == 'sent'}">
+            <button type="button" data-ng-click="setTab('sent')">
+                <i class="fa fa-mail-forward"></i>
+                Sent
+            </button>
+        </li>
+        <li data-ng-class="{active: renticity.tab == 'renting'}"  class="disabled">
+            <button type="button" data-ng-click="setTab('renting')" disabled>
+                <i class="fa fa-key"></i>
+                Disabled
+            </button>
+        </li>
+    </ul>
+    <div class="well" data-ng-show="renticity.tab=='saved'">
+        Things go here.
+    </div>
+    <div class="well" data-ng-show="renticity.tab=='sent'">
+        More things go here
+    </div>
+    <div class="well" data-ng-show="renticity.tab=='renting'">
+        You should not be able to see this.
+    </div>
+
+    <br/>
+
+    <h3>Buttons</h3>
+    <button type="button" class="btn btn-default">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+    <button type="button" class="btn btn-primary">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+    <button type="button" class="btn btn-danger">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+
+    <br>
+    <br>
+
+    <button type="button" class="btn btn-default btn-outline">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+    <button type="button" class="btn btn-primary btn-outline">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+    <button type="button" class="btn btn-danger btn-outline">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+
+    <br>
+    <br>
+
+    <button type="button" class="btn btn-default btn-link">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+    <button type="button" class="btn btn-primary btn-link">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+    <button type="button" class="btn btn-danger btn-link">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+
+    <br>
+    <br>
+
+    <button type="button" class="btn btn-default disabled">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+    <button type="button" class="btn btn-primary disabled">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+    <button type="button" class="btn btn-danger disabled">
+        <i class="fa fa-bomb"></i>
+        Test 1
+    </button>
+
+    <br><br>
+
+    <button class="btn btn-dark"><i class=" fa fa-exclamation-circle"></i>Link Dark</button>
+
+    <br><br>
+
+
+    <button class="btn btn-default btn-outline btn-xs"><i class=" fa fa-circle-o"></i>Open Save</button>
+    <button class="btn btn-default btn-outline btn-sm"><i class=" fa fa-circle-o"></i>Open Save</button>
+    <button class="btn btn-default btn-outline btn-lg"><i class=" fa fa-circle-o"></i>Open Save</button>
+    <br>
+    <br>
+
+    <form class="input-group">
+        <a class="btn btn-default btn-outline input-group-addon">
+            <i class="fa fa-beer"></i>
+        </a>
+        <input type="text" class="form-control" placeholder="What would you like to drink?">
+        <a class="btn btn-default btn-outline input-group-addon">
+            <i class="fa fa-coffee"></i>
+        </a>
+    </form>
+
+    <br>
+    <br>
+    <div class="btn-group btn-group-lg">
+        <a class="btn btn-default btn-outline">
+            <i class="fa fa-map-marker"></i></a>
+        <a class="btn btn-default btn-outline">
+            <i class="fa fa-building-o"></i></a>
+        <a class="btn btn-default btn-outline">
+            <i class="fa fa-envelope-o"></i></a>
+        <a class="btn btn-default btn-outline">
+            <i class="fa fa-times-circle-o"></i></a>
+    </div>
+    <br>
+    <br>
+
+    <div class="btn-group btn-group-justified">
+        <a class="btn btn-default btn-outline">
+            <i class="fa fa-map-marker"></i></a>
+        <a class="btn btn-default btn-outline">
+            <i class="fa fa-building-o"></i></a>
+        <a class="btn btn-default btn-outline">
+            <i class="fa fa-envelope-o"></i></a>
+        <a class="btn btn-default btn-outline">
+            <i class="fa fa-times-circle-o"></i></a>
+    </div>
+
+    <h3>Checkboxes</h3>
+
+    <label class="btn btn-default btn-outline">
+        <input type="checkbox" />
+        <span class="lbl">Ride Yoshi</span>
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" checked="checked"/>
+        <span class="lbl">Save Princess</span>
+    </label>
+
+    <br>
+
+
+    <label>
+        <input type="radio" name="character" value="mario">
+        <span class="lbl">Mario</span>
+    </label>
+    <label>
+        <input type="radio" name="character" value="luigi">
+        <span class="lbl">Luigi</span>
+    </label>
+
+    <label class="btn btn-default btn-outline btn-sm">
+        <input type="radio" name="character" value="mario">
+        <span class="lbl">Wario</span>
+    </label>
+    <label class="btn btn-default btn-outline btn-sm">
+        <input type="radio" name="character" value="luigi">
+        <span class="lbl">Waluigi</span>
+    </label>
+
+
+    <h3>Forms</h3>
+
+    <div class="form-horizontal">
+        <div class="form-group clearfix">
+            <label for="inputEmail3" class="col-md-2 control-label">Email</label>
+            <div class="col-md-4">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group clearfix">
+            <label for="inputPassword3" class="col-md-2 control-label">Password</label>
+            <div class="col-md-4">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group clearfix">
+            <label class="col-md-2 control-label">Drop the:</label>
+            <div class="col-md-2">
+                <select class="form-control" name="dropdown">
+                    <option value="" selected disabled>Choose one</option>
+                    <option value="bass">Bass</option>
+                    <option value="charges">Charges</option>
+                    <option value="baby">Baby</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group clearfix">
+            <label for="character" class="col-md-2 control-label">Select hero</label>
+            <div class="col-md-2">
+                <label>
+                    <input type="radio" name="character" value="mario">
+                    <span class="lbl">Mario</span>
+                </label>
+                <label>
+                    <input type="radio" name="character" value="luigi">
+                    <span class="lbl">Luigi</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <h3>Tables</h3>
+    <table class="responsive-table">
+        <thead>
+        <tr>
+            <th>Beverage</th>
+            <th>Short (8 oz)</th>
+            <th>Tall (12 oz)</th>
+            <th>Grande (16 oz)</th>
+            <th>Venti (20-24 oz)</th>
+            <th>Trenta (31oz)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-th="Beverage">Brewed Coffee</td>
+            <td data-th="Short (8 oz)">180mg</td>
+            <td data-th="Tall (12 oz)">260mg</td>
+            <td data-th="Grande (16 oz)">330mg</td>
+            <td data-th="Venti (20-24 oz)">415mg</td>
+            <td data-th="Trenta (31oz)">–</td>
+        </tr>
+        <tr>
+            <td data-th="Beverage">Brewed Decaf Coffee</td>
+            <td data-th="Short (8 oz)">15mg</td>
+            <td data-th="Tall (12 oz)">20mg</td>
+            <td data-th="Grande (16 oz)">25mg</td>
+            <td data-th="Venti (20-24 oz)">30mg</td>
+            <td data-th="Trenta (31oz)">–</td>
+        </tr>
+        <tr>
+            <td data-th="Beverage">Caffè Americano</td>
+            <td data-th="Short (8 oz)">75mg</td>
+            <td data-th="Tall (12 oz)">150mg</td>
+            <td data-th="Grande (16 oz)">225mg</td>
+            <td data-th="Venti (20-24 oz)">300mg</td>
+            <td data-th="Trenta (31oz)">–</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Alt Hover Effect</h3>
+    <div class="alt-hover" data-ng-repeat="i in [0,1,2,3]">
+        <i class="fa fa-bomb pull-right"></i>
+        I can count to {{i}}.
+    </div>
+
+
+
+    <h3>Logos</h3>
+
+    <img src="/images/renticity_logo_small.png"><br/>
+    <img src="/images/renticity_logo.png"><br/>
+    <img src="/images/brand.png">
+
+    <h3>Mailto Links</h3>
+
+    <a mail-type="support" mail-subject="Test MailTo" data-renticity-mail-to-directive target="_blank">Contact Support</a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Deprecated</h2>
+
+    <h3>Accordions</h3>
+    <p>
+        <span class="bold underline">Deprecated</span> currently. Hidden in code.
+    </p>
+
+    <div class="panel-group">
+        <div class="panel panel-default" data-ng-repeat="i in [1]"  data-ng-click="isOpen = !isOpen">
+            <div class="panel-heading">
+                <div class="panel-controls"></div>
+                <div class="panel-title">
+                    <div class="accordion-toggle">
+                        <i class="fa" ng-class="{'fa-caret-down': isOpen, 'fa-caret-right': !isOpen}"></i>
+                        A simple header with no controls
+                    </div>
+                </div>
+            </div>
+            <div class="panel-collapse collapse" collapse="!isOpen">
+                <div class="panel-body">
+                    <div>
+                        Panel body 1
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        Panel body 2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default" data-ng-repeat="i in [1]" data-ng-click="isOpen = !isOpen">
+            <div class="panel-heading">
+                <div class="panel-controls">
+                    <a class="btn btn-default btn-outline btn-xs">Control 1</a>
+                    <a class="btn btn-default btn-outline btn-xs">Control 2</a>
+                </div>
+                <div class="panel-title">
+                    <div class="accordion-toggle">
+                        <i class="fa" ng-class="{'fa-caret-down': isOpen, 'fa-caret-right': !isOpen}"></i>
+                        A simple header with controls.
+                    </div>
+                </div>
+            </div>
+            <div class="panel-collapse collapse" collapse="!isOpen">
+                <div class="panel-body">
+                    <div>
+                        Test
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default" data-ng-repeat="i in [1]" data-ng-click="isOpen = !isOpen">
+            <div class="panel-collapse collapse" collapse="!isOpen">
+                <div class="panel-body">
+                    <div>
+                        Panel 1
+                    </div>
+                </div>
+            </div>
+            <div class="panel-heading">
+                <div class="panel-controls">
+                    <a class="btn btn-default btn-outline btn-xs">Control 1</a>
+                    <a class="btn btn-default btn-outline btn-xs">Control 2</a>
+                </div>
+                <div class="panel-title">
+                    <div class="accordion-toggle" >
+                        <i class="fa" ng-class="{'fa-caret-down': isOpen, 'fa-caret-right': !isOpen}"></i>
+                        A complex header with controls.
+                    </div>
+                </div>
+            </div>
+            <div class="panel-collapse collapse" collapse="!isOpen">
+                <div class="panel-body">
+                    <div>
+                        Panel 2
+                    </div>
+                    <div>
+                        Panel 3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h3>Tooltips</h3>
+    <p>
+        <span class="bold underline">Deprecated</span> as of Dec. 2015. Please do not use tooltips anymore.
+        They are inconsistent on mobile and can hide valuable information behind invisible interactions.
+    </p>
+
+</div>
