@@ -6,19 +6,37 @@
 
 /*XS*/
 @media only screen and (max-width : 520px) {
+    /*Misc*/
     .break_test {background: cyan;}
     .visible_sm, .visible_md,
     .visible_lg, .hidden_xs  {display: none;}
 
-    .slideshow .slide {height: 20em;}
+    /*Slideshow*/
+    .slideshow .slide {height: auto;}
+    .slideshow .slide .headline {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        font-size: 1em;
+        /*width: 100%;*/
+        padding: .5em 2em .5em .25em;
+        display: block;
+        background: linear-gradient(135deg, #ED1C24 50%, #d0171e);
+    }
+    .slideshow .slide .headline:before {
+        content: none;
+    }
 
-   header .ticker {
-       display: block;
-   }
+
 }
 
 /*XS+SM*/
 @media only screen and (max-width : 767px) {
+    h2 {
+        padding-left: .25em;
+        padding-right: .25em;
+    }
+
     header .tagline {
         font-size: 1.1em;
         padding-left: .5em;
@@ -32,11 +50,17 @@
 
 /*SM*/
 @media only screen and (min-width : 521px) and (max-width : 767px) {
+    /*Misc*/
     .break_test {background: magenta;}
     .visible_xs, .visible_md,
     .visible_lg, .hidden_sm {display: none;}
 
+   /*Slideshow*/
     .slideshow .slide {height: 20em;}
+
+    .slideshow .slide .headline {
+        font-size: 1.5em;
+    }
 
 
     .top_stories article {
@@ -46,6 +70,7 @@
 
 /*MD*/
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    /*Misc*/
     .break_test {background: yellow;}
     .visible_xs, .visible_sm,
     .visible_lg, .hidden_md {display: none;}
@@ -60,6 +85,7 @@
 
 /*LG*/
 @media only screen and (min-width : 1025px) {
+    /*Misc*/
     .break_test {
         background: black;
     }
@@ -67,6 +93,7 @@
     .visible_md, .hidden_lg {display: none;}
 
 
+   /*Slideshow*/
     header .tagline {
         margin-top: 0.7em;
     }

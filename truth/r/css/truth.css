@@ -58,13 +58,14 @@ Header
 ---------------------------------*/
 
 header {
-    height: 50px;
+    height: 4em;
     border-bottom: 1px solid #111;
 }
 header img {
-    float: left;
-    height: 50px;
-    padding-right: 10px;
+    display: inline-block;
+    height: 100%;
+    padding-right: .75em;
+    /*z-index: 2;*/
 }
 
 
@@ -76,20 +77,40 @@ header h1 {
     vertical-align: top;
 }
 
-
-header .ticker {
-    text-align: right;
-    float: right;
-    padding: 0.25em .5em;
-}
-
 header .tagline {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     display: inline-block;
+    vertical-align: top;
+
 
     font-size: 1.3em;
 }
+
+marquee {
+    position: relative;
+    z-index: -1;
+    bottom: 1.5em;
+}
+
+marquee > span:not(:last-of-type):after {
+    content: '\f111';
+    font-family: FontAwesome;
+    color: #ED1C24;
+    font-size: 0.4em;
+    line-height: 0em;
+    position: relative;
+    top: -0.5em;
+    padding: 0 1em;
+
+}
+
+/*header .ticker {*/
+    /*text-align: right;*/
+    /*float: right;*/
+    /*padding: 0.25em .5em;*/
+/*}*/
+
 
 /*---------------------------------
 Frame
@@ -128,6 +149,7 @@ Slideshow
 .slideshow .slide img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .slideshow .slide .headline {
@@ -190,8 +212,9 @@ Top Stories
     color: #111;
     /*text-transform: uppercase;*/
     transition: .15s all;
-    padding: .25em .25em .5em;
+    padding: 0em .25em .5em;
     margin: 0;
+    clear: both;
 
 }
 .top_stories article > a {
