@@ -27,6 +27,27 @@
         content: none;
     }
 
+    footer {
+        padding-top: 1em;
+    }
+
+    footer .columns {
+        flex-direction: column;
+    }
+
+    footer .columns .column {
+        flex: 1 0 100%;
+    }
+
+    footer a {
+        text-align: center;
+        padding: .5em;
+    }
+
+    footer h2 {
+        text-align: center;
+        padding: 1em .25em 0em;
+    }
 
 }
 
@@ -45,11 +66,15 @@
     .top_stories article {
         flex-basis: 100%;
     }
+
+    .trends a {
+        padding: 1em;
+    }
 }
 
 
 /*SM*/
-@media (min-width : 32.01em) and (max-width : 42em) {
+@media (min-width : 32em) and (max-width : 42em) {
     /*Misc*/
     .break_test {background: magenta;}
     .visible_xs, .visible_md,
@@ -69,7 +94,7 @@
 }
 
 /*MD*/
-@media (min-width : 42.01em) and (max-width : 64em) {
+@media (min-width : 42em) and (max-width : 64em) {
     /*Misc*/
     .break_test {background: yellow;}
     .visible_xs, .visible_sm,
@@ -84,7 +109,7 @@
 }
 
 /*LG*/
-@media (min-width : 64.01em) {
+@media (min-width : 64em) {
     /*Misc*/
     .break_test {
         background: black;
