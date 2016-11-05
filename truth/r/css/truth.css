@@ -64,7 +64,7 @@ header {
 header img {
     display: inline-block;
     height: 100%;
-    padding-right: .75em;
+    padding-right: .5em;
     /*z-index: 2;*/
 }
 
@@ -117,7 +117,7 @@ Frame
 ---------------------------------*/
 
 .frame {
-    max-width: 900px;
+    max-width: 64em;
     margin: 0 auto;
 }
 
