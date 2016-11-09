@@ -13,7 +13,7 @@
 
     /*Slideshow*/
     .slideshow .slide {height: auto;}
-    .slideshow .slide .headline {
+    .slideshow .slide .byline {
         position: relative;
         bottom: 0;
         right: 0;
@@ -23,7 +23,7 @@
         display: block;
         background: linear-gradient(135deg, #ED1C24 50%, #d0171e);
     }
-    .slideshow .slide .headline:before {
+    .slideshow .slide .byline:before {
         content: none;
     }
 
@@ -77,6 +77,10 @@
         padding-left: .5em;
     }
 
+    .slideshow .slide .headline {
+        font-size: 3em;
+    }
+
     .top_stories article {
         flex-basis: 100%;
     }
@@ -123,7 +127,7 @@
    /*Slideshow*/
     .slideshow .slide {height: 20em;}
 
-    .slideshow .slide .headline {
+    .slideshow .slide .byline {
         font-size: 1.5em;
     }
 

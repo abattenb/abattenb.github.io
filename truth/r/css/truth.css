@@ -154,6 +154,17 @@ Slideshow
 }
 
 .slideshow .slide .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    position: absolute;
+    top: 0em;
+    right: 0.2em;
+    color: white;
+    text-shadow: 0px 0px 0.4em black;
+}
+
+
+.slideshow .slide .byline {
     color: white;
     position: absolute;
     bottom: 1em;
@@ -162,11 +173,11 @@ Slideshow
     display: inline-block;
     text-shadow: 0px 1px 1px #960a0f, 0px 0px 8px #8e0c11;
     text-align: right;
-    mix-blend-mode: lighten;
+    mix-blend-mode: hard-light;
 }
 
 
-.slideshow .slide .headline:before {
+.slideshow .slide .byline:before {
     content: '';
     position: absolute;
     left: -0.5em;
