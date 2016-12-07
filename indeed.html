@@ -1,0 +1,375 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Don't call it a "redesign" - Tailoring Indeed with Stylish - Andrew Battenburg</title>
+    <meta name="description" content="An article exploring the high points making a Stylish script for Indeed's job listing page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="stylesheet" href="r/css/normalize.min.css">
+
+    <link rel="stylesheet" href="r/css/pure-grids.css">
+    <link rel="stylesheet" href="r/css/main.css">
+    <link rel="stylesheet" href="r/css/mobile.css">
+
+    <!--Indeed specific stylings-->
+    <link rel="stylesheet" href="r/css/indeed.css">
+
+    <script src="https://use.fontawesome.com/42c9dfa299.js"></script>
+
+    <!--GA-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-86585411-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body class="pure-g">
+
+<!--[if lt IE 8]>
+<p class="browserupgrade pure-u-1">
+    What are you doin' using an old version of <i class="fa fa-internet-explorer"></i>?
+    <a href="http://browsehappy.com/" target="_blank">You know better</a>.
+</p>
+<![endif]-->
+
+
+
+<aside class="pure-u-1 pure-u-sm-1-3 pure-u-md-1-3 pure-u-lg-1-4">
+
+    <button class="menu">
+        ≡ Menu
+    </button>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html#main">Introductions</a>
+            </li>
+            <li>
+                <a href="index.html#projects">Projects</a>
+            </li>
+            <li>
+                <a href="index.html#uiux">UI + UX</a>
+            </li>
+            <li>
+                <a href="index.html#work">Work</a>
+            </li>
+            <li>
+                <a href="index.html#photography">Photography</a>
+            </li>
+        </ul>
+
+    </nav>
+</aside>
+
+
+<main class="pure-u-1 pure-u-sm-2-3 pure-u-md-2-3 pure-u-lg-2-3">
+    <article>
+
+        <!--Preamble-->
+        <section>
+            <h1>
+                Don't call it a "redesign"<span>.</span>
+            </h1>
+            <p class="italics">
+                Tailoring Indeed with Stylish
+            </p>
+            <p>
+                Browsing jobs on
+                <a href="http://www.indeed.com/">Indeed</a>
+                , I noticed that every list page employed different styling. This wasn’t really a surprise as it looked like vendors could mark up their listings how they wanted. Headers, bold, bullets, and break tags littered pages seemingly at random. The more I looked, the more curious I got, and I popped open DevTools and
+                <a href="https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Stylish</a>
+                to see what I could tweak.
+            </p>
+
+            <figure>
+                <img src="r/img/indeed/secret2.png" class="pure-img" alt="Job header on Indeed job page code.">
+                <figcaption>
+                    A header on an Indeed job listing. Shh, it'll be our little secret.
+                </figcaption>
+            </figure>
+
+            <p>
+                Customer can get pretty upset when the services they rely on shuffle the UI (*cough* Facebook). Indeed already works, and works well, but it could benefit from a few design and usability adjustments. I like to think of this as more of a “tailoring” than a “redesign”; we’re tightening up what’s already there. You can can follow along with the actual
+                Stylish script (
+                <a href="r/css/indeed_stylish.css">download the css</a>
+                , add a rule for Indeed, and be sure to set “Applies to” to “URLs starting with” and “http://www.indeed.com/viewjob”) or with the final before/after images below.
+            </p>
+
+
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <figure>
+                        <a href="r/img/indeed/fullsite_new.png" target="_blank">
+                            <img src="r/img/indeed/fullsite_new_thumb.jpg" class="pure-img" alt="New Indeed Stylish design.">
+                        </a>
+                        <figcaption>
+                            The new Indeed Stylish design.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="pure-u-1-2">
+                    <figure>
+                        <a href="r/img/indeed/fullsite_old.png" target="_blank">
+                            <img src="r/img/indeed/fullsite_old_thumb.jpg" class="pure-img" alt="The current Indeed job listing design.">
+                        </a>
+                        <figcaption>
+                            The current Indeed job listing design.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Type + Hierarchy-->
+        <section>
+            <h2>
+                Type + Hierarchy
+            </h2>
+            <p>
+                Indeed is mostly set in
+                <span class="arial">
+                    Arial,
+                </span>
+                and I like
+                <span class="arial">
+                    Arial.
+                </span>
+                Everyone has it and you can make it look pretty good (with some fiddling). But it doesn’t really capture that light hearted tone that Indeed’s rounded and bouncy logo suggests. At the same time, if vendors are going to be throwing
+                <span class="code">&lt;b&gt;</span>
+                and
+                <span class="code">&lt;i&gt;</span>
+                tags around, we might as well start using real
+                <span class="bold">
+                    bolds
+                </span>
+                and
+                <span class="italics">
+                    italics.
+                </span>
+                Enter
+                <span class="monserrat">
+                    Montserrat
+                </span>
+                and
+                <span class="source_sans">
+                    Source Sans Pro.
+                </span>
+            </p>
+
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <figure>
+                        <img src="r/img/indeed/title_new.png" class="pure-img" alt="Indeed job header set in Monserrat.">
+                        <figcaption>
+                            New Indeed job header set in Monserrat.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="pure-u-1-2">
+                    <figure>
+                        <img src="r/img/indeed/title_old.png" class="pure-img" alt="Current Indeed job header set in Arial.">
+                        <figcaption>
+                            Current Indeed job header set in Arial.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <p>
+                The job title is set in Montserrat. It’s naturally bold, but also well rounded. Like Indeed, the new title is approachable and professional. While we're at it, let’s also establish a new, broader type hierarchy, giving some breathing room for the content.
+            </p>
+
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <figure>
+                        <img src="r/img/indeed/body_new.png" class="pure-img" alt="New hierarchy, font-size, and line-height, set in Source Sans Pro.">
+                        <figcaption>
+                            New hierarchy, set in Source Sans Pro.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="pure-u-1-2">
+                    <figure>
+                        <img src="r/img/indeed/body_old.png" class="pure-img" alt="Current text, set in Arial.">
+                        <figcaption>
+                            Current text, set in Arial.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <p>
+                We can give the body text a few tweaks as well. Bolds are no long faux, the font size and line heights are a readable 16px/1.45, and the font color is a “true black” now.
+            </p>
+            <p>
+                Small tweaks like setting the search box labels in all caps, increasing the margins on various elements, and syncing some colors to the brand
+                <span class="indeed_brand">#1F65EF</span>
+                are also sprinkled in for good measure.
+            </p>
+
+        </section>
+
+        <!--Buttons-->
+        <section>
+            <h2>
+                Buttons
+            </h2>
+            <p>
+                I like buttons. They are the gateway to software for most people. You press them and cool things happen. I mainly focused on two aspects of Indeed’s buttons: adding meaningful icons and fixing the click targets.
+            </p>
+            <p>
+                While I like buttons, I <span class="italics">love</span> Font Awesome icons. I'm declaring it an international holiday when
+                <a href="https://www.kickstarter.com/projects/232193852/font-awesome-5">Font Awesome 5</a>
+                drops. For Indeed, I wanted to add just a few icons to direct attention and clarify a few functions. I'm not adding anything too crazy, but I do feel it helps a lot.
+            </p>
+
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <figure>
+                        <img src="r/img/indeed/search_new.png" class="pure-img" alt="New search button with icon.">
+                        <figcaption>
+                            New search button with icon.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="pure-u-1-2">
+                    <figure>
+                        <img src="r/img/indeed/search_old.png" class="pure-img" alt="Current search button with icon.">
+                        <figcaption>
+                            Current search button without icon.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <p>
+                A search, upload, sign in, and follow icon are all that’s needed to clarify the important functions on a page. Please don’t judge me on how I got this to work. It was a dirty, dirty hack and I know it.
+            </p>
+
+            <p>
+                The second, and in my opinion more important, thing I wanted to fix are the buttons on main nav bar at top. I’m not going to sugar coat this, and Indeed you're not the only company to do this, but here it is:
+            </p>
+
+            <p class="bold">
+                Fix your damn click targets!
+            </p>
+
+            <div class="pure-g">
+                <div class="pure-u-1-2">
+                    <figure>
+                        <img src="r/img/indeed/button_new.png" class="pure-img" alt="Full-height button with hover state.">
+                        <figcaption>
+                            Full-height button with hover state.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="pure-u-1-2">
+                    <figure>
+                        <img src="r/img/indeed/button_old.png" class="pure-img" alt="Current, hard-to-use link.">
+                        <figcaption>
+                            Current, hard-to-use link.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <p>
+                Alright, I’ve never yelled at an employer before and I’m sorry I raised my voice. It’s just.. It’s just that it’s so easy to fix, and it makes such a huge difference in usability. All you need to do it is set your anchor tag to
+                <span class="code">display: inline-block</span>
+                , give it some
+                <span class="code">padding</span>
+                , add a
+                <span class="code">:hover</span>
+                (and focus, and active) state, and your good!
+            </p>
+
+            <p>
+                In all seriousness, seemingly small improvements in font-size and click targets vastly improve the web experience for all abilities and across devices. It constantly baffles me that designers are setting type grey-against-grey, or developers using on-click routing calls on anchor tags (set all JS on
+                <span class="code">&lt;button&gt;</span>
+                and give all
+                <span class="code">&lt;a&gt;</span>
+                an href, that way both are keyboard accessible).
+            </p>
+        </section>
+
+        <!--Visual Separation-->
+        <section>
+            <h2>
+                Visual Separation
+            </h2>
+
+            <p>
+                I’ll keep section brief, but I did want to add a few visual separators to segment content.
+                Before it was unclear if “Other jobs you may like” was a part of the job listing, now it has it’s own box (much like the employer bio on the right).
+                Subtle shadow around the boxes and on the main nav gives an ever-so-slight amount of depth without feeling like “more dropshadow”.
+                A few horizontal rules also break up the break from the body.
+                Check the before and after images to spot the difference.
+            </p>
+
+            <figure>
+                <img src="r/img/indeed/heading_new.png" class="pure-img" alt="New heading with all the new changes.">
+                <figcaption>
+                    New heading with all the new changes.
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <!--Closing-->
+        <section>
+            <h2>
+                Closing Thoughts
+            </h2>
+
+            <p>
+                There's a lot I wanted to touch. Using
+                <span class="code">flex</span>
+                instead of tables for layout, adding more responsive breakpoints down to mobile resolutions, and cleaning up all the old HTML 3 code would be at the top of my list.
+                The multitude of inline styles also made selections and specificity a challenge.
+            </p>
+            <p>
+                There are also many pages that haven't been fully tested with this stylesheet (states are difficult to test without access), and there is a ton of vendor specific stuff that just looks weird (
+                <span class="code">&lt;br&gt;</span>
+                for days..), but overall I think it's a huge improvement for just a few small tweaks.
+                Pop open Stylish and give it a shot yourself, you'll be surprised just how much you can fix on your own.
+            </p>
+        </section>
+
+    </article>
+
+
+    <footer class="pure-u-1">
+        2016 &copy; Andrew Battenburg
+    </footer>
+</main>
+
+<script src="r/js/main.js"></script>
+</body>
+</html>
+<!--                 _
+     /\             | |
+    /  \   _ __   __| |_ __ _____      __
+   / /\ \ | '_ \ / _` | '__/ _ \ \ /\ / /
+  / ____ \| | | | (_| | | |  __/\ V  V /
+ /_/__  \_\_| |_|\__,_|_|  \___|_\_/\_/
+ |  _ \      | | | |           | |
+ | |_) | __ _| |_| |_ ___ _ __ | |__  _   _ _ __ __ _
+ |  _ < / _` | __| __/ _ \ '_ \| '_ \| | | | '__/ _` |
+ | |_) | (_| | |_| ||  __/ | | | |_) | |_| | | | (_| |
+ |____/ \__,_|\__|\__\___|_| |_|_.__/ \__,_|_|  \__, |
+                                                 __/ |
+                                                |___/-->

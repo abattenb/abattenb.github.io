@@ -139,7 +139,11 @@ a:hover {
     transition: .12s all;
 }
 
-figure {margin: 2em 0;}
+figure {margin: 0 0 2em 0;}
+
+figure img {
+    margin-bottom: 0;
+}
 
 figcaption {
     font-style: italic;
@@ -189,6 +193,14 @@ video {
 
 textarea {
     resize: vertical;
+}
+
+.code {
+    font-family: monospace;
+    background: #333;
+    color: white;
+
+    border-left: .3em solid #d32f2f;
 }
 
 .browserupgrade {

@@ -1,0 +1,306 @@
+/*
+Indeed Stylish Theme
+Author: Andrew Battenburg
+Notes on site:
+- Brand color #1f65ef
+- CTA color #f60
+- Layout in tables, deprecated tags like <font>
+- Inline styles
+
+Changes
+---
+
+- Updated typefaces and whitespacing, matching light, easy brand
+- Typography now has hierarchy, better rhythm, easier to read at distance
+- Reset Synced CTA button styling
+- Provided more seperation between job listing and other content
+- Increase click targets to match visual space on header, added hover effects
+- Used brand color for site header
+- Added FontAwesome icons to key buttons
+- Fixed the ratings margin on sidebar (drove me nuts)
+
+Future
+---
+
+- Responsive design!!!
+- Update layout to CSS (flex?)
+- Redo styling on Apply buttons for all states
+
+*/
+
+
+/* ---
+Site Wide
+--- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro:400,400italic,600,700');
+
+
+/* Hotloading FontAwesome */
+/* Not recommended for production (or anything for that matter), but since I don't have access to source.. */
+/* I still can't believe it worked so easily */
+/* Also since everything is wrapping so many times, I have lots of hooks for sudo elements */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('http://fontawesome.io/assets/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('http://fontawesome.io/assets/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('http://fontawesome.io/assets/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('http://fontawesome.io/assets/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('http://fontawesome.io/assets/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('http://fontawesome.io/assets/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+html {color: #222;}
+html * {font-family: 'Source Sans Pro', sans-serif;}
+ul {padding-left: 30px;}
+
+/* Padding between search bar and columns */
+#job-content > tbody > tr > td {
+    padding-top: 10px!important; /*countering inline styles*/
+}
+
+/* ---
+Site Header
+--- */
+#g_nav {
+    box-shadow: 0 1px 1px #eee;
+}
+
+#g_nav .navBi {
+    padding: 0;
+}
+
+#g_nav .navBi a {
+    padding: 12px 16px;
+    display: inline-block;
+    color: #1f65ef;
+
+    transition: .1s all;
+}
+
+#g_nav .navBi a:hover {
+    background: #1f65ef;
+    color: white;
+
+    transition: .1s all;
+}
+
+
+#g_nav .navBi a.selected:hover {
+    background: none;
+    color: #222;
+
+    transition: .1s all;
+}
+
+#g_nav #navpromo a:hover {
+    background: #f60;
+    color: white;
+}
+
+#g_nav #navpromo a {
+    color: #f60;
+}
+
+
+#g_nav a, #g_nav a:visited {
+    padding: 9px 12px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* upload resume */
+#g_nav #navpromo a:before {
+    content: "\f2be";
+    display: inline-block;
+    padding: 0 5px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* sign in */
+#g_nav #user_actions .navBi:last-child a:before {
+    content:"\f08b";
+    display: inline-block;
+    padding: 0 5px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* ---
+Search Bar
+--- */
+/* #jobsearch {} */
+
+#jobsearch #what_label_top,
+#where_label_top {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+tr[role=search] .inwrap {
+    border: none;
+}
+
+tr[role=search] .inwrap input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.advanced-search a.sl {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#jobsearch .inwrapBorderTop:before {
+    content: "\f002";
+    display: inline;
+    padding: 0 3px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    left: 5px;
+    bottom: 1px;
+    color: white;
+}
+
+/* ---
+Job Header
+--- */
+#job-content {
+    margin-top: 10px;
+}
+
+#job-content > tbody > tr > td:first-child > div {
+    padding: 0 0 15px 0;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#job-content .location {
+    font-style: italic;
+    font-size: 14px;
+}
+
+#job-content .company {
+    font-size: 18px;
+}
+
+/* Job description */
+.jobtitle font {
+    font-family: 'Montserrat', Tahoma, sans-serif;
+    font-size: 26px;
+    line-height: 1.9;
+}
+
+.snip * {
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+/* apply button */
+/* styles are generated to ids, escalating specificity */
+#indeed_apply .indeed-apply-widget a {
+
+    background: none !important;
+    box-shadow: none !important;
+}
+
+#indeed_apply .indeed-apply-widget a > span {
+    border-radius: 2px !important;
+    border: 1px solid #600;
+    box-shadow: 0 1px 2px #999;
+    text-shadow: 0px -1px #600;
+}
+
+#indeed_apply .indeed-apply-widget a > span:before {
+    content: "\f064";
+    display: inline-block;
+    padding: 0 5px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    position: relative;
+    left: -3px;
+}
+
+/* ---
+Reccomended Jobs
+--- */
+#job-content .recJobs {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #eee;
+}
+
+#job-content .recJobs .sjh {
+    font-size: 20px;
+    display: block;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    font-family: 'Montserrat', Tahoma, sans-serif;
+}
+
+
+#job-content .recJobs .sjr a {
+    font-size: 18px;
+}
+
+#job-content .recJobs .sdn {
+    font-weight: 600;
+    color: inherit;
+}
+
+#job-content .recJobs .company {
+    font-size: 16px;
+}
+
+
+/* ---
+Sidebar
+--- */
+.cmp_info {
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #eee;
+}
+
+.cmp_info .inwrapBorder {
+    border-radius: 2px;
+}
+
+.cmp_info .ratings {
+    margin: 0 5px 0 0;
+}
+
+.cmp_info .inwrapBorderTop:before {
+    content: "\f067";
+    padding: 0 0 0 7px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}

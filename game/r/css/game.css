@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cardo|Oswald:300,400,700');
+
+html {
+    font-family: Tahoma, sans-serif;
+    background: #050505;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+
+    font-family: 'Oswald', sans-serif;
+
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 8em;
+    /*color: #ffdd00;*/
+    color: #ff0066;
+
+    font-style: italic;
+}
+
+
+h1 span {
+    display: inline-block;
+
+}
+h1 span:first-letter {
+
+    font-size: 1.2em;
+}
+
+h2 {
+    font-family: 'Cardo', serif;
+    text-align: center;
+    color: #ff0066;
+}
+
+img {
+    display: block;
+    margin: 15em auto 5em;
+}
