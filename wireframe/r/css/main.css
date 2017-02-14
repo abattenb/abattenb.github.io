@@ -1,0 +1,382 @@
+/*
+Wireframe
+*/
+
+/*
+TODO: Color agnostic
+TODO: Bang out components
+TODO: Cool name
+*/
+
+html {
+    font-famiily: Arial;
+}
+
+
+section {
+    background: white;
+    position: relative;
+    box-shadow:
+        0em 0em 0 0.2em #555,
+        0em 0em 0 1.3em #EEE,
+        0em 0em 0 1.6em #555;
+    width: 20em;
+    height: 35.55em;
+    left: 1.5em;
+    top: 1.5em;
+    margin-bottom: 9em;
+    resize: both;
+    border-radius: .15em;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+section::-webkit-scrollbar-track {
+    background: rgba(255,255,255,.2);
+}
+section::-webkit-scrollbar {
+    float: right;
+    width: .35em;
+    background: rgba(0,0,0,.1);
+}
+
+section::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background: rgba(0,0,0,.3);
+}
+/*section:before {*/
+    /*content: '';*/
+    /*left: -1.5em;*/
+    /*top: -1.5em;*/
+    /*padding: 1.5em 1.5em 6em 1.5em;*/
+    /*width: 20em;*/
+    /*height: 35.55em;*/
+    /*box-shadow: 0em 0em 0 0.3em #555;*/
+    /*border-radius: .8em;*/
+    /*background: #EEE;*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*z-index: -1;*/
+/*}*/
+/*section:after {*/
+    /*content: '';*/
+    /*display: block;*/
+    /*background: white;*/
+    /*box-shadow: 0em 0em 0 0.2em #555;*/
+    /*margin: auto;*/
+    /*width: 3em;*/
+    /*height: 3em;*/
+    /*position: absolute;*/
+    /*bottom: -4.5em;*/
+    /*left: 8em;*/
+
+    /*border-radius: 40%;*/
+/*}*/
+
+
+
+
+
+
+/*--------
+Theme
+--------*/
+
+/*Type*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Serif:400,400i,700);
+
+/*Colors*/
+:root {
+    --body-color: rgba(240,240,240,1);
+    --black: rgba(15,15,20,1);
+
+
+    /*--brand-light: rgb(196, 211, 241);*/
+    /*--brand-soft: rgb(118, 159, 236);*/
+    /*--brand: rgb(36, 101, 226);*/
+    /*--brand-hard: rgb(9, 57, 148);*/
+    /*--brand-dark: rgb(7, 33, 82);*/
+
+    --brand-light: #EEE;
+    --brand-soft: #CCC;
+    --brand: #777;
+    --brand-hard: #363636;
+    --brand-dark: #222;
+
+    /*--brand-light: #EEE;*/
+    /*--brand-soft: #CCC;*/
+    /*--brand: #666;*/
+    /*--brand-hard: #444;*/
+    /*--brand-dark: #222;*/
+
+    --text-color: white;
+
+
+    --transition-fast:      .1s;
+    --transition-medium:    .15s;
+    --transition-slow:      .2s;
+}
+
+
+html {
+    background: var(--body-color);
+    color: var(--black);
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+
+
+/*--------
+Components
+--------*/
+
+/*Cover*/
+
+.cover {
+    background: url(../img/image.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cover.cover_half {
+    height: 50vh;
+
+}
+
+/*Image*/
+
+
+.image {
+    background-image: url(../img/image.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*Paragraph*/
+
+h1.paragraph,
+h2.paragraph,
+h3.paragraph,
+h4.paragraph {
+    background: var(--brand);
+    width: 35%;
+}
+
+p.paragraph {
+    background: var(--brand-soft);
+    line-height: 1.2;
+    margin: 0 0 0.2em 0;
+}
+
+
+/*Type + Headers*/
+
+
+h1, h2, h3, h4 {
+    color: var(--brand);
+    margin: 1.414em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.441em;
+}
+h2 {font-size: 1.953em;}
+h3 {font-size: 1.563em;}
+h4 {font-size: 1.25em;}
+
+
+/*Tabs*/
+
+.tabs {
+    list-style: none;
+    padding: 0;
+    display: block;
+    border-bottom: 1px solid var(--brand);
+}
+.tabs button {
+    display: inline-block;
+    margin: 0;
+    padding: .5em .7em;
+    box-shadow: inherit;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    transition: all var(--transition-medium);
+
+}
+.tabs button:hover,
+.tabs button:focus {
+    box-shadow: 0 -.35em 0 var(--brand);
+    top: inherit;
+    color: var(--text-color);
+
+}
+
+/*Buttons*/
+button {
+    background: var(--brand);
+    color: white;
+    border: none;
+    padding: .5em 1em;
+    border-radius: .25em;
+    box-shadow: 0 .2em 0 var(--brand-hard);
+    position: relative;
+    top: 0;
+
+    transition: all var(--transition-medium);
+
+}
+button:hover,
+button:focus {
+    top: -.1em;
+    box-shadow: 0 .3em 0 var(--brand-hard);
+
+    transition: all var(--transition-medium);
+}
+button:active {
+    background: var(--brand-hard);
+    top: .1em;
+    box-shadow: 0 0em 0 var(--brand-hard);
+
+    transition: all var(--transition-medium);
+}
+button:focus,
+button:active {
+    text-decoration: underline;
+
+    transition: all var(--transition-medium);
+}
+
+button.small {
+    font-size: .8em;
+}
+button.large {
+    font-size: 1.2em;
+    padding: .5em 1em;
+
+}
+
+button[disabled],
+button[disabled]:hover,
+button[disabled]:focus,
+button[disabled]:active {
+    color: var(--brand-light);
+    background: var(--brand-soft);
+    touch-event: none;
+    box-shadow: 0 .2em 0 var(--brand);
+    top: inherit;
+
+}
+
+/*Top Nav*/
+
+.top_nav {
+    background: var(--brand);
+    color: var(--text-color);
+}
+
+.top_nav .header {
+    padding: .5em;
+}
+
+.top_nav button {
+    box-shadow: inherit;
+    top: inherit;
+    float: right;
+}
+
+/*Calendar*/
+
+.calendar {
+    display: inline-block;
+    border: 1px solid var(--brand);
+}
+.calendar .date {
+    display: flex;
+    flex-direction: row;
+    padding: .5em 0;
+}
+.calendar .date > * {
+    margin: auto;
+}
+
+.calendar .selected {
+    background: var(--brand-soft);
+    font-weight: bold;
+}
+
+.calendar table {
+    margin: 0 0 -1px -1px;
+}
+.calendar table td {
+    padding: .5em 0.7em;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--brand);
+
+    transition: color var(--transition-fast), background var(--transition-fast);
+}
+.calendar table td:hover {
+    background: var(--brand);
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color var(--transition-fast), background var(--transition-fast);
+}
+.calendar table td:empty {
+    background: var(--brand-soft);
+    cursor: default;
+    touch-event: none;
+}
+
+
+/*Ratings*/
+
+.rating {}
+
+/*User*/
+
+.user {
+    background: var(--brand-soft);
+    color: var(--text-color);
+    border-radius: 10em;
+    height: 2em;
+    width: 2em;
+    font-size: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+
+/*Util*/
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.text-right {text-align: right;}
+.text-left {text-align: right;}
+.float-right {float: right;}
+.float-left {float: right;}
+.uppercase {text-transform: uppercase;}
+.bold {font-weight: bold;}
+.strike {text-decoration: line-through;}
+.big {font-size: 125%;}
+.small {font-size: 75%;}

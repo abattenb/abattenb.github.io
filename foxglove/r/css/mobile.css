@@ -1,0 +1,80 @@
+/*
+Foxglove.js
+Andrew Battenburg
+02/13/17
+
+A satirical JS framework template meant to have fun and be functional.
+*/
+
+
+
+
+/*Mobile Styles*/
+@media (max-width: 900px) {
+    .flex_test {
+        flex-flow: wrap;
+        height: 25em;
+
+    }
+
+    .flex_test .image {
+        flex: 1 1 100%;
+        align-self: flex-end;
+
+        order: 1;
+    }
+
+    .flex_test .words {
+        flex: 1 1 100%;
+        order: 2;
+        /*align-self: flex-start;*/
+    }
+    .flex_test .words h3 {
+        text-align: center;
+    }
+
+
+
+    ul {
+        columns: 1;
+    }
+
+
+
+}
+
+
+
+/*Mobile Medium*/
+@media (max-width: 750px) {
+    .graph .bar {
+        margin: 0;
+    }
+
+}
+
+/*Mobile Small*/
+@media (max-width: 550px) {
+    .cover {padding: .5em;}
+    .cover svg {
+        width: 100px;
+        height: 150px;
+    }
+    .cover h1 {font-size: 1.5em;}
+    .cover .subtext {font-size: .8em;}
+
+    .cover .social span {display: none;}
+
+    h3 {text-align: center;}
+
+    .banner .col {
+        flex: 1 100%;
+        margin: 1em 0;
+    }
+    .graph .bar {font-size: 0.7em;}
+
+    ul {
+        font-size: .8em;
+    }
+}
+

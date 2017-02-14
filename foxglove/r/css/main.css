@@ -1,0 +1,301 @@
+/*
+Foxglove.js
+Andrew Battenburg
+02/13/17
+
+A satirical JS framework template meant to have fun and be functional.
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html * {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #fffdfe;
+}
+h1 {font-size: 3em;}
+
+hr {
+    width: 25%;
+    margin: 5em auto;
+}
+
+
+::selection {
+    color: #ff00cc;
+    background: yellow;
+    text-shadow: none;
+}
+
+.color {color: #9b19b3;}
+
+.cta {
+    border-color: #9b19b3;
+    color: #61004d;
+}
+
+.cover {
+    font-size: 1.8em;
+    background: linear-gradient(135deg, #ff00cc , #333399),
+        url("https://www.toptal.com/designers/subtlepatterns/patterns/congruent_pentagon.png") center center;
+    background-blend-mode: multiply;
+
+    margin-bottom: 3em;
+    padding: 3em;
+    color: white;
+    text-shadow: 0px -2px 0px #61004d;
+}
+
+
+
+.cover button {
+    color: white;
+}
+
+.cover .social button {
+    height: 2.2em;
+    line-height: 2.2;
+}
+
+/*Two Ups*/
+
+.flex_test {
+    display: flex;
+    /*flex-flow: wrap;*/
+    align-items: center;
+    justify-content: center;
+
+    height: 20em;
+}
+.flex_test .image {
+    flex: 1 0 50%;
+    order: 2;
+    align-self: center;
+}
+
+.flex_test .image .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flex_test .words {
+    flex: 1 0 50%;
+    order: 1;
+
+}
+
+.flex_test.flex_reverse .image {
+    order: 1;
+}
+.flex_test.flex_reverse .words {
+
+    order: 2;
+}
+
+
+.fa.icons {
+    color: #9b19b3;
+    font-size: 8em;
+}
+
+
+/*Graph*/
+
+.graph {}
+
+
+.graph {
+    background: rgba(0,0,0, .03);
+    border-bottom: 1px solid #9b19b3;
+
+    height: 20em;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.graph:before,
+.graph:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #EEE;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.graph:before {
+    bottom: 33%;
+}
+
+.graph:after {
+    bottom: 66%;
+}
+
+.graph .bar {
+    flex: 1;
+    align-self: flex-end;
+
+    border-top: 1px solid #9b19b3;
+    background: linear-gradient(135deg, #ded3e0 , #cdbed0 );
+
+    color: black;
+    margin: 5% 5% 0 5%;
+    padding: .5em;
+    text-align: center;
+}
+
+.graph .bar.gquery {height: 18%;}
+.graph .bar.respond {height: 22%;}
+.graph .bar.corner {height: 28%;}
+.graph .bar.sight {height: 40%;}
+
+.graph .bar.foxglove {
+    height: 80%;
+    text-shadow: 0 -2px 0 #61004d;
+    background: linear-gradient(135deg, #9b19b3 , #563399);
+    color: white;
+    font-weight: bold;
+}
+
+/*Banner*/
+
+.banner {
+    background: linear-gradient(135deg, #ff00cc , #333399),
+        url("../img/congruent_outline.png");
+    background-blend-mode: overlay;
+
+    margin: 5em 0;
+    text-align: center;
+
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0px -2px 0px #61004d;
+
+}
+
+.banner .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner .col {
+    flex: 1;
+    align-self: center;
+
+    margin: 2em 0;
+}
+
+.banner .fa,
+.pie-wrapper {
+    font-size: 5em;
+    display: block;
+    margin-bottom: .3em;
+}
+
+
+.pie-wrapper {
+    height: 1em;
+    width: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.pie-wrapper * {box-sizing: border-box;}
+
+.pie-wrapper .pie {
+    height: 100%;
+    width: 100%;
+    clip: rect(auto, auto, auto, auto);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.pie-wrapper .pie .half-circle {
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 50%;
+    clip: rect(0, 0.5em, 1em, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.pie-wrapper .label {
+    bottom: 0.4em;
+    cursor: default;
+    display: block;
+    font-size: 0.25em;
+    left: 0.4em;
+    line-height: 2.6em;
+    position: absolute;
+    right: 0.4em;
+    text-align: center;
+    top: 0.4em;
+    background: none;
+}
+.pie-wrapper .label .smaller {
+    font-size: .45em;
+    padding-bottom: 20px;
+    vertical-align: super;
+}
+.pie-wrapper .shadow {
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid #61004d;
+    border-radius: 50%;
+}
+
+
+.pie-wrapper.progress-95 .pie .right-side {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.pie-wrapper.progress-95 .pie .left-side {
+    -webkit-transform: rotate(342deg);
+    transform: rotate(342deg);
+}
+
+ul {
+    columns: 2;
+    margin: 2em 0;
+}
+
+/*Footer*/
+
+footer {
+    background: linear-gradient(135deg, #ff00cc , #333399),
+        url("../img/congruent_outline.png");
+    background-blend-mode: overlay;
+    text-align: center;
+    color: white;
+    margin-top: 3em;
+    font-size: .8em;
+    padding: .3em 0;
+}
+
+
+
+/*Util*/
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.text-right {text-align: right;}
+.text-left {text-align: right;}
+.text-center {text-align: center;}
+.float-right {float: right;}
+.float-left {float: right;}
+.uppercase {text-transform: uppercase;}
+.bold {font-weight: bold;}
+.strike {text-decoration: line-through;}
+.big {font-size: 125%;}
+.small {font-size: 75%;}
