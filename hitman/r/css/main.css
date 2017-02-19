@@ -1,0 +1,87 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+
+}
+
+body {
+    background: white;
+}
+
+/*Padding is subtracting the letterspacing on the right*/
+
+
+::selection {
+    color: black;
+    background-color: black;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.cover:after {
+    content: '';
+    background: url("../img/map_color_lines.svg") center center;
+    background-size: cover;
+    position: absolute;
+    height: 250%;
+    width: 170%;
+    transform: skew(-10deg,-10deg) rotate(21deg) scale(0.9, 0.6) translate(7rem, 8rem);
+}
+
+.cover:before {
+    content: '';
+    background: radial-gradient(#561513 30%, #1c0b09 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+h1 {
+    border: 1rem solid white;
+    padding: 1rem 3rem 1rem 9rem;
+    font-size: 7rem;
+    letter-spacing: 6rem;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.cover .scroll {
+    font-size: 2.25rem;
+    z-index: 1;
+    opacity: 0;
+    margin-bottom: 6rem;
+
+    animation: scroll 2s 2.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0rem);
+        opacity: .7;
+    }
+}
