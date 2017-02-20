@@ -41,7 +41,7 @@ hr {
 .cover {
     font-size: 1.8em;
     background: linear-gradient(135deg, #ff00cc , #333399),
-        url("https://www.toptal.com/designers/subtlepatterns/patterns/congruent_pentagon.png") center center;
+        url("../img/congruent_pentagon.png") center center;
     background-blend-mode: multiply;
 
     margin-bottom: 3em;

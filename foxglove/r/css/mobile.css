@@ -13,7 +13,7 @@ A satirical JS framework template meant to have fun and be functional.
 @media (max-width: 900px) {
     .flex_test {
         flex-flow: wrap;
-        height: 25em;
+        height: 15em;
 
     }
 
