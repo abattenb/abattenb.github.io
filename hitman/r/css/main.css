@@ -96,6 +96,74 @@ h1 {
     }
 }
 
+/*Agency*/
+
+.agency {
+    height: 100vh;
+    background-color: #cad0ce;
+    position: relative;
+
+
+}
+.agency:after {
+    content: '';
+    background-image: url("../img/dot.svg");
+    background-size: 4rem 4rem;
+    /*background-position: 50% 50%;*/
+    background-repeat: repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+
+    transition: .2s all;
+}
+.agency:before {
+    content: '';
+    background-image: url("../img/dot.svg");
+    background-size: 6rem 6rem;
+    /*background-position: 50% 50%;*/
+    background-repeat: repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+
+    transition: .2s all;
+}
+
+.agency:hover:after {
+    transition: .2s all;
+
+
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.agency:hover:before {
+    transition: .2s all;
+    background-size: 6.1rem 6.1rem;
+
+
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
 
 /*Weapons Section*/
 
@@ -105,7 +173,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 
-    background:  linear-gradient(135deg, #555 , #111), url("../img/footer_lodyas.png");
+    background:  linear-gradient(135deg, #555 , #111), url("../img/dark_embroidery.png");
     background-blend-mode: multiply;
 
 }
@@ -134,12 +202,14 @@ h1 {
     position: absolute;
     -webkit-transform: scale(0.35);
     transform: scale(0.35);
+    opacity: .5;
 }
 
 
 .weapons .carousel .item.active {
     -webkit-transform: scale(1);
     transform: scale(1);
+    opacity: 1;
 
 }
 
@@ -160,7 +230,7 @@ h1 {
 
 
 .weapons .carousel .item:hover {
-    background: #333;
+    background: rgba(99,99,99,.2);
     cursor: pointer;
 }
 .weapons .carousel .item.active:hover {
