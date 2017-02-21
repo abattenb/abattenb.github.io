@@ -99,71 +99,131 @@ h1 {
 /*Agency*/
 
 .agency {
-    height: 100vh;
+
+    height: 80vh;
     background-color: #cad0ce;
     position: relative;
-
-
+    overflow: hidden;
 }
-.agency:after {
+
+.agency .title {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 3.5em);
+    width: 7em;
+    text-align: center;
+    display: inline-block;
+    padding: 1.5rem;
+    background: #0E111A;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.agency .dot:before {
     content: '';
-    background-image: url("../img/dot.svg");
-    background-size: 4rem 4rem;
-    /*background-position: 50% 50%;*/
-    background-repeat: repeat;
+    background-image: url("../img/dots/xlarge.svg");
+    background-size: cover;
     display: block;
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     z-index: 0;
-
-    transition: .2s all;
+    filter: blur(.3rem);
+    transition: .25s all;
 }
-.agency:before {
+.agency .dot:after {
     content: '';
-    background-image: url("../img/dot.svg");
-    background-size: 6rem 6rem;
-    /*background-position: 50% 50%;*/
-    background-repeat: repeat;
+    background-image: url("../img/dots/xsmall.svg");
+    background-size: cover;
     display: block;
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     z-index: 0;
+    filter: blur(.5rem);
+    transition: .25s all;
+}
 
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    filter: blur(4px);
-
+.agency .dot_wrapper:before {
+    content: '';
+    background-image: url("../img/dots/large.svg");
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    filter: blur(.1rem);
+    transition: .2s all;
+}
+.agency .dot_wrapper:after {
+    dot_wrapper: '';
+    background-image: url("../img/dots/small.svg");
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    filter: blur(.3rem);
     transition: .2s all;
 }
 
-.agency:hover:after {
+.agency .dot_wrapper {
+    background-image: url("../img/dots/medium.svg");
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    filter: blur(.1rem);
     transition: .2s all;
+}
 
 
-    -webkit-filter: blur(2px);
+/*    -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
     -ms-filter: blur(2px);
     filter: blur(2px);
+    */
+
+.agency:hover .dot:before {
+    filter: blur(.2rem);
+    transform: scale(1.02, 1.02);
+    transition: .3s .05s all;
+}
+.agency:hover .dot:after {
+    filter: blur(.2rem);
+    transform: scale(1.02, 1.02);
+    transition: .3s .05s all;
+}
+.agency:hover .dot .dot_wrapper:before {
+    filter: blur(.4rem);
+    transform: scale(1.03, 1.03);
+    transition: .35s all;
+}
+.agency:hover .dot .dot_wrapper:after {
+    filter: blur(.4rem);
+    transform: scale(1.03, 1.03);
+    transition: .35s all;
 }
 
-.agency:hover:before {
-    transition: .2s all;
-    background-size: 6.1rem 6.1rem;
-
-
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(0px);
-    -o-filter: blur(0px);
-    -ms-filter: blur(0px);
-    filter: blur(0px);
+.agency:hover .dot .dot_wrapper {
+    filter: blur(0rem);
+    transform: scale(1.01, 1.01);
+    transition: .3s all;
 }
+
+
 
 /*Weapons Section*/
 
