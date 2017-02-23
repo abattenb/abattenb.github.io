@@ -267,6 +267,17 @@ aside nav li:last-of-type a {
    Images
    ========================================================================== */
 
+.product_shots img {
+    margin: -100px 0;
+}
+.product_shots img:first-of-type {
+    margin: auto;
+}
+.product_shots img:last-of-type {
+    margin-bottom: 0;
+}
+
+
 .thumbs {
     display: flex;
     flex-flow: row wrap;

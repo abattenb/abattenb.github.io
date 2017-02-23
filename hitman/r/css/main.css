@@ -96,6 +96,30 @@ h1 {
     }
 }
 
+/*Stage*/
+
+.stage {}
+.stage .grid {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.stage .plane {
+
+    flex: 1 0;
+
+    height: 20rem;
+    background: linear-gradient(135deg, #561513 , #ff0000), url('../img/stage/plane.jpg') center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    border-radius: .5rem;
+}
+
+
+
 /*Agency*/
 
 .agency {
@@ -109,16 +133,17 @@ h1 {
 .agency .title {
     position: absolute;
     top: 40%;
-    left: calc(50% - 3.5em);
-    width: 7em;
+    left: calc(50% - 8em);
+    width: 16em;
     text-align: center;
     display: inline-block;
     padding: 1.5rem;
     background: #0E111A;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     z-index: 1;
+    text-transform: uppercase;
 }
 
 .agency .dot:before {
@@ -131,6 +156,7 @@ h1 {
     height: 100%;
     width: 100%;
     z-index: 0;
+    -webkit-filter: blur(.3rem);
     filter: blur(.3rem);
     transition: .25s all;
 }
@@ -144,6 +170,7 @@ h1 {
     height: 100%;
     width: 100%;
     z-index: 0;
+    -webkit-filter: blur(.5rem);
     filter: blur(.5rem);
     transition: .25s all;
 }
@@ -158,6 +185,7 @@ h1 {
     height: 100%;
     width: 100%;
     z-index: 0;
+    -webkit-filter: blur(.1rem);
     filter: blur(.1rem);
     transition: .2s all;
 }
@@ -171,6 +199,7 @@ h1 {
     height: 100%;
     width: 100%;
     z-index: 0;
+    -webkit-filter: blur(.3rem);
     filter: blur(.3rem);
     transition: .2s all;
 }
@@ -184,6 +213,7 @@ h1 {
     height: 100%;
     width: 100%;
     z-index: 0;
+    -webkit-filter: blur(.1rem);
     filter: blur(.1rem);
     transition: .2s all;
 }
@@ -196,28 +226,33 @@ h1 {
     filter: blur(2px);
     */
 
-.agency:hover .dot:before {
+.dot:hover:before {
+    -webkit-filter: blur(.2rem);
     filter: blur(.2rem);
     transform: scale(1.02, 1.02);
     transition: .3s .05s all;
 }
-.agency:hover .dot:after {
+.dot:hover:after {
+    -webkit-filter: blur(.2rem);
     filter: blur(.2rem);
     transform: scale(1.02, 1.02);
     transition: .3s .05s all;
 }
-.agency:hover .dot .dot_wrapper:before {
+.dot:hover .dot_wrapper:before {
+    -webkit-filter: blur(.4rem);
     filter: blur(.4rem);
     transform: scale(1.03, 1.03);
     transition: .35s all;
 }
-.agency:hover .dot .dot_wrapper:after {
+.dot:hover .dot_wrapper:after {
+    -webkit-filter: blur(.4rem);
     filter: blur(.4rem);
     transform: scale(1.03, 1.03);
     transition: .35s all;
 }
 
-.agency:hover .dot .dot_wrapper {
+.dot:hover .dot_wrapper {
+    -webkit-filter: blur(0rem);
     filter: blur(0rem);
     transform: scale(1.01, 1.01);
     transition: .3s all;
