@@ -3,10 +3,11 @@
     $(document).ready(function() {
 
         var options = {
-            ovalWidth: 400,
-            ovalHeight: 100,
-            offsetX: 100,
-            offsetY: 325,
+            unit: 'rem',
+            ovalWidth: 40,
+            ovalHeight: 10,
+            offsetX: 10,
+            offsetY: 40,
             angle: 0,
             activeItem: 0,
             duration: 250,

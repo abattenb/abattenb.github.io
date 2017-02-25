@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -53,7 +53,7 @@ h2 {
 
 .cover:before {
     content: '';
-    background: radial-gradient(#561513 30%, #1c0b09 100%);
+    background: radial-gradient(#560106 30%, #1c0b09 100%);
     background-blend-mode: multiply;
     background-size: cover;
     position: absolute;
@@ -96,28 +96,79 @@ h1 {
     }
 }
 
-/*Stage*/
+/*Destination*/
 
-.stage {}
-.stage .grid {
+.destination {
+    background: radial-gradient(#560106 40%, #410004 100%);
+    color: white;
+    height: 80vh;
+}
+.destination .container {
     display: flex;
-    flex-direction: row;
-
-    max-width: 50rem;
+    flex-direction: column;
+    max-width: 40rem;
     margin: 0 auto;
-}
-.stage .plane {
-
-    flex: 1 0;
-
-    height: 20rem;
-    background: linear-gradient(135deg, #561513 , #ff0000), url('../img/stage/plane.jpg') center center;
-    background-size: cover;
-    background-blend-mode: multiply;
-
-    border-radius: .5rem;
+    align-item: center;
+    justify-content: center;
 }
 
+
+.destination .header {
+    width: 100%;
+    border-bottom: .2rem solid white;
+    margin-bottom: 1rem;
+}
+.destination .header svg {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.destination .header .country {
+    font-size: 1.7rem;
+}
+.destination .header .city {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.destination .clock {
+    font-size: 15.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.destination .clock span:nth-of-type(2){
+    font-family: Arial;
+    font-weight: 700;
+    position: relative;
+    top: -1rem;
+
+    /*Added delay due to browser weirdness*/
+    animation: blink 2s .2s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    49% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.destination .clock span:nth-of-type(3):before {
+    content: '03';
+    animation: timer 40s 3s infinite;
+}
+
+@keyframes timer {
+    0% {content: '03'}
+    10% {content: '04'}
+    20% {content: '05'}
+    30% {content: '06'}
+    40% {content: '07'}
+    50% {content: '08'}
+    60% {content: '09'}
+    70% {content: '00'}
+    80% {content: '01'}
+    90% {content: '02'}
+}
 
 
 /*Agency*/
@@ -134,7 +185,7 @@ h1 {
     position: absolute;
     top: 40%;
     left: calc(50% - 8em);
-    width: 16em;
+    width: 50rem;
     text-align: center;
     display: inline-block;
     padding: 1.5rem;
@@ -280,8 +331,8 @@ h1 {
     padding: 0;
 }
 .weapons .carousel_wrapper {
-    height: 70rem;
-    width: 100rem;
+    height: 50rem;
+    width: 92rem;
 
 }
 .weapons .carousel .item {
@@ -290,21 +341,29 @@ h1 {
     justify-content: center;
     flex-direction: column;
 
-    width: 35rem;
-    height: 35rem;
+    /*width: 25rem;*/
+    /*height: 25rem;*/
     text-align: center;
 
     position: absolute;
-    -webkit-transform: scale(0.35);
-    transform: scale(0.35);
-    opacity: .5;
 }
 
 
-.weapons .carousel .item.active {
+.weapons .carousel .item svg {
+    -webkit-transform: scale(0.35);
+    transform: scale(0.35);
+    opacity: .5;
+
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.weapons .carousel .item.active svg {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 
 }
 
@@ -313,25 +372,23 @@ h1 {
 }
 
 .weapons .carousel .item.active .desc {
+    user-select: none;
     display: block;
 }
 .weapons .carousel .item.active .desc h3 {
     font-size: 2rem;
     text-transform: uppercase;
-    border-bottom: .1rem solid white;
+    text-decoration: underline;
     margin-bottom: 1rem;
 
 }
+.weapons .carousel .item.active .desc p {
+    font-size: 1.4rem;
+}
 
 
-.weapons .carousel .item:hover {
-    background: rgba(99,99,99,.2);
-    cursor: pointer;
-}
-.weapons .carousel .item.active:hover {
-    background: inherit;
-    cursor: default;
-}
+.weapons .carousel .item:hover {cursor: pointer;}
+.weapons .carousel .item.active:hover {cursor: default;}
 
 .weapons .carousel .item .outline {
     width: auto;
@@ -342,11 +399,13 @@ h1 {
 }
 .weapons .carousel .item.active .outline {
     opacity: 1;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .weapons .carousel .item.transition {
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .weapons .controls {

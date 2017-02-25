@@ -1,8 +1,12 @@
-/* jQuery Circular Carousel 0.1 */
+/* jQuery Circular Carousel 0.1a */
 
 /*
 Author: @samuelgbrown
 Thanks: Addy Osmani, Marcus Haslam
+
+Modifications: Andrew Battenburg
+-Changed movement to more efficient CSS transform instead of margin
+-Added option to specify unit (em, rem, px, etc)
 */
 
 (function ($) {
@@ -14,6 +18,7 @@ Thanks: Addy Osmani, Marcus Haslam
   $.fn.CircularCarousel = function (options) {
 
     var $ele = $(this),
+        unit = options.unit,
         ovalWidth = options.ovalWidth,
         ovalHeight = options.ovalHeight,
         activeItem = options.activeItem,
@@ -25,6 +30,7 @@ Thanks: Addy Osmani, Marcus Haslam
         itemHeights = [],
         cycleDuration = options.duration,
         previousActiveElement = activeItem;
+
 
     /*
        Original Source of this function: Addy Osmani's jquery.shapelib from 2010. Updated, tweaked by @samuelgbrown.
@@ -80,8 +86,15 @@ Thanks: Addy Osmani, Marcus Haslam
           offsetNextElement = 0;
         }
 
-        $items.eq(offsetElement).css('margin-top', X + 'px');
-        $items.eq(offsetElement).css('margin-left', Y + 'px');
+        $items.eq(offsetElement).css('transform', 'translate(' + Y + unit + ',' + X + unit + ')');
+
+          //if (activeElement) {
+          //  $items.eq(offsetElement).css('transform', 'translate(' + Y + 'px,' + X + 'px) scale(1)');
+          //} else {
+          //  $items.eq(offsetElement).css('transform', 'translate(' + Y + 'px,' + X + 'px) scale(0.35)');
+          //}
+          //
+        //$items.eq(offsetElement).css('left', Y + 'px');
 
         var itemMeta = { 'top' : $items.eq(offsetNextElement).offset().top, 'index' : offsetNextElement };
         itemHeights.push(itemMeta);
