@@ -80,6 +80,7 @@ h1 {
 
 
 .cover .scroll {
+    position: relative;
     font-size: 2.25rem;
     z-index: 1;
     opacity: 0;
