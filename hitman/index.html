@@ -14,13 +14,10 @@
     <link rel="stylesheet" href="r/css/main.css">
     <link rel="stylesheet" href="r/css/mobile.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
     <!--
     jQuery Circular Carousel
     https://github.com/sgb-io/jquery.circular-carousel
     -->
-    <script src="r/js/jquery.circular-carousel.js"></script>
 
     <!--<script src="https://use.fontawesome.com/42c9dfa299.js"></script>-->
 
@@ -131,23 +128,8 @@
 
                 </ul>
             </div>
-
         </section>
 
-        <section class="destination">
-            <h2>The Destination</h2>
-            <div class="container">
-                <div class="header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 62 62"><path d="M57.7 0H4.3C1.9 0 0 1.9 0 4.3v53.4C0 60.1 1.9 62 4.3 62h53.4c2.4 0 4.3-1.9 4.3-4.3V4.3C62 1.9 60.1 0 57.7 0zM49.4 34H37.8L27.3 51h-4.2l5.3-17H16.8l-3.2 4h-3.2l2.1-7 -2.1-7h3.2l3.2 4h11.6l-5.3-17h4.2l10.5 17h11.6c1.7 0 3.2 1.3 3.2 3S51.2 34 49.4 34z" fill="#FFF"/></svg>
-                    <div class="country">China</div>
-                    <div class="city">Shenzhen</div>
-                </div>
-                <div class="clock">
-                    <!--Because of the implicite HTML space, all one line -->
-                    <span>22</span><span>:</span><span></span>
-                </div>
-            </div>
-        </section>
         <!--
         Props to the following site. Was fun mixing and matching names.
         http://fantasynamegenerators.com/mobster-names.php
@@ -162,13 +144,33 @@
             </div>
         </section>
 
+        <section class="destination">
+            <h2>The Destination</h2>
+            <div class="container">
+                <div class="header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 62 62"><path d="M57.7 0H4.3C1.9 0 0 1.9 0 4.3v53.4C0 60.1 1.9 62 4.3 62h53.4c2.4 0 4.3-1.9 4.3-4.3V4.3C62 1.9 60.1 0 57.7 0zM49.4 34H37.8L27.3 51h-4.2l5.3-17H16.8l-3.2 4h-3.2l2.1-7 -2.1-7h3.2l3.2 4h11.6l-5.3-17h4.2l10.5 17h11.6c1.7 0 3.2 1.3 3.2 3S51.2 34 49.4 34z" fill="#FFF"/></svg>
+                    <div class="country">China</div>
+                    <div class="city">Shenzhen</div>
+                </div>
+                <div class="clock">
+                    <!--Because of the implicite HTML space, all one line -->
+                    <!--Also turns out you can animate content properties-->
+                    <span>22</span><span>:</span><span></span>
+                </div>
+            </div>
+        </section>
+
+
+
 
     </main>
 
     <footer>
 
     </footer>
-<script src="r/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="r/js/jquery.circular-carousel.js"></script>
+    <script src="r/js/main.js"></script>
 </body>
 </html>
 <!--                 _

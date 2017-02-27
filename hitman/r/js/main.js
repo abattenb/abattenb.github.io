@@ -1,53 +1,58 @@
 (function() {
-
+    //No idea if this is still needed
     $(document).ready(function() {
 
-        var options = {
-            unit: 'rem',
-            ovalWidth: 40,
-            ovalHeight: 10,
-            offsetX: 10,
-            offsetY: 40,
-            angle: 0,
-            activeItem: 0,
-            duration: 250,
-            className: 'item'
+        //This is such a mess, I can't stop laughing
+        //I have no idea how this works cross browser
+        //Sticking to responsive behavior in CSS
+        var init = true;
+        var carousel;
+
+        if (init) {
+            checkWindow();
+
+            //resizeCarousel(40, 10);
+            init = false;
         }
 
-        var carousel = $('.carousel').CircularCarousel(options);
+        window.addEventListener("resize", function(){
 
-        /* Fires when an item is about to start it's activate animation */
-        carousel.on('itemBeforeActive', function(e, item) {
-            //$(item).css('box-shadow', '0 0 20px blue');
+            $('.carousel .active').removeClass('active');
+            $('.carousel li:first-of-type').addClass('active');
+            checkWindow();
+
         });
 
-        /* Fires after an item finishes it's activate animation */
-        carousel.on('itemActive', function(e, item) {
-            //$(item).css('box-shadow', '0 0 20px green');
-        });
-
-        /* Fires when an active item starts it's de-activate animation */
-        carousel.on('itemBeforeDeactivate', function(e, item) {
-            //$(item).css('box-shadow', '0 0 20px yellow');
-        })
-
-        /* Fires after an active item has finished it's de-activate animation */
-        carousel.on('itemAfterDeactivate', function(e, item) {
-            $(item).css('box-shadow', '');
-        })
+        function checkWindow() {
+            if (window.matchMedia("(min-width: 60rem)").matches) {
+                resizeCarousel(40, 10);
+            } else if (window.matchMedia("(max-width: 59.999rem) and (min-width: 45rem)").matches) {
+                resizeCarousel(30, 7);
+            } else if (window.matchMedia("(max-width: 44.999rem) and (min-width: 30rem)").matches) {
+                resizeCarousel(20, 5);
+            } else if (window.matchMedia("(max-width: 29.999rem").matches) {
+                resizeCarousel(12, 3);
+            }
+        }
 
 
-        /* Previous button */
-        $('.controls .previous').click(function(e) {
-            carousel.cycleActive('previous');
-            e.preventDefault();
-        });
 
-        /* Next button */
-        $('.controls .next').click(function(e) {
-            carousel.cycleActive('next');
-            e.preventDefault();
-        });
+        function resizeCarousel(width, height){
+            //Weapon Carousel
+            var options = {
+                unit: 'rem',
+                ovalWidth: width,
+                ovalHeight: height,
+                offsetX: 10,
+                offsetY: 40,
+                angle: 0,
+                activeItem: 0,
+                duration: 250,
+                className: 'item'
+            }
+            carousel = $('.carousel').CircularCarousel(options);
+        }
+
 
         /* Manaully click an item anywhere in the carousel */
         $('.carousel .item').click(function(e) {
@@ -55,6 +60,12 @@
             carousel.cycleActiveTo(index);
             e.preventDefault();
         });
+
+
+        //Responsive carousel workaround
+        //https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
+
+
 
     });
 

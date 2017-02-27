@@ -101,14 +101,21 @@ h1 {
 .destination {
     background: radial-gradient(#560106 40%, #410004 100%);
     color: white;
-    height: 80vh;
+}
+.destination h2 {
+    position: absolute;
+    width: 100%;
+    padding: 3rem 0;
+    margin: 0;
+    text-align: center;
 }
 .destination .container {
+    height: 80vh;
     display: flex;
     flex-direction: column;
     max-width: 40rem;
     margin: 0 auto;
-    align-item: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -174,21 +181,34 @@ h1 {
 /*Agency*/
 
 .agency {
-
+    display: flex;
+    flex-direction: column;
     height: 80vh;
     background-color: #cad0ce;
     position: relative;
     overflow: hidden;
 }
+.agency h2 {
+    position: absolute;
+    width: 100%;
+    padding: 3rem 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0rem #cad0ce,
+                 0.1rem -0.1rem 0rem #cad0ce,
+                 -0.1rem 0.1rem 0rem #cad0ce,
+                 -0.1rem -0.1rem 0rem #cad0ce;
+    z-index: 1;
+}
+
 
 .agency .title {
-    position: absolute;
+    position: relative;
     top: 40%;
-    left: calc(50% - 8em);
     width: 50rem;
+    margin: 0 auto;
     text-align: center;
-    display: inline-block;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     background: #0E111A;
     color: white;
     font-size: 3rem;
@@ -270,13 +290,6 @@ h1 {
 }
 
 
-/*    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(2px);
-    */
-
 .dot:hover:before {
     -webkit-filter: blur(.2rem);
     filter: blur(.2rem);
@@ -322,7 +335,9 @@ h1 {
     background:  linear-gradient(135deg, #555 , #111), url("../img/dark_embroidery.png");
     background-blend-mode: multiply;
 
+    overflow-x: hidden;
 }
+
 
 
 .weapons .carousel {
