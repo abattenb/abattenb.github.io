@@ -2,17 +2,13 @@
    Type
    ========================================================================== */
 
-/*
-In the sea of Open Sans, Helvetica, and Raleway, I really enjoy the approachability of Montserrat.
-I am also not afraid to use serifed type. They are awesome and are coming back, I swear!
-*/
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Serif:400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800|Noto+Serif:400,400i,700);
 
 /* Font Declarations */
 h1, h2, h3, h4, h5, nav a, .menu {
-    font-family: 'Montserrat', arial, sans-serif;
-    letter-spacing: -0.025em;
+    font-family: 'Merriweather Sans', Arial, sans-serif;
+    letter-spacing: -0.02em;
     text-rendering: optimizeLegibility;
 }
 
@@ -86,6 +82,7 @@ h1 span {color: #d32f2f;}
 
 h2 {
     font-size: 1.8em;
+    font-weight: 700;
     position: relative;
     margin: 1.5em 0 0.8em;
 }
@@ -119,15 +116,11 @@ h5 {
 a {
     color: #d32f2f;
     text-decoration: none;
-
-
     text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px #fff;
-
     background-image: linear-gradient(90deg, currentColor 100%, transparent 100%);
     background-position: 0 1.2em;
     background-repeat: repeat-x;
     background-size: 1px 1px;
-
     transition: .12s all;
 }
 
@@ -135,7 +128,6 @@ a:hover {
     color: white;
     background-color: #d32f2f;
     text-shadow: 1px 1px 0 #d32f2f, -1px 1px 0 #d32f2f, -1px -1px 0 #d32f2f, 1px -1px #d32f2f;
-
     transition: .12s all;
 }
 
@@ -253,9 +245,9 @@ aside nav a {
     margin-bottom: -1px;
     border-bottom: .1em solid #DDD;
     background: none;
-
-
+    letter-spacing: 0.015em;
 }
+
 aside nav li:last-of-type a {
     border-bottom: none;
 }
