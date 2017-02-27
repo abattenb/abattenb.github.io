@@ -1,3 +1,7 @@
+/*
+Hitman Tribute
+Author: Andrew Battenburg
+*/
 
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
@@ -110,7 +114,7 @@ h1 {
     text-align: center;
 }
 .destination .container {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     max-width: 40rem;
@@ -332,7 +336,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 
-    background:  linear-gradient(135deg, #555 , #111), url("../img/dark_embroidery.png");
+    background:  linear-gradient(135deg, #777 , #333), url("../img/dark_embroidery.png");
     background-blend-mode: multiply;
 
     overflow-x: hidden;
@@ -429,10 +433,16 @@ h1 {
 }
 
 
-/*Util*/
+/*Footer*/
 
+footer {
 
-/*
-jQuery Circular Carousel
-https://github.com/sgb-io/jquery.circular-carousel
-*/
+    background:  linear-gradient(135deg, #777 , #333), url("../img/dark_embroidery.png");
+    background-blend-mode: multiply;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    box-shadow: -.5rem 0 .2rem #000;
+}
+

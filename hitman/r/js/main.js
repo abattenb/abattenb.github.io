@@ -23,6 +23,9 @@
 
         });
 
+
+        //Responsive carousel workaround
+        //https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
         function checkWindow() {
             if (window.matchMedia("(min-width: 60rem)").matches) {
                 resizeCarousel(40, 10);
@@ -43,8 +46,8 @@
                 unit: 'rem',
                 ovalWidth: width,
                 ovalHeight: height,
-                offsetX: 10,
-                offsetY: 40,
+                offsetX: 8,
+                offsetY: 39,
                 angle: 0,
                 activeItem: 0,
                 duration: 250,
@@ -60,12 +63,6 @@
             carousel.cycleActiveTo(index);
             e.preventDefault();
         });
-
-
-        //Responsive carousel workaround
-        //https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia
-
-
 
     });
 
