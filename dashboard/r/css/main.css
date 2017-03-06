@@ -1,0 +1,742 @@
+/* ==========================================================================
+    Type
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900');
+
+html {
+    font-family: Tahoma, sans-serif;
+    font-size: 10px;
+    color: #0c0214;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Font Declarations */
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather', Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    color: #380B32;
+    font-style: italic;
+
+}
+
+h1 {
+    font-style: normal;
+
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.8rem;
+    overflow: hidden;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0rem;
+    margin: 6rem auto 4rem;
+    
+}
+
+h2:before,
+h2:after {
+    content: '';
+    border-top: .2rem dotted #703B3B;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+h2:before {
+    right: 1rem;
+    margin-left: -50%;
+}
+h2:after {
+    left: 1rem;
+    margin-right: -50%;
+}
+
+
+h3 {
+    font-size: 2.2rem;
+
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+p, div, blockquote, footer, span, b, i {
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 0 0 1rem 0;
+    line-height: 1.45;
+}
+
+blockquote {
+    margin: 0;
+}
+blockquote p {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+blockquote p:before,
+blockquote p:after {
+    content: '\201C';
+    flex: 1 0 6rem;
+    text-align: center;
+    font-family: Times, sans-serif;
+    font-size: 6rem;
+    line-height: 0.8;
+    font-weight: bold;
+    color: #B5AF89;
+}
+blockquote p:after {
+    content: '\201D';
+    align-self: flex-end;
+    line-height: 0.2;
+}
+
+blockquote footer {
+    flex: 1 0 100%;
+    font-family: 'Merriweather', Arial, sans-serif;
+    border: none;
+    text-align: right;
+    margin-right: 8rem;
+    /*font-size: 1.4rem;*/
+}
+blockquote footer:before {
+    content: '\2014';
+}
+
+::selection {
+    color: white;
+    background: #380B32;
+}
+
+
+.big {font-size: 130%;}
+.small {font-size: 75%;}
+.text-center {text-align: center;}
+
+.italics {font-style: italic;}
+.bold {font-weight: bold;}
+.underline {text-decoration: underline;}
+.uppercase {text-transform: uppercase;}
+.freetext {white-space: pre-wrap; word-wrap: break-word;}
+
+.text-right {text-align: right;}
+.text-left {text-align: left}
+
+
+/* ==========================================================================
+    Buttons
+   ========================================================================== */
+
+button, .button {
+    display: flex;
+    font-size: 1.8rem;
+    background: none;
+    color: #16031E;
+    fill: #16031E;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border: .1rem solid #380B32;
+    transform: translateY(-.2rem);
+    box-shadow: 0 .2rem 0 #16031E;
+    border-radius: .2rem;
+
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+
+    transform: translateY(-.4rem);
+    box-shadow: 0 .4rem 0 #16031E;
+}
+
+button:active,
+.button:active {
+
+    transform: translateY(0rem);
+    box-shadow: 0 0rem 0 #16031E;
+}
+
+button svg,
+.button svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: inherit;
+    align-self: center;
+    margin-right: .5rem;
+}
+
+/* ==========================================================================
+    Global
+   ========================================================================== */
+
+/*Color Ramp*/
+/*http://www.pixelfor.me/crc/81680D2D*/
+
+* {
+    transition: .15s all;
+}
+
+html {
+    background: #F3F7F2;
+    background: linear-gradient(#F3F7F2, #F3F7F2), url("../img/white_wall_hash.png");
+    background-blend-mode: color-dodge;
+    overflow: hidden;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    flex: 1;
+    padding: 3rem 3rem 0 3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+aside {
+    flex: 0 1 40rem;
+    padding: 0 3rem 3rem 3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*Scrollbar*/
+main::-webkit-scrollbar,
+aside::-webkit-scrollbar {
+    width: .8rem;
+    background-color: rgba(0,0,0,.05);
+}
+
+main::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb {
+    background-color: #CDD6B8;
+    border-radius: 1rem;
+}
+
+aside h3 {
+    margin-bottom: 1rem;
+}
+
+footer {
+    border-top: .1rem dotted #380B32;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.more_bar {
+    margin-top: 1rem;
+}
+.more_bar a {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+.more_bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* ==========================================================================
+    Articles
+   ========================================================================== */
+
+.article {
+    display: flex;
+    padding: 1rem 0;
+}
+
+
+
+.article .title {
+    font-weight: bold;
+    margin: .5rem 0;
+}
+.article .title .tag {
+    float: right;
+    padding-top: 0;
+}
+.article .desc {
+    flex: 1;
+}
+.article .desc p {
+    font-size: 1.4rem;
+}
+
+.article .date {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #91735D;
+}
+.article .editor {
+    padding-right: 2rem;
+}
+.article .editor div {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.article .editor img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: .25rem;
+    clip-path: circle(50% at center);
+}
+
+
+/*Boost Social*/
+.article .boost {
+    flex: 0 0 7rem;
+
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    padding-left: 2rem;
+
+
+}
+.article .boost button {
+    margin: 1rem auto;
+}
+.article .boost .social {
+    display: flex;
+    padding: 0.1rem 0;
+}
+.article .boost .social * {
+    flex: 1;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.article .boost .social:nth-of-type(1) > * {
+    color: #f44336;
+    fill: #f44336;
+}
+.article .boost .social:nth-of-type(2) > * {
+    color: #2196f3;
+    fill: #2196f3;
+}
+.article .boost .social:nth-of-type(3) > * {
+    color: #ff9800;
+    fill: #ff9800;
+}
+
+
+
+/*Toolbar*/
+.article .toolbar {
+    display: inline-block;
+}
+.article .toolbar a {
+    font-size: 1.2rem;
+    float: left;
+    padding: .25rem 1rem;
+    text-decoration: none;
+    border-radius: 0;
+}
+.article .toolbar a svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.article .toolbar a:not(first-of-type) {
+    margin-left: -.1rem;
+}
+.article .toolbar a:first-of-type {
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+.article .toolbar a:last-of-type {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+
+}
+
+
+/*Tags*/
+.tag {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: .2rem .5rem;
+    border-radius: .3rem;
+    border: .1rem solid #703B3B;
+}
+.tag svg {
+    height: 1.4rem;
+    position: relative;
+    top: 0.3rem;
+}
+
+.tag.tag_solid {
+    background: #703B3B;
+    color: white;
+}
+.tag.tag_solid svg {fill: white;}
+
+.tag.tag_outline {
+    color: #541F36;
+    font-weight: bold;
+}
+.tag.tag_outline svg {fill: #541F36;}
+
+
+/* ==========================================================================
+    Weather
+   ========================================================================== */
+
+.weather {
+    padding-bottom: 2rem;
+}
+.weather .temp {
+    text-align: center;
+    font-size: 2rem;
+}
+.weather .location {
+    text-align: center;
+
+}
+.weather svg {
+    width: 100%;
+    max-height: 10rem;
+    fill: #380B32;
+}
+
+/* ==========================================================================
+    Nav
+   ========================================================================== */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 90%, rgba(0,0,0,.2)), #16031E;
+    background-blend-mode: multiply;
+    font-size: 1.8rem;
+    letter-spacing: .075rem;
+    text-shadow: 0 .1rem .1rem #380B32;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+nav::-webkit-scrollbar {
+    width: .8rem;
+    background-color: rgba(0,0,0,.05);
+}
+
+nav::-webkit-scrollbar-thumb {
+    background-color: #541F36;
+    border-radius: 1rem;
+}
+
+
+
+nav ul {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav li a {
+    display: flex;
+    position: relative;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    text-decoration: none;
+    color: #FFF;
+    
+}
+
+nav li a:hover {
+    padding-left: 1rem;
+    /*background: #541F36;*/
+    background: linear-gradient(90deg, rgba(255,255,255,0) 90%, rgba(0,0,0,.2)), #541F36;
+    background-blend-mode: multiply;
+    
+}
+
+nav li a svg {
+    margin: auto 1.5rem;
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+nav li.active a {
+
+
+    pointer-events: none;
+    /*background: #541F36;*/
+
+    background: linear-gradient(90deg, rgba(255,255,255,0) 90%, rgba(0,0,0,.2)), #541F36;
+    background-blend-mode: multiply;
+}
+
+nav li.active a:before {
+    content: '';
+    right: -0.7rem;
+    top: 1.15rem;
+    position: absolute;
+    border-top: 1.5rem solid #FFF;
+    border-right: 1.5rem solid #FFF;
+    transform: rotate(-45deg);
+    z-index: 0;
+}
+
+
+nav li.logout {
+    margin-top: auto;
+
+}
+nav li.logout a {
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+
+
+/*User Logged In*/
+nav .user  {
+    display: block;
+    font-family: 'Merriweather', Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: .1rem dotted #FFF;
+    
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+nav .user:hover {
+    background: #91735D;
+    
+}
+
+nav .user .profile {
+    position: relative;
+}
+
+nav .user .photo {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 1rem;
+    clip-path: circle(50% at center);
+}
+
+nav .user .org {
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+    width: 4rem;
+    height: auto;
+    margin-bottom: 1rem;
+    clip-path: circle(50% at center);
+}
+
+nav .user .name {
+    clear: both;
+    font-size: 2rem;
+}
+
+/* ==========================================================================
+    Notes
+   ========================================================================== */
+
+.notes textarea {
+    width: calc(100% - 2rem);
+    min-height: 15rem;
+    border: .1rem dotted #380B32;
+    padding: 1rem;
+}
+
+/* ==========================================================================
+    Update
+   ========================================================================== */
+.update {}
+.update {
+    display: flex;
+    border: .1rem solid #91735D;
+    border-radius: .5rem;
+    background: linear-gradient(#F3F7F2, #F3F7F2);
+    padding: 1rem;
+}
+
+.update .icon {
+    flex: 0 0 15rem;
+    padding: 2rem;
+}
+.update .icon svg {fill: #380B32;}
+.update .desc {flex: 1;}
+
+.update .desc .header {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+
+.update button {
+    padding: .5rem 1rem;
+}
+
+
+/* ==========================================================================
+    Plugins
+   ========================================================================== */
+
+.plugin {}
+.plugin {
+    display: flex;
+    padding: 1rem;
+}
+.plugin .title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.plugin .desc p {
+    margin: 0;
+}
+.plugin .updates {
+    margin-left: auto;
+    min-width: 20rem;
+}
+.plugin .updates p {
+    font-size: 1.4rem;
+    text-align: right;
+
+}
+.plugin .updates .updated {
+    display: flex;
+    float: right;
+    font-size: 1.4rem;
+}
+.plugin .updates .updated svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: inherit;
+    align-self: center;
+    margin-right: .5rem;
+}
+
+.plugin .updates button {
+    float: right;
+    font-size: 1.4rem;
+}
+
+
+
+/* ==========================================================================
+    Chats
+   ========================================================================== */
+
+.chats {}
+.chats .chat {
+    display: flex;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    transform: none;
+}
+.chats .chat:hover,
+.chats .chat:focus {
+    transform: none;
+}
+
+
+.chats .chat .toggle {
+    align-self: center;
+}
+
+
+.chats .chat img {
+    flex: 0 0 5rem;
+    align-self: center;
+    width: 5rem;
+    height: 5rem;
+    margin: .5rem 1rem .5rem 0;
+    clip-path: circle(50% at center);
+}
+.chats .chat .clip {
+    position: relative;
+    text-overflow: ellipsis;
+    align-self: center;
+    max-height: 4rem;
+    text-align: left;
+    overflow: hidden;
+
+}
+.chats .chat .clip:before {
+    content: '\2026';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1) 40%);
+    padding-left: 2rem;
+}
+
+.chats span {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+/* ==========================================================================
+    Analytics
+   ========================================================================== */
+
+.graph img {
+    width: calc(100% - 2rem);
+    height: auto;
+    margin: 1rem;
+}
+
+
+
+/* ==========================================================================
+    Item Styling
+   ========================================================================== */
+
+.item {
+    border-bottom: .1rem dotted #380B32;
+}
+
+.item:first-of-type {
+    border-top: .1rem dotted #380B32;
+}
+
+
+
+
+

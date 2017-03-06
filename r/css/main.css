@@ -46,7 +46,7 @@ html, input, select, textarea,
 
 html {
     background: #fbfbfe;
-    color: #333;
+    color: #263238;
     line-height: 1.75;
     font-size: 1.1em;
 
@@ -61,9 +61,7 @@ main {
 }
 
 section {
-    color: #263238;
     padding: 0 0.5em;
-
 }
 
 p {
