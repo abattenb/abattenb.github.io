@@ -25,7 +25,9 @@
 
 }
 
-@media (min-width: 0em) and (max-width: 50em) {
+@media (max-width: 50em) {
+
+
     main {
         padding-top: 3rem;
     }
@@ -70,10 +72,6 @@
     nav .menu:active ~ ul {
         display: block;
     }
-
-    nav {
-        margin-bottom: 4rem;
-    }
     
     nav li svg {
         display: none;
@@ -97,6 +95,10 @@
 }
 
 @media (max-width: 30em) {
+
+    body {
+        display: block;
+    }
 
     .update {
         flex-direction: column;
