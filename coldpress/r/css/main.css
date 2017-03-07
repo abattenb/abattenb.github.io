@@ -703,7 +703,7 @@ nav .user .name {
     position: relative;
     text-overflow: ellipsis;
     align-self: center;
-    max-height: 4rem;
+    height: 4rem;
     text-align: left;
     overflow: hidden;
 
