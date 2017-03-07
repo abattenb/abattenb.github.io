@@ -71,22 +71,16 @@
         display: block;
     }
 
-    nav ul {
+    nav {
         margin-bottom: 4rem;
     }
     
     nav li svg {
         display: none;
     }
-    nav li a,
-    nav li.logout a {
+    nav li a {
         justify-content: center;
         align-self: center;
-        font-size: inherit;
-        padding: .75rem;
-    }
-    nav li.logout {
-        margin-top: initial;
     }
 
     nav li.active a:before {
@@ -189,7 +183,7 @@
         font-size: 1.4rem;
     }
     .chats .chat .clip {
-        height: 3.4rem;
+        height: 3.3rem;
     }
 
     footer {
