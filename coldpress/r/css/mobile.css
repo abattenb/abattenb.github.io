@@ -86,7 +86,7 @@
         padding: .75rem;
     }
     nav li.logout {
-        margin-top: inherit;
+        margin-top: initial;
     }
 
     nav li.active a:before {
@@ -159,7 +159,7 @@
     }
     .article .toolbar a svg {
         position: relative;
-        top: .2rem;
+        top: .3rem;
     }
 
     .plugin {
@@ -189,7 +189,7 @@
         font-size: 1.4rem;
     }
     .chats .chat .clip {
-        max-height: 3.6rem;
+        height: 3.6rem;
     }
 
     footer {
