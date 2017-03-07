@@ -207,6 +207,13 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+}
+
+.dashboard {
     flex: 1;
     padding: 3rem 3rem 0 3rem;
     overflow-y: auto;
@@ -221,13 +228,13 @@ aside {
 }
 
 /*Scrollbar*/
-main::-webkit-scrollbar,
+.dashboard::-webkit-scrollbar,
 aside::-webkit-scrollbar {
     width: .8rem;
     background-color: rgba(0,0,0,.05);
 }
 
-main::-webkit-scrollbar-thumb,
+.dashboard::-webkit-scrollbar-thumb,
 aside::-webkit-scrollbar-thumb {
     background-color: #CDD6B8;
     border-radius: 1rem;
@@ -434,7 +441,6 @@ nav {
     font-size: 1.8rem;
     letter-spacing: .075rem;
     text-shadow: 0 .1rem .1rem #380B32;
-
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -442,7 +448,7 @@ nav {
 
 nav::-webkit-scrollbar {
     width: .8rem;
-    background-color: rgba(0,0,0,.05);
+    /*background-color: rgba(0,0,0,.05);*/
 }
 
 nav::-webkit-scrollbar-thumb {
@@ -450,6 +456,12 @@ nav::-webkit-scrollbar-thumb {
     border-radius: 1rem;
 }
 
+
+
+nav .logo,
+nav .menu {
+    display: none;
+}
 
 
 nav ul {
@@ -542,12 +554,14 @@ nav .user:hover {
 
 nav .user .profile {
     position: relative;
+    width: 15rem;
+    margin: 0 auto 1rem auto;
+
 }
 
 nav .user .photo {
-    width: 15rem;
+    width: 100%;
     height: auto;
-    margin-bottom: 1rem;
     clip-path: circle(50% at center);
 }
 
@@ -558,7 +572,6 @@ nav .user .org {
     z-index: 1;
     width: 4rem;
     height: auto;
-    margin-bottom: 1rem;
     clip-path: circle(50% at center);
 }
 
@@ -739,4 +752,11 @@ nav .user .name {
 
 
 
+/* ==========================================================================
+    Misc
+   ========================================================================== */
+
+.hidden, *[hidden] {
+    display: none;
+}
 

@@ -28,6 +28,14 @@
 <body>
 <!--Side Navication-->
 <nav>
+
+    <div class="logo">
+        ColdPress
+    </div>
+    <button class="menu">
+        ≡ Menu
+    </button>
+
     <a href="#" class="user">
         <div class="profile">
             <img src="r/img/profiles/6.jpg" class="photo" alt="Profile of Me">
@@ -119,825 +127,835 @@
 </nav>
 <!--Main Page-->
 <main>
-    <h1>ColdPress Dashboard</h1>
+    <div class="dashboard">
+        <h1>ColdPress Dashboard</h1>
 
-    <!--Update-->
-    <section class="update">
+        <!--Update-->
+        <section class="update">
 
-        <div class="icon">
-            <svg fill="#000000" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h24v24H0V0z" fill="none"/>
-                <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
-            </svg>
-        </div>
-        <div class="desc">
-            <div class="header">
-                A new version of ColdPress is available!
-            </div>
-            <p>
-                We've been working hard on bringing you the latest version of ColdPress.
-                Our collaboration with Foxglove has really payed off.
-                Below are just a few of the under-the-hood improvements that are being included in this version.
-
-            </p>
-            <ul>
-                <li>Foxglove front-end integration.</li>
-                <li>Better plugin integration.</li>
-                <li>Per-editor analytics on post productivity.</li>
-                <li>Performance updates.</li>
-                <li>NSA-recommended security patches.</li>
-            </ul>
-            <button>
-                <svg fill="#FFFFFF" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
+            <div class="icon">
+                <svg fill="#000000" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
                 </svg>
-                Update to v3.1.0
+            </div>
+            <div class="desc">
+                <div class="header">
+                    A new version of ColdPress is available!
+                </div>
+                <p>
+                    We've been working hard on bringing you the latest version of ColdPress.
+                    Our collaboration with Foxglove has really payed off.
+                    Below are just a few of the under-the-hood improvements that are being included in this version.
+
+                </p>
+                <ul>
+                    <li>Foxglove front-end integration.</li>
+                    <li>Better plugin integration.</li>
+                    <li>Per-editor analytics on post productivity.</li>
+                    <li>Performance updates.</li>
+                    <li>NSA-recommended security patches.</li>
+                </ul>
+                <button>
+                    <svg fill="#FFFFFF" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                    Update to v3.1.0
+                </button>
+            </div>
+        </section>
+
+        <!--Articles-->
+        <section>
+            <h2>Articles</h2>
+            <div class="article item">
+                <div class="editor">
+                    <img src="r/img/profiles/6.jpg" alt="Profile Picture">
+                    <div>
+                        Amber<br>Nguyen
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="title">
+                        <span class="tag tag_outline">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.99 8c0-.72-.37-1.35-.94-1.7L12 1 2.95 6.3C2.38 6.65 2 7.28 2 8v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2l-.01-10zM12 13L3.74 7.84 12 3l8.26 4.84L12 13z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Draft
+                        </span>
+                        Foxglove is making every other framework obsolete, overnight.
+                    </div>
+                    <p>
+                        [NEED TO WRITE SOMETHING HERE OR MR. JELLYFISH IS GOING TO SELL US OFF. AHHHHHHHHHHH, THINK THINK!! WRITERS BLOCK.. WE'RE SO SCREWED]
+                    </p>
+                    <div class="toolbar">
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Trash
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Edit
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                            Publish
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
+                            </svg>
+                            Buy
+                        </a>
+                    </div>
+                    <div class="date pull-right">
+                        March 6, 2017 @ 16:20
+                    </div>
+                </div>
+                <div class="boost">
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article item">
+                <div class="editor">
+                    <img src="r/img/profiles/6.jpg" alt="Profile Picture">
+                    <div>
+                        Amber<br>Nguyen
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="title">
+                        <span class="tag tag_outline">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.99 8c0-.72-.37-1.35-.94-1.7L12 1 2.95 6.3C2.38 6.65 2 7.28 2 8v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2l-.01-10zM12 13L3.74 7.84 12 3l8.26 4.84L12 13z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Draft
+                        </span>
+                        Big Hummus - What they don't want you to know!
+                    </div>
+                    <p>
+                        From the riotous and bloody beginnings of the 'Chick Pea Revolution', to the landmark Supreme Court ruling condemning the use of tahini in it's products,
+                        the Hummus Industry has fought hard to reach the platitudes of success it enjoys today. But has it gone too far?
+                    </p>
+                    <div class="toolbar">
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Trash
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Edit
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                            Publish
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
+                            </svg>
+                            Buy
+                        </a>
+                    </div>
+                    <div class="date pull-right">
+                        March 6, 2017 @ 09:15
+                    </div>
+                </div>
+                <div class="boost">
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="article item">
+                <div class="editor">
+                    <img src="r/img/profiles/2.jpg" alt="Profile Picture">
+                    <div>
+                        Jane<br>Fallon
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="title">
+                        <span class="tag tag_outline">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <path d="M0 0h24v24H0V0z" id="a"/>
+                                </defs>
+                                <clipPath id="b">
+                                    <use overflow="visible" xlink:href="#a"/>
+                                </clipPath>
+                                <path clip-path="url(#b)" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"/>
+                            </svg>
+                            Queued
+                        </span>
+                        How 'Multiverse Accounting' is changing investing today.
+
+                    </div>
+                    <p>
+                        It's taken the financial world by storm. Every company today can suppose any possible quarterly outcomes, at all times, freeing up
+                        critical resources for executive bonuses. Where as before you had to 'cook' your finances, now any and all fiscal possibilites
+                        are available to provide the public, instantly.
+                    </p>
+                    <div class="toolbar">
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Trash
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Edit
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                            Publish
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
+                            </svg>
+                            Buy
+                        </a>
+                    </div>
+                    <div class="date pull-right">
+                        March 3, 2017 @ 15:46
+                    </div>
+                </div>
+                <div class="boost">
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>--</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="article item">
+                <div class="editor">
+                    <img src="r/img/profiles/1.jpg" alt="Profile Picture">
+                    <div>
+                        Dennis<br>Richards
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="title">
+                         <span class="tag tag_solid">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
+                            </svg>
+                            Published
+                         </span>
+
+                        US messes up big in Middle East, Russia furious.
+                    </div>
+                    <p>
+
+                        Secretary of State James Baker accidentally spoils latest Game of Throws episode at G20 peace summit, Putin walks out.
+
+                    </p>
+                    <div class="toolbar">
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Trash
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Edit
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"/>
+                                <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
+                            </svg>
+                            Hide
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
+                            </svg>
+                            Buy
+                        </a>
+                    </div>
+                    <div class="date pull-right">
+                        March 1, 2017 @ 10:02
+                    </div>
+                </div>
+                <div class="boost">
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>22</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                        </svg>
+                        <span>12</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>104</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="article item">
+                <div class="editor">
+                    <img src="r/img/profiles/6.jpg" alt="Profile Picture">
+                    <div>
+                        Amber<br>Nguyen
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="title">
+                         <span class="tag tag_solid">
+
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
+                            </svg>
+                            Published
+                         </span>
+                        Face of a Murderer - How Time tried killing you slowly.
+                    </div>
+                    <p>
+                        "Alarms should've been going off" experts say, "he was wound too tight".
+                        The shocking truth behind what made this clock tick.
+                    </p>
+                    <div class="toolbar">
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Trash
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Edit
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"/>
+                                <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
+                            </svg>
+                            Hide
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
+                            </svg>
+                            Buy
+                        </a>
+                    </div>
+                    <div class="date pull-right">
+                        February 28, 2017 @ 09:32
+                    </div>
+                </div>
+                <div class="boost">
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>86</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                        </svg>
+                        <span>45</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>288</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article item">
+                <div class="editor">
+                    <img src="r/img/profiles/2.jpg" alt="Profile Picture">
+                    <div>
+                        Jane<br>Fallon
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="title">
+                         <span class="tag tag_solid">
+
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
+                            </svg>
+                            Published
+                         </span>
+                        'Falafel: The Movie' sweeps award night, 26 in total.
+                    </div>
+                    <p>
+                        "A film like this comes once in a lifetime" says Martian Scarsese. "I haven't felt this way since Avatar in 3D. Magical"
+                    </p>
+                    <div class="toolbar">
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Trash
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                            Edit
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"/>
+                                <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
+                            </svg>
+                            Hide
+                        </a>
+                        <a href="#" class="button">
+                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
+                            </svg>
+                            Buy
+                        </a>
+                    </div>
+                    <div class="date pull-right">
+                        February 27, 2017 @ 07:53
+                    </div>
+                </div>
+                <div class="boost">
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>8.4k</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                        </svg>
+                        <span>4.2k</span>
+                    </div>
+                    <div class="social">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        <span>12.5k</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more_bar">
+                <a href="#" class="button pull-right">All Articles</a>
+            </div>
+        </section>
+
+
+
+        <!--Analytics-->
+        <!--
+        I'll be honest, this was the last thing I worked on, and it shows.
+        Sometimes you just gotta ship it and refine later.
+        -->
+        <section>
+            <h2>
+                Site Analytics
+            </h2>
+
+            <div class="graph">
+                <img src="r/img/graph_site_views2.svg" alt="Site views per month">
+            </div>
+        </section>
+
+
+        <!--Plugins-->
+        <section>
+            <h2>
+                Plugins
+            </h2>
+
+            <div class="plugin item">
+                <div class="desc">
+                    <div class="title">
+                        Boost Social
+                    </div>
+                    <p>
+                        Gaining a following doesn't have to be hard. Purchase views, watchers, clicks, and shares at the touch
+                        of a "+1 Boost" button. It's fast, cheap, and easy. Finally you can get the audience and recognition you deserve.
+                    </p>
+                </div>
+                <div class="updates">
+                    <p>
+                        Last Updated: Yesterday<br>
+                        v1.5.7b
+                    </p>
+                    <div class="updated">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        Up-to-Date
+                    </div>
+                </div>
+            </div>
+
+            <div class="plugin item">
+                <div class="desc">
+                    <div class="title">
+                        DrunkPost Protectron
+                    </div>
+                    <p>
+                        Proposes a simple math question to help prevent posting while inebriated, reducing embarrassing mistakes
+                        by over 82%. 4 out of 5 Chief Editors require DrunkPost Protectron for their publications.
+                    </p>
+                </div>
+                <div class="updates">
+                    <p>
+                        Last Updated: Today<br>
+                        v44.0.2
+                    </p>
+                    <button>
+                        <svg fill="#FFFFFF" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        Update
+                    </button>
+                </div>
+            </div>
+
+            <div class="plugin item">
+                <div class="desc">
+                    <div class="title">
+                        LovelyBot
+                    </div>
+                    <p>
+                        Is working from home getting you down? Do you miss talking to humans? LovelyBot integrates into your
+                        chat, asking you meaningful questions like <span class="italics">"How are you doing?"</span> and <span class="italics">"Are you experiencing burnout?"</span>.
+                    </p>
+                </div>
+                <div class="updates">
+                    <p>
+                        Last Updated: 1 month ago<br>
+                        v12.9.0
+                    </p>
+                    <button>
+                        <svg fill="#FFFFFF" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        Update
+                    </button>
+                </div>
+            </div>
+
+            <div class="plugin item">
+                <div class="desc">
+                    <div class="title">
+                        Daily Muse
+                    </div>
+                    <p>
+                        Every morning receive a fresh quote from the most visionary minds. Einstein, Ada, Newton, Rylai, Jellyfish.
+                        With over 9,000 quotes, inspiration is just a plugin away. Downloaded 23 million times.
+                    </p>
+                </div>
+                <div class="updates">
+                    <p>
+                        Last Updated: 2 years ago<br>
+                        v2.5.1
+                    </p>
+                    <div class="updated">
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        Up-to-Date
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="plugin item">
+                <div class="desc">
+                    <div class="title">
+                        ColdPress Security Updates
+                    </div>
+                    <p>
+                        Official ColdPress security suite with auto updates. Just one click for up-to-date protection. It really is that easy.
+                        Includes the following tools: ZedDefense, Cloud Privacy, XSS Pro 7, HashBlue.
+                        <span class="uppercase">Highly recommended.</span>
+
+                    </p>
+                </div>
+                <div class="updates">
+                    <p>
+                        Last Updated: 6 years ago<br>
+                        v105.3.3
+                    </p>
+                    <button>
+                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        Install
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="more_bar">
+                <a href="#" class="button pull-right">New Plugins</a>
+                <a href="#" class="button pull-right">Installed Plugins</a>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+    <aside>
+        <h2>Feed</h2>
+
+        <!--Daily Muse-->
+        <section>
+            <h3>Daily Muse</h3>
+            <blockquote>
+                <p>
+                    Yes, I cried over spilt milk. There is absolutely nothing wrong with it. Crying shows you are strong and hungry. Speaking of food, go see 'Falafel: The Movie". It is a masterpiece. Crispy flick.
+                </p>
+                <footer class="italics">
+                    Mr. Jellyfish
+                </footer>
+            </blockquote>
+        </section>
+
+        <!--Chats-->
+        <section class="chats">
+            <h3>Chats</h3>
+            <button class="chat item">
+                <img src="r/img/profiles/5.jpg" alt="Profile Picture">
+                <div class="clip">
+                    <span>LovelyBot</span>
+                    How's your day going? You seemed kinda down when you walked in. Did Dennis say something stupid again? He really doesn't have any awareness.
+                </div>
+                <div class="toggle">◀</div>
             </button>
-        </div>
-    </section>
-
-    <!--Articles-->
-    <section>
-        <h2>Articles</h2>
-        <div class="article item">
-            <div class="editor">
-                <img src="r/img/profiles/6.jpg" alt="Profile Picture">
-                <div>
-                    Amber<br>Nguyen
-                </div>
-            </div>
-            <div class="desc">
-                <div class="title">
-                    <span class="tag tag_outline">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.99 8c0-.72-.37-1.35-.94-1.7L12 1 2.95 6.3C2.38 6.65 2 7.28 2 8v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2l-.01-10zM12 13L3.74 7.84 12 3l8.26 4.84L12 13z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Draft
-                    </span>
-                    Foxglove is making every other framework obsolete, overnight.
-                </div>
-                <p>
-                    [NEED TO WRITE SOMETHING HERE OR MR. JELLYFISH IS GOING TO SELL US OFF. AHHHHHHHHHHH, THINK THINK!! WRITERS BLOCK.. WE'RE SO SCREWED]
-                </p>
-                <div class="toolbar">
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Trash
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Edit
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                        </svg>
-                        Publish
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
-                        </svg>
-                        Boost
-                    </a>
-                </div>
-                <div class="date pull-right">
-                    March 6, 2017 @ 16:20
-                </div>
-            </div>
-            <div class="boost">
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-            </div>
-        </div>
-        <div class="article item">
-            <div class="editor">
-                <img src="r/img/profiles/6.jpg" alt="Profile Picture">
-                <div>
-                    Amber<br>Nguyen
-                </div>
-            </div>
-            <div class="desc">
-                <div class="title">
-                    <span class="tag tag_outline">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.99 8c0-.72-.37-1.35-.94-1.7L12 1 2.95 6.3C2.38 6.65 2 7.28 2 8v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2l-.01-10zM12 13L3.74 7.84 12 3l8.26 4.84L12 13z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Draft
-                    </span>
-                    Big Hummus - What they don't want you to know!
-                </div>
-                <p>
-                    From the riotous and bloody beginnings of the 'Chick Pea Revolution', to the landmark Supreme Court ruling condemning the use of tahini in it's products,
-                    the Hummus Industry has fought hard to reach the platitudes of success it enjoys today. But has it gone too far?
-                </p>
-                <div class="toolbar">
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Trash
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Edit
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                        </svg>
-                        Publish
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
-                        </svg>
-                        Boost
-                    </a>
-                </div>
-                <div class="date pull-right">
-                    March 6, 2017 @ 09:15
-                </div>
-            </div>
-            <div class="boost">
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="article item">
-            <div class="editor">
-                <img src="r/img/profiles/2.jpg" alt="Profile Picture">
-                <div>
-                    Jane<br>Fallon
-                </div>
-            </div>
-            <div class="desc">
-                <div class="title">
-                    <span class="tag tag_outline">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path d="M0 0h24v24H0V0z" id="a"/>
-                            </defs>
-                            <clipPath id="b">
-                                <use overflow="visible" xlink:href="#a"/>
-                            </clipPath>
-                            <path clip-path="url(#b)" d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"/>
-                        </svg>
-                        Queued
-                    </span>
-                    How 'Multiverse Accounting' is changing investing today.
-
-                </div>
-                <p>
-                    It's taken the financial world by storm. Every company today can suppose any possible quarterly outcomes, at all times, freeing up
-                    critical resources for executive bonuses. Where as before you had to 'cook' your finances, now any and all fiscal possibilites
-                    are available to provide the public, instantly.
-                </p>
-                <div class="toolbar">
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Trash
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Edit
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                        </svg>
-                        Publish
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
-                        </svg>
-                        Boost
-                    </a>
-                </div>
-                <div class="date pull-right">
-                    March 3, 2017 @ 15:46
-                </div>
-            </div>
-            <div class="boost">
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>--</span>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="article item">
-            <div class="editor">
+            <button class="chat item">
                 <img src="r/img/profiles/1.jpg" alt="Profile Picture">
-                <div>
-                    Dennis<br>Richards
-                </div>
-            </div>
-            <div class="desc">
-                <div class="title">
-                     <span class="tag tag_solid">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
-                        </svg>
-                        Published
-                     </span>
+                <div class="clip">
+                    <span>Dennis Richards</span>
+                    😡
 
-                    US messes up big in Middle East, Russia furious.
+                    STOP EATING MY ORGANIC LARD FROM THE FRIDGE!!!1! I KNOW ITS YOU AND JUST BECAUSE YOUR MY BOSS DOESNT MEAN YOU GET TO TAKE WHAT YOU WANT
                 </div>
-                <p>
-
-                    Secretary of State James Baker accidentally spoils latest Game of Throws episode at G20 peace summit, Putin walks out.
-
-                </p>
-                <div class="toolbar">
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Trash
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Edit
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"/>
-                            <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
-                        </svg>
-                        Unpublish
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
-                        </svg>
-                        Boost
-                    </a>
+                <div class="toggle">◀</div>
+            </button>
+            <button class="chat item">
+                <img src="r/img/profiles/4.jpg" alt="Profile Picture">
+                <div class="clip">
+                    <span>Mr. Jellyfish</span>
+                    Hey when are you going to post the Foxglove piece? Investor meeting in 30 min and I'm getting nervous. I'll pay server costs for 3 months if post RIGHT NOW!
                 </div>
-                <div class="date pull-right">
-                    March 1, 2017 @ 10:02
-                </div>
-            </div>
-            <div class="boost">
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>22</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                    </svg>
-                    <span>12</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>104</span>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="article item">
-            <div class="editor">
-                <img src="r/img/profiles/6.jpg" alt="Profile Picture">
-                <div>
-                    Amber<br>Nguyen
-                </div>
-            </div>
-            <div class="desc">
-                <div class="title">
-                     <span class="tag tag_solid">
-
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
-                        </svg>
-                        Published
-                     </span>
-                    Face of a Murderer - How Time tried killing you slowly.
-                </div>
-                <p>
-                    "Alarms should've been going off" experts say, "he was wound too tight".
-                    The shocking truth behind what made this clock tick.
-                </p>
-                <div class="toolbar">
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Trash
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Edit
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"/>
-                            <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
-                        </svg>
-                        Unpublish
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
-                        </svg>
-                        Boost
-                    </a>
-                </div>
-                <div class="date pull-right">
-                    February 28, 2017 @ 09:32
-                </div>
-            </div>
-            <div class="boost">
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>86</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                    </svg>
-                    <span>45</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>288</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="article item">
-            <div class="editor">
+                <div class="toggle">◀</div>
+            </button>
+            <button class="chat item">
                 <img src="r/img/profiles/2.jpg" alt="Profile Picture">
-                <div>
-                    Jane<br>Fallon
+                <div class="clip">
+                    <span>Jane Fallon</span>
+                    'Falafel' stories are done. Thankful for the ad contract or we'd be so finished. Can I start work on the corruption in Washington piece?
                 </div>
-            </div>
-            <div class="desc">
-                <div class="title">
-                     <span class="tag tag_solid">
-
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
-                        </svg>
-                        Published
-                     </span>
-                    'Falafel: The Movie' sweeps award night, 26 in total.
+                <div class="toggle">◀</div>
+            </button>
+            <button class="chat item">
+                <img src="r/img/profiles/3.jpg" alt="Profile Picture">
+                <div class="clip">
+                    <span>Laurette Kaufman</span>
+                    My Telsa just went to Burrito Den on it's own and spilled hot sauce all over the seats. I just fed it yesterday too.
                 </div>
-                <p>
-                    "A film like this comes once in a lifetime" says Martian Scarsese. "I haven't felt this way since Avatar in 3D. Magical"
-                </p>
-                <div class="toolbar">
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Trash
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                        </svg>
-                        Edit
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"/>
-                            <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
-                        </svg>
-                        Unpublish
-                    </a>
-                    <a href="#" class="button">
-                        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M10 8H8v4H4v2h4v4h2v-4h4v-2h-4zm4.5-1.92V7.9l2.5-.5V18h2V5z"/>
-                        </svg>
-                        Boost
-                    </a>
-                </div>
-                <div class="date pull-right">
-                    February 27, 2017 @ 07:53
-                </div>
+                <div class="toggle">◀</div>
+            </button>
+            <div class="more_bar">
+                <a href="#" class="button pull-right">Read All</a>
             </div>
-            <div class="boost">
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>8.4k</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
-                    </svg>
-                    <span>4.2k</span>
-                </div>
-                <div class="social">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    <span>12.5k</span>
-                </div>
+        </section>
+
+
+        <!--Weather-->
+        <section class="weather">
+            <h3>
+                Weather
+            </h3>
+            <div class="temp">
+                Super Cloudy, 56&deg;F
             </div>
-        </div>
 
-        <div class="more_bar">
-            <a href="#" class="button pull-right">All Articles</a>
-        </div>
-    </section>
-
-
-
-    <!--Analytics-->
-    <!--
-    I'll be honest, this was the last thing I worked on, and it shows.
-    Sometimes you just gotta ship it and refine later.
-    -->
-    <section>
-        <h2>
-            Site Analytics
-        </h2>
-
-        <div class="graph">
-            <img src="r/img/graph_site_views2.svg" alt="Site views per month">
-        </div>
-    </section>
-
-
-    <!--Plugins-->
-    <section>
-        <h2>
-            Plugins
-        </h2>
-
-        <div class="plugin item">
-            <div class="desc">
-                <div class="title">
-                    Boost Social
-                </div>
-                <p>
-                    Gaining a following doesn't have to be hard. Purchase views, watchers, clicks, and shares at the touch
-                    of a "+1 Boost" button. It's fast, cheap, and easy. Finally you can get the audience and recognition you deserve.
-                </p>
+            <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.61 5.64 5.36 8.04 2.35 8.36 0 10.9 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4h2c0-2.76-1.86-5.08-4.4-5.78C8.61 6.88 10.2 6 12 6c3.03 0 5.5 2.47 5.5 5.5v.5H19c1.65 0 3 1.35 3 3s-1.35 3-3 3z"/>
+            </svg>
+            <div class="location">
+                Seattle, WA
             </div>
-            <div class="updates">
-                <p>
-                    Last Updated: Yesterday<br>
-                    v1.5.7b
-                </p>
-                <div class="updated">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
-                    </svg>
-                    Up-to-Date
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <div class="plugin item">
-            <div class="desc">
-                <div class="title">
-                    DrunkPost Protectron
-                </div>
-                <p>
-                    Proposes a simple math question to help prevent posting while inebriated, reducing embarrassing mistakes
-                    by over 82%. 4 out of 5 Chief Editors require DrunkPost Protectron for their publications.
-                </p>
-            </div>
-            <div class="updates">
-                <p>
-                    Last Updated: Today<br>
-                    v44.0.2
-                </p>
-                <button>
-                    <svg fill="#FFFFFF" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    Update
-                </button>
-            </div>
-        </div>
-
-        <div class="plugin item">
-            <div class="desc">
-                <div class="title">
-                    LovelyBot
-                </div>
-                <p>
-                    Is working from home getting you down? Do you miss talking to humans? LovelyBot integrates into your
-                    chat, asking you meaningful questions like <span class="italics">"How are you doing?"</span> and <span class="italics">"Are you experiencing burnout?"</span>.
-                </p>
-            </div>
-            <div class="updates">
-                <p>
-                    Last Updated: 1 month ago<br>
-                    v12.9.0
-                </p>
-                <button>
-                    <svg fill="#FFFFFF" height="100%" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    Update
-                </button>
-            </div>
-        </div>
-
-        <div class="plugin item">
-            <div class="desc">
-                <div class="title">
-                    Daily Muse
-                </div>
-                <p>
-                    Every morning receive a fresh quote from the most visionary minds. Einstein, Ada, Newton, Rylai, Jellyfish.
-                    With over 9,000 quotes, inspiration is just a plugin away. Downloaded 23 million times.
-                </p>
-            </div>
-            <div class="updates">
-                <p>
-                    Last Updated: 2 years ago<br>
-                    v2.5.1
-                </p>
-                <div class="updated">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
-                    </svg>
-                    Up-to-Date
-                </div>
-            </div>
-        </div>
-
-
-        <div class="plugin item">
-            <div class="desc">
-                <div class="title">
-                    ColdPress Security Updates
-                </div>
-                <p>
-                    Official ColdPress security suite with auto updates. Just one click for up-to-date protection. It really is that easy.
-                    Includes the following tools: ZedDefense, Cloud Privacy, XSS Pro 7, HashBlue.
-                    <span class="uppercase">Highly recommended.</span>
-
-                </p>
-            </div>
-            <div class="updates">
-                <p>
-                    Last Updated: 6 years ago<br>
-                    v105.3.3
-                </p>
-                <button>
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                    Install
-                </button>
-            </div>
-        </div>
-
-
-        <div class="more_bar">
-            <a href="#" class="button pull-right">New Plugins</a>
-            <a href="#" class="button pull-right">Installed Plugins</a>
-        </div>
-
-    </section>
-
-
-
-
-    <footer>
-        Designed by Andrew Battenburg - Made for Fun
-    </footer>
-
-</main>
-<aside>
-    <h2>Feed</h2>
-
-    <!--Daily Muse-->
-    <section>
-        <h3>Daily Muse</h3>
-        <blockquote>
-            <p>
-                Yes, I cried over spilt milk. There is absolutely nothing wrong with it. Crying shows you are strong and hungry. Speaking of food, go see 'Falafel: The Movie". It is a masterpiece. Crispy flick.
-            </p>
-            <footer class="italics">
-                Mr. Jellyfish
-            </footer>
-        </blockquote>
-    </section>
-
-    <!--Chats-->
-    <section class="chats">
-        <h3>Chats</h3>
-        <button class="chat item">
-            <img src="r/img/profiles/5.jpg" alt="Profile Picture">
-            <div class="clip">
-                <span>LovelyBot</span>
-                How's your day going? You seemed kinda down when you walked in. Did Dennis say something stupid again? He really doesn't have any awareness.
-            </div>
-            <div class="toggle">◀</div>
-        </button>
-        <button class="chat item">
-            <img src="r/img/profiles/1.jpg" alt="Profile Picture">
-            <div class="clip">
-                <span>Dennis Richards</span>
-                😡
-
-                STOP EATING MY ORGANIC LARD FROM THE FRIDGE!!!1! I KNOW ITS YOU AND JUST BECAUSE YOUR MY BOSS DOESNT MEAN YOU GET TO TAKE WHAT YOU WANT
-            </div>
-            <div class="toggle">◀</div>
-        </button>
-        <button class="chat item">
-            <img src="r/img/profiles/4.jpg" alt="Profile Picture">
-            <div class="clip">
-                <span>Mr. Jellyfish</span>
-                Hey when are you going to post the Foxglove piece? Investor meeting in 30 min and I'm getting nervous. I'll pay server costs for 3 months if post RIGHT NOW!
-            </div>
-            <div class="toggle">◀</div>
-        </button>
-        <button class="chat item">
-            <img src="r/img/profiles/2.jpg" alt="Profile Picture">
-            <div class="clip">
-                <span>Jane Fallon</span>
-                'Falafel' stories are done. Thankful for the ad contract or we'd be so finished. Can I start work on the corruption in Washington piece?
-            </div>
-            <div class="toggle">◀</div>
-        </button>
-        <button class="chat item">
-            <img src="r/img/profiles/3.jpg" alt="Profile Picture">
-            <div class="clip">
-                <span>Laurette Kaufman</span>
-                My Telsa just went to Burrito Den on it's own and spilled hot sauce all over the seats. I just fed it yesterday too.
-            </div>
-            <div class="toggle">◀</div>
-        </button>
-        <div class="more_bar">
-            <a href="#" class="button pull-right">Read All</a>
-        </div>
-    </section>
-
-
-    <!--Weather-->
-    <section class="weather">
-        <h3>
-            Weather
-        </h3>
-        <div class="temp">
-            Super Cloudy, 56&deg;F
-        </div>
-
-        <svg fill="#000000" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.61 5.64 5.36 8.04 2.35 8.36 0 10.9 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4h2c0-2.76-1.86-5.08-4.4-5.78C8.61 6.88 10.2 6 12 6c3.03 0 5.5 2.47 5.5 5.5v.5H19c1.65 0 3 1.35 3 3s-1.35 3-3 3z"/>
-        </svg>
-        <div class="location">
-            Seattle, WA
-        </div>
-    </section>
-
-    <!--Notes to Self-->
-    <section class="notes">
-        <h3>Notes To Self</h3>
-        <textarea>
+        <!--Notes to Self-->
+        <section class="notes">
+            <h3>Notes To Self</h3>
+            <textarea>
 - Pick up dinner at Burrito Den
 - Email Ellen about ad deal
 - See Falafel
-- Wipe my IoT memory banks (again)
-- Get better financial timeline from Jane
+- Wipe IoT memory banks (again)
+- Have Jane make financial timeline
 - Publish Foxglove "article" (ugh)
-        </textarea>
-        <div class="more_bar">
-            <a href="#" class="button pull-right">Save</a>
-        </div>
-    </section>
-</aside>
+            </textarea>
+            <div class="more_bar">
+                <a href="#" class="button pull-right">
+                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/>
+                    </svg>
+                    Save
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            Designed by Andrew Battenburg - Made for Fun
+        </footer>
+
+    </aside>
+</main>
 <!--
 Notes:
 

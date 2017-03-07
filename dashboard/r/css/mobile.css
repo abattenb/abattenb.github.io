@@ -1,0 +1,200 @@
+/*Mobile Breakpoints for ColdPress*/
+
+@media (max-width: 87em) {
+
+    main {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .dashboard,
+    aside {
+        overflow: auto;
+    }
+
+    main::-webkit-scrollbar {
+        width: .8rem;
+        background-color: rgba(0,0,0,.05);
+    }
+
+    main::-webkit-scrollbar-thumb {
+        background-color: #CDD6B8;
+        border-radius: 1rem;
+    }
+
+}
+
+@media (min-width: 0em) and (max-width: 50em) {
+    main {
+        padding-top: 3rem;
+    }
+
+
+    nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        height: auto;
+        max-height: 100vh;
+        width: 100%;
+        color: white;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 1;
+    }
+
+    nav .logo {
+        padding: 1rem;
+        display: block;
+    }
+
+    nav .menu {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: .5rem;
+        border: none;
+    }
+
+    nav .user, nav ul {
+        display: none;
+    }
+
+    /*nav .menu:hover ~ .user,*/
+    /*nav .menu:hover ~ ul,*/
+    nav .menu:focus ~ .user,
+    nav .menu:focus ~ ul,
+    nav .menu:active ~ .user,
+    nav .menu:active ~ ul {
+        display: block;
+    }
+
+    nav ul {
+        margin-bottom: 1rem;
+    }
+    
+    nav li svg {
+        display: none;
+    }
+    nav li a,
+    nav li.logout a {
+        justify-content: center;
+        align-self: center;
+        font-size: inherit;
+        padding: .75rem;
+    }
+    nav li.logout {
+        margin-top: inherit;
+    }
+
+    nav li.active a:before {
+        content: none;
+    }
+
+
+    .dashboard, aside {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media (min-width: 0em) and (max-width: 30em) {
+
+    .update {
+        flex-direction: column;
+    }
+    .update .icon {
+        width: 50%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .article {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .article .desc {
+        order: 1;
+        flex: 100%;
+    }
+    .article .editor {
+        order: 2;
+        flex: 50%;
+        padding: 0;
+        text-align: center;
+    }
+    .article .boost{
+        order: 3;
+        flex: 50%;
+        padding: 0;
+
+    }
+
+    .article .title .tag {
+        float: none;
+        margin-right: 1rem;
+        position: relative;
+        top: -0.2rem;
+    }
+
+    .article .date {
+        padding: 1rem 0;
+        float: none;
+        text-align: center;
+    }
+    
+    .article .toolbar {
+        display: flex;
+    }
+    .article .toolbar a {
+        flex: 1;
+        padding: .5rem 0;
+        line-height: 1.5;
+        text-align: center;
+        display: block;
+    }
+    .article .toolbar a svg {
+        position: relative;
+        top: .2rem;
+    }
+
+    .plugin {
+        flex-direction: column;
+    }
+
+    .plugin .updates {
+        padding-top: 1rem;
+    }
+
+
+    blockquote p:before,
+    blockquote p:after {
+        flex: 1 0 4rem;
+        font-size: 4rem;
+    }
+
+
+    .chats .chat img {
+        flex: 0 0 4rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .chats .chat span,
+    .chats .chat .clip {
+        font-size: 1.4rem;
+    }
+    .chats .chat .clip {
+        max-height: 3.6rem;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+
+}
+
