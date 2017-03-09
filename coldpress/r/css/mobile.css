@@ -50,6 +50,12 @@
         padding: 1rem;
         display: block;
     }
+    nav .logo svg {
+        fill: #FFF;
+        height: 2rem;
+        margin-right: 1rem;
+        float: left;
+    }
 
     nav .menu {
         display: block;
@@ -64,8 +70,10 @@
         display: none;
     }
 
-    /*nav .menu:hover ~ .user,*/
-    /*nav .menu:hover ~ ul,*/
+    nav ul {
+        margin-bottom: 4rem;
+    }
+
     nav .menu:focus ~ .user,
     nav .menu:focus ~ ul,
     nav .menu:active ~ .user,
@@ -93,6 +101,19 @@
     }
 
 }
+
+@media (min-width: 50em) {
+    nav li:last-of-type {
+        margin-top: auto;
+
+    }
+    nav li:last-of-type a {
+        justify-content: center;
+        font-size: 1.3rem;
+        padding: .5rem;
+    }
+}
+
 
 @media (max-width: 30em) {
 
@@ -189,17 +210,4 @@
         font-size: 1.2rem;
     }
 
-}
-
-
-@media (min-width: 30em) {
-    nav li.logout {
-        margin-top: auto;
-
-    }
-    nav li.logout a {
-        justify-content: center;
-        font-size: 1.3rem;
-        padding: .5rem;
-    }
 }
