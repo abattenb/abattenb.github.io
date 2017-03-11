@@ -3,6 +3,160 @@ Type Board
 Author: Andrew Battenburg
 */
 
-:root {
-     --font-size: 16px;
+
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: Tahoma;
+    padding: 0 1rem;
+}
+
+
+
+/* ==========================================================================
+   Type Column
+   ========================================================================== */
+
+#type_board {
+    display: flex;
+
+}
+
+.type_column {}
+
+.type_column {
+    flex: 1;
+}
+.type_column .charmap {
+    padding: 0 1rem;
+    border-right: .1rem solid var(--accent-color);
+}
+.type_column:last-of-type .charmap {
+    margin-right: 0;
+    border-right: none;
+}
+
+
+.type_column .charmap {
+    font-size: var(--column-font-size);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.type_column .charmap div {
+
+    line-height: 1.5;
+    width: calc(1.5 * var(--column-font-size));
+    align-self: center;
+    text-align: center;
+    border: .1rem solid var(--background-color);
+
+}
+.type_column .charmap div:hover,
+.type_column .charmap div:focus {
+    border: .1rem solid var(--text-color);
+}
+
+
+.type_column .header {
+    display: flex;
+    position: relative;
+    border-bottom: .1rem solid var(--accent-color);
+    margin: 0 1rem 1rem 1rem;
+}
+.type_column .header h2 {
+    margin: .5rem 0;
+    font-weight: normal;
+}
+.type_column .header button {
+    position: absolute;
+    right: 0;
+}
+
+
+
+/* ==========================================================================
+    Modifiers
+   ========================================================================== */
+.italics {
+    font-style: italic;
+}
+
+/* ==========================================================================
+    Buttons
+   ========================================================================== */
+
+button, .button {
+    font-size: 1rem;
+    background: none;
+    text-decoration: none;
+    padding: .2rem .5rem;
+    border: .1rem solid var(--text-color);
+    transform: translateY(-.1rem);
+    box-shadow: 0 .1rem 0 var(--text-color);
+    border-radius: .1rem;
+
+    transition: .1s all;
+
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    transform: translateY(-.2rem);
+    box-shadow: 0 .2rem 0 #333;
+    transition: .1s all;
+}
+
+button:active,
+.button:active {
+
+    transform: translateY(0rem);
+    box-shadow: 0 0rem 0 #333;
+    transition: .1s all;
+}
+
+
+/* ==========================================================================
+   Themes
+   ========================================================================== */
+
+:root .theme_white {
+    --background-color: #FFF;
+    --text-color: #333;
+    --accent-color: #CCC;
+    --column-font-size: 1rem;
+}
+
+:root .theme_black {
+    --background-color: #222;
+    --text-color: #FFF;
+    --accent-color: #CCC;
+    --column-font-size: 1rem;
+}
+:root .theme_yellow {
+    --background-color: #222;
+    --text-color: #FF0;
+    --accent-color: #CCC;
+    --column-font-size: 1rem;
+}
+
+
+/* ==========================================================================
+    Util
+   ========================================================================== */
+
+.hidden, *[hidden] {
+    display: none;
 }
