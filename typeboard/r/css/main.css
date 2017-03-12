@@ -25,13 +25,45 @@ h1 {
 
 
 
+
+/* ==========================================================================
+    Type Board Controls
+   ========================================================================== */
+
+
+.typeboard_controls{
+    margin: 1rem;
+    padding: 1rem 0;
+    border-bottom: .1rem solid var(--accent-color);
+}
+
+
+/* ==========================================================================
+    Text Board
+   ========================================================================== */
+
+#text_board {
+    padding: 1rem;
+}
+#text_board textarea {
+    width: 100%;
+}
+
+#text_board .text_sample {
+    font-size: var(--column-font-size);
+
+}
+#text_board pre {
+    margin: 1rem 0;
+}
+
+
 /* ==========================================================================
    Type Column
    ========================================================================== */
 
-#type_board {
+#char_board {
     display: flex;
-
 }
 
 .type_column {}
@@ -93,17 +125,6 @@ h1 {
 
 
 /* ==========================================================================
-    Type Board Controls
-   ========================================================================== */
-.typeboard_controls{
-    margin: 1rem;
-    padding: 1rem 0;
-    border-bottom: .1rem solid var(--accent-color);
-}
-
-
-
-/* ==========================================================================
     Modifiers
    ========================================================================== */
 
@@ -140,7 +161,6 @@ button:focus,
 
 button:active,
 .button:active {
-
     transform: translateY(0rem);
     box-shadow: 0 0rem 0 #333;
     transition: .1s all;
@@ -153,8 +173,20 @@ button:active,
 
 :root .theme_white {
     --background-color: #FFF;
-    --text-color: #333;
+    --text-color: #111;
     --accent-color: #CCC;
+}
+
+:root .theme_blue {
+    --background-color: #FFF;
+    --text-color: rgb(60, 90, 200);
+    --accent-color: #CCC;
+}
+:root .theme_grey {
+    --background-color: #FAFAFA;
+    --text-color: #666;
+    --accent-color: #CCC;
+
 }
 
 :root .theme_black {
@@ -164,9 +196,16 @@ button:active,
 }
 :root .theme_yellow {
     --background-color: #222;
-    --text-color: #FF0;
+    --text-color: rgba(255,230,0,1);
     --accent-color: #CCC;
 }
+
+:root .theme_red {
+    --background-color: #222;
+    --text-color: rgba(255,40,0,1);
+    --accent-color: #CCC;
+}
+
 
 
 /* ==========================================================================

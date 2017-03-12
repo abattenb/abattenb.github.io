@@ -8,7 +8,6 @@
 
 
 //Todo: Increase/Decrease font weight (100-900)
-//Todo: Add invert colors
 //Todo: Redo clearing of settings
 
 
@@ -21,7 +20,8 @@ var settings = {
     "fontSize" : "1",
     "fontWeight" : "400",
     "italic" : false,
-    "numberColumns" : 3
+    "sampleText" : "Sphinx of black quartz, judge my vow.",
+    "numberColumns" : 3 //Going to be the typeface id array
 };
 
 
@@ -36,7 +36,7 @@ function addCharMapColumn() {
             columnCharMap.innerHTML = xhttp.responseText;
             columnCharMap.setAttribute('column_id', columnId); //Not perfectly unique
             typeColumnArray.push(columnId);
-            document.getElementById('type_board').appendChild(columnCharMap);
+            document.getElementById('char_board').appendChild(columnCharMap);
         }
     }
     xhttp.open("GET", "../typeboard/charmap.html", true);
@@ -97,34 +97,75 @@ function checkSettingsExist(){
 
 //Updates font size
 function updateSize(size){
-    var newSize = document.getElementById('type_board').style.setProperty('--column-font-size', size + 'rem', null);
+
+    document.getElementById('type_board').style.setProperty('--column-font-size', size + 'rem', null);
     document.getElementById('output_size').innerHTML = String(size + 'rem');
-    return newSize;
+    document.getElementById('fontSize').value = settings.fontSize;
+
+    updateSettings("fontSize", size);
+
 }
 
 
+//Updates all the sample texts
+function updateSample(text_value){
+    var sample_text = document.getElementsByClassName('text_sample');
+    for(var i = 0; i < sample_text.length; i++){
+        sample_text[i].innerHTML = text_value;
+    }
+    document.getElementById('text_input').innerHTML = text_value;
+    updateSettings("sampleText", text_value);
+}
 
+//Loads settings from local cookie if exists
+//Inits app data with settings
 function loadSettings(){
     //If no settings, create
     checkSettingsExist();
 
+    //Apply cookie settings to app
     settings = JSON.parse(document.cookie);
-    console.log(settings);
-
 
     //Italic
+    //TODO: Update italics?
     if(settings.italic){
         document.getElementById('type_board').classList.toggle('italics');
     }
 
     //Font-Size
+    updateSize(settings.fontSize);
 
+    //Sample Text
+    updateSample(settings.sampleText);
+
+    //Theme
+    updateTheme(settings.theme);
+
+    console.log(settings);
 }
+
+
+//Changes CSS theme
+function updateTheme(newTheme){
+    var options = document.getElementById('theme').getElementsByTagName('option');
+
+    //Remove all selected attributes
+    for(var i = 0; i < options.length; i++) {
+        options[i].removeAttribute('selected');
+    }
+
+    document.getElementsByTagName('body')[0].className = newTheme;
+    document.getElementById('theme').querySelector('[value=' + newTheme + ']').setAttribute('selected', '');
+
+    updateSettings('theme', newTheme);
+    console.log(settings);
+}
+
 
 window.addEventListener('load', function() {
 
+    //Load settings from cookie
     loadSettings();
-
 
 
     //Init Columns
@@ -133,10 +174,12 @@ window.addEventListener('load', function() {
     addCharMapColumn();
     
 
-    //Init Eventlisteners
+    //
+    // Init Eventlisteners
+    //
 
     //Remove Column
-    document.getElementById('type_board').addEventListener('click', function(event) {
+    document.getElementById('char_board').addEventListener('click', function(event) {
         if (event.target.classList.contains('column_remove')) {
             event.preventDefault();
             removeTypeColumn(event.target);
@@ -144,29 +187,41 @@ window.addEventListener('load', function() {
     });
 
 
-
+    //Font Size slider
     document.getElementById('fontSize').addEventListener('input', function(){
-        typeSize = updateSize(fontSize.value);
+        updateSize(this.value);
+    }, false);
+
+    //Sample Textarea
+    document.getElementById('text_input').addEventListener('input', function(){
+        updateSample(this.value);
+    }, false);
+
+    //Theme
+    document.getElementById('theme').addEventListener('input', function(){
+        updateTheme(this.value);
     }, false);
 
 
-   document.getElementById('toggleItalics').addEventListener('click', function(){
+    //Italics
+    document.getElementById('toggleItalics').addEventListener('click', function(){
         toggleItalics();
     }, false);
 
-   document.getElementById('addCharMapRow').addEventListener('click', function(){
+    //Add Typeface
+    document.getElementById('addCharMapRow').addEventListener('click', function(){
        addCharMapColumn();
     }, false);
 
 
 
-    //Settings - to be removed
+    //Settings
    document.getElementById('clearSettings').addEventListener('click', function(){
        clearSettings();
     }, false);
-   document.getElementById('updateSettings').addEventListener('click', function(){
-       updateSettings();
-    }, false);
+   //document.getElementById('updateSettings').addEventListener('click', function(){
+   //    updateSettings();
+   // }, false);
 
 
 });
