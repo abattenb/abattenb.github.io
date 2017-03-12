@@ -45,9 +45,6 @@ h1 {
 #text_board {
     padding: 1rem;
 }
-#text_board textarea {
-    width: 100%;
-}
 
 #text_board .text_sample {
     font-size: var(--column-font-size);
@@ -134,7 +131,7 @@ h1 {
 }
 
 /* ==========================================================================
-    Buttons
+    Inputs
    ========================================================================== */
 
 button, .button {
@@ -166,6 +163,15 @@ button:active,
     transition: .1s all;
 }
 
+textarea {
+    width: 100%;
+}
+select {
+    background-color: transparent;
+}
+select option {
+    color: black;
+}
 
 /* ==========================================================================
    Themes
