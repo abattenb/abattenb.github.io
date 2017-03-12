@@ -8,29 +8,22 @@
 
 
 //Todo: Increase/Decrease font weight (100-900)
-//Todo: Add/Remove italics
 //Todo: Add invert colors
+//Todo: Redo clearing of settings
 
 
 //Global Variables          I know, I know
-
 var typeColumnArray = [];
-var italics = false;
 var typeSize = "1"; //in REM
 
+var settings = {
+    "theme" : "theme_white",
+    "fontSize" : "1",
+    "fontWeight" : "400",
+    "italic" : false,
+    "numberColumns" : 3
+};
 
-//Toggles italics
-function toggleItalics(toggle) {
-    document.getElementById('type_board').classList.toggle('italics');
-    document.getElementById('output_italics').innerHTML = String(!toggle);
-    return !toggle;
-}
-
-//Updates font size
-function updateSize(size){
-    var newSize = document.getElementById('type_board').style.setProperty('--column-font-size', size + 'rem', null);
-    document.getElementById('output_size').innerHTML = String(size + 'rem');
-}
 
 //Adds a new Type Column to the right
 function addCharMapColumn() {
@@ -49,7 +42,6 @@ function addCharMapColumn() {
     xhttp.open("GET", "../typeboard/charmap.html", true);
     xhttp.send();
 }
-
 
 //http://stackoverflow.com/a/2117523
 function genColumnID(){
@@ -70,13 +62,76 @@ function removeTypeColumn(childObj) {
 }
 
 
+
+//Update Settings cookie with current settings
+function updateSettings(settingsKey, settingsValue){
+    //Set dymanically new value based on key, if found
+    if (settings.hasOwnProperty(settingsKey)) {
+        settings[settingsKey] = settingsValue;
+    }
+    //Update cookie
+    document.cookie = JSON.stringify(settings);
+}
+
+
+
+//Toggles italics
+function toggleItalics() {
+    updateSettings("italic", !settings.italic);
+    //TODO: check toggle status first
+    document.getElementById('type_board').classList.toggle('italics');
+}
+
+//Clears settings cookie
+//TODO: clear settings
+function clearSettings() {
+    document.cookie = '';
+}
+
+//If Settings cookie doesnt exist, create
+function checkSettingsExist(){
+    if(document.cookie == "" || document.cookie == null) {
+        document.cookie = JSON.stringify(settings);
+    }
+}
+
+//Updates font size
+function updateSize(size){
+    var newSize = document.getElementById('type_board').style.setProperty('--column-font-size', size + 'rem', null);
+    document.getElementById('output_size').innerHTML = String(size + 'rem');
+    return newSize;
+}
+
+
+
+function loadSettings(){
+    //If no settings, create
+    checkSettingsExist();
+
+    settings = JSON.parse(document.cookie);
+    console.log(settings);
+
+
+    //Italic
+    if(settings.italic){
+        document.getElementById('type_board').classList.toggle('italics');
+    }
+
+    //Font-Size
+
+}
+
 window.addEventListener('load', function() {
 
-    //Init
+    loadSettings();
 
+
+
+    //Init Columns
     addCharMapColumn();
     addCharMapColumn();
-
+    addCharMapColumn();
+    
 
     //Init Eventlisteners
 
@@ -96,11 +151,21 @@ window.addEventListener('load', function() {
 
 
    document.getElementById('toggleItalics').addEventListener('click', function(){
-        italics = toggleItalics(italics);
+        toggleItalics();
     }, false);
 
    document.getElementById('addCharMapRow').addEventListener('click', function(){
        addCharMapColumn();
+    }, false);
+
+
+
+    //Settings - to be removed
+   document.getElementById('clearSettings').addEventListener('click', function(){
+       clearSettings();
+    }, false);
+   document.getElementById('updateSettings').addEventListener('click', function(){
+       updateSettings();
     }, false);
 
 

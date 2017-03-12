@@ -9,7 +9,10 @@ Author: Andrew Battenburg
    Global
    ========================================================================== */
 
+:root {
+    --column-font-size: 1rem;
 
+}
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -47,7 +50,6 @@ h1 {
 
 
 .type_column .charmap {
-    font-size: var(--column-font-size);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -57,6 +59,7 @@ h1 {
 .type_column .charmap div {
 
     line-height: 1.5;
+    font-size: var(--column-font-size);
     width: calc(1.5 * var(--column-font-size));
     align-self: center;
     text-align: center;
@@ -71,7 +74,10 @@ h1 {
 
 .type_column .header {
     display: flex;
+    align-items: center;
     position: relative;
+    font-style: normal;
+    font-weight: normal;
     border-bottom: .1rem solid var(--accent-color);
     margin: 0 1rem 1rem 1rem;
 }
@@ -87,8 +93,21 @@ h1 {
 
 
 /* ==========================================================================
+    Type Board Controls
+   ========================================================================== */
+.typeboard_controls{
+    margin: 1rem;
+    padding: 1rem 0;
+    border-bottom: .1rem solid var(--accent-color);
+}
+
+
+
+/* ==========================================================================
     Modifiers
    ========================================================================== */
+
+
 .italics {
     font-style: italic;
 }
@@ -136,20 +155,17 @@ button:active,
     --background-color: #FFF;
     --text-color: #333;
     --accent-color: #CCC;
-    --column-font-size: 1rem;
 }
 
 :root .theme_black {
     --background-color: #222;
     --text-color: #FFF;
     --accent-color: #CCC;
-    --column-font-size: 1rem;
 }
 :root .theme_yellow {
     --background-color: #222;
     --text-color: #FF0;
     --accent-color: #CCC;
-    --column-font-size: 1rem;
 }
 
 
